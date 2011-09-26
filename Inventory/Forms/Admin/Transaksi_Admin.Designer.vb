@@ -31,6 +31,7 @@ Partial Class Transaksi_Admin
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New Bunifu.Framework.UI.BunifuCards()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtID_Barang = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.cbStatus = New System.Windows.Forms.ComboBox()
         Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.txtID_Transaksi = New Bunifu.Framework.UI.BunifuMaterialTextbox()
@@ -67,6 +68,7 @@ Partial Class Transaksi_Admin
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.txtID_Barang)
         Me.GroupBox1.Controls.Add(Me.cbStatus)
         Me.GroupBox1.Controls.Add(Me.BunifuCustomLabel2)
         Me.GroupBox1.Controls.Add(Me.txtID_Transaksi)
@@ -74,6 +76,21 @@ Partial Class Transaksi_Admin
         resources.ApplyResources(Me.GroupBox1, "GroupBox1")
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.TabStop = False
+        '
+        'txtID_Barang
+        '
+        resources.ApplyResources(Me.txtID_Barang, "txtID_Barang")
+        Me.txtID_Barang.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtID_Barang.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtID_Barang.HintForeColor = System.Drawing.Color.Empty
+        Me.txtID_Barang.HintText = ""
+        Me.txtID_Barang.isPassword = False
+        Me.txtID_Barang.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.txtID_Barang.LineIdleColor = System.Drawing.Color.Gray
+        Me.txtID_Barang.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.txtID_Barang.LineThickness = 3
+        Me.txtID_Barang.Name = "txtID_Barang"
+        Me.txtID_Barang.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'cbStatus
         '
@@ -330,4 +347,5 @@ Partial Class Transaksi_Admin
     Friend WithEvents BunifuCustomLabel2 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents txtID_Transaksi As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents cbStatus As ComboBox
+    Friend WithEvents txtID_Barang As Bunifu.Framework.UI.BunifuMaterialTextbox
 End Class

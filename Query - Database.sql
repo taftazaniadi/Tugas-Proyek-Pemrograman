@@ -149,7 +149,7 @@ INSERT INTO transaksi VALUES('T0003', 2, 'B0003', '2019-01-10', '2019-01-11', 2,
 go
 
 --Query Transaksi
-UPDATE transaksi SET status_transaksi = 'Dikembalikan' WHERE id_transaksi = 'T0002'
+UPDATE transaksi SET status_transaksi = 'Diterima' WHERE id_transaksi = 'T0001' AND id_barang = 'B0001'
 UPDATE barang set stock = 5, keterangan = 'Tersedia'
 UPDATE barang set pinjam = 0
 DELETE FROM transaksi WHERE id_transaksi = 'T0001'

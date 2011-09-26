@@ -603,6 +603,42 @@
   <data name="&gt;&gt;btnEdit.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="txtID_Barang.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="txtID_Barang.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtID_Barang.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
+  <data name="txtID_Barang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 20</value>
+  </data>
+  <data name="txtID_Barang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="txtID_Barang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>368, 33</value>
+  </data>
+  <data name="txtID_Barang.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="txtID_Barang.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;txtID_Barang.Name" xml:space="preserve">
+    <value>txtID_Barang</value>
+  </data>
+  <data name="&gt;&gt;txtID_Barang.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtID_Barang.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;txtID_Barang.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="cbStatus.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
@@ -643,7 +679,7 @@
     <value>GroupBox1</value>
   </data>
   <data name="&gt;&gt;cbStatus.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="BunifuCustomLabel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -679,7 +715,7 @@
     <value>GroupBox1</value>
   </data>
   <data name="&gt;&gt;BunifuCustomLabel2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="txtID_Transaksi.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -709,7 +745,7 @@
     <value>GroupBox1</value>
   </data>
   <data name="&gt;&gt;txtID_Transaksi.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="BunifuCustomLabel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -742,7 +778,7 @@
     <value>GroupBox1</value>
   </data>
   <data name="&gt;&gt;BunifuCustomLabel1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="GroupBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 366</value>

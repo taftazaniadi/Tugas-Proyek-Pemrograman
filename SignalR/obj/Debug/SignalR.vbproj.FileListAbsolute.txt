@@ -1,0 +1,3 @@
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\SignalR\obj\Debug\SignalR.Resources.resources
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\SignalR\obj\Debug\SignalR.vbproj.GenerateResource.cache
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\SignalR\obj\Debug\SignalR.vbproj.CoreCompileInputs.cache

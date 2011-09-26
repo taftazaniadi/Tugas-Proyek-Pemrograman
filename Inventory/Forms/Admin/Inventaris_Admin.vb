@@ -45,10 +45,10 @@ Public Class Inventaris_Admin
                 txtNama.Text = .Cells(1).Value.ToString
                 cbJenis.Text = .Cells(2).Value.ToString
                 txtStock.Text = .Cells(3).Value.ToString
-                cbSatuan.Text = .Cells(4).Value.ToString
-                cbKet.Text = .Cells(5).Value.ToString
-                cbTempat.Text = .Cells(6).Value.ToString
-                cbStatus.Text = .Cells(7).Value.ToString
+                cbSatuan.Text = .Cells(5).Value.ToString
+                cbKet.Text = .Cells(6).Value.ToString
+                cbTempat.Text = .Cells(7).Value.ToString
+                cbStatus.Text = .Cells(8).Value.ToString
             End With
         End If
     End Sub

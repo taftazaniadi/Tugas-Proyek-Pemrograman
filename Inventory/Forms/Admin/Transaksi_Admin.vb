@@ -6,6 +6,7 @@
     Private Sub Peminjaman_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.MdiParent = Form1
         RefreshGrid()
+        DGTransaksi.Columns(2).Visible = False
         txtID_Transaksi.Enabled = False
     End Sub
 
@@ -21,7 +22,8 @@
         If br < DTGrid.Rows.Count Then
             With DGTransaksi.Rows(br)
                 txtID_Transaksi.Text = .Cells(0).Value.ToString
-                cbStatus.SelectedItem = .Cells(6).Value.ToString
+                txtID_Barang.Text = .Cells(2).Value.ToString
+                cbStatus.SelectedItem = .Cells(7).Value.ToString
             End With
         End If
     End Sub
@@ -59,10 +61,9 @@
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         With EntitasTransaksi
             .id_transaksiDetail = txtID_Transaksi.Text
+            .id_barangDetail = txtID_Barang.Text
             .status_transaksiDetail = cbStatus.SelectedItem
         End With
-
-
 
         If modeProses = 1 Then
             KontrolTransaksi.InsertData(EntitasTransaksi)

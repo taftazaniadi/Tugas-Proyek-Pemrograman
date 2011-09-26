@@ -63,10 +63,11 @@ E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-P
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\bin\Microsoft.Owin.Host.SystemWeb.xml
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\bin\Microsoft.Owin.Security.xml
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\bin\Newtonsoft.Json.xml
-E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\obj\Debug\SignaIR.vbprojResolveAssemblyReference.cache
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\obj\Debug\SignaIR.Resources.resources
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\obj\Debug\SignaIR.vbproj.GenerateResource.Cache
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\obj\Debug\SignaIR.vbproj.CoreCompileInputs.cache
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\obj\Debug\SignaIR.dll
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\obj\Debug\SignaIR.xml
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\obj\Debug\SignaIR.pdb
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\obj\Debug\SignaIR.vbprojAssemblyReference.cache
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\obj\Debug\SignaIR.vbproj.CopyComplete
