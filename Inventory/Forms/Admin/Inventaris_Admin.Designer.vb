@@ -23,20 +23,31 @@ Partial Class Inventaris_Admin
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Inventaris_Admin))
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New Bunifu.Framework.UI.BunifuCards()
+        Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
+        Me.DGBarang = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.btnDelete = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnEdit = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnCancel = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnSave = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnAdd = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.BunifuCustomDataGrid1 = New Bunifu.Framework.UI.BunifuCustomDataGrid()
-        Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
+        Me.BunifuMaterialTextbox1 = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuMaterialTextbox2 = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuMaterialTextbox4 = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.BunifuCustomLabel5 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuDropdown1 = New Bunifu.Framework.UI.BunifuDropdown()
+        Me.BunifuDropdown2 = New Bunifu.Framework.UI.BunifuDropdown()
         Me.Panel1.SuspendLayout()
-        CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BunifuGradientPanel1.SuspendLayout()
+        CType(Me.DGBarang, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -51,7 +62,7 @@ Partial Class Inventaris_Admin
         Me.Panel1.BottomSahddow = True
         Me.Panel1.color = System.Drawing.Color.Tomato
         Me.Panel1.Controls.Add(Me.BunifuGradientPanel1)
-        Me.Panel1.Controls.Add(Me.BunifuCustomDataGrid1)
+        Me.Panel1.Controls.Add(Me.DGBarang)
         Me.Panel1.LeftSahddow = False
         Me.Panel1.Location = New System.Drawing.Point(12, 12)
         Me.Panel1.Name = "Panel1"
@@ -59,6 +70,57 @@ Partial Class Inventaris_Admin
         Me.Panel1.ShadowDepth = 20
         Me.Panel1.Size = New System.Drawing.Size(540, 494)
         Me.Panel1.TabIndex = 0
+        '
+        'BunifuGradientPanel1
+        '
+        Me.BunifuGradientPanel1.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel1.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuGradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuDropdown2)
+        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuDropdown1)
+        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuCustomLabel5)
+        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuCustomLabel4)
+        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuMaterialTextbox4)
+        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuCustomLabel3)
+        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuCustomLabel2)
+        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuMaterialTextbox2)
+        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuCustomLabel1)
+        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuMaterialTextbox1)
+        Me.BunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.White
+        Me.BunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White
+        Me.BunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White
+        Me.BunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White
+        Me.BunifuGradientPanel1.Location = New System.Drawing.Point(3, 244)
+        Me.BunifuGradientPanel1.Name = "BunifuGradientPanel1"
+        Me.BunifuGradientPanel1.Quality = 10
+        Me.BunifuGradientPanel1.Size = New System.Drawing.Size(534, 247)
+        Me.BunifuGradientPanel1.TabIndex = 2
+        '
+        'DGBarang
+        '
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.DGBarang.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        Me.DGBarang.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.DGBarang.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DGBarang.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGBarang.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
+        Me.DGBarang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGBarang.DoubleBuffered = True
+        Me.DGBarang.EnableHeadersVisualStyles = False
+        Me.DGBarang.HeaderBgColor = System.Drawing.Color.SeaGreen
+        Me.DGBarang.HeaderForeColor = System.Drawing.Color.SeaGreen
+        Me.DGBarang.Location = New System.Drawing.Point(3, 6)
+        Me.DGBarang.Name = "DGBarang"
+        Me.DGBarang.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.DGBarang.Size = New System.Drawing.Size(534, 232)
+        Me.DGBarang.TabIndex = 1
         '
         'btnDelete
         '
@@ -237,45 +299,145 @@ Partial Class Inventaris_Admin
         Me.btnAdd.Textcolor = System.Drawing.Color.White
         Me.btnAdd.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
-        'BunifuCustomDataGrid1
+        'BunifuMaterialTextbox1
         '
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
-        Me.BunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.BunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.BunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
-        Me.BunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.BunifuCustomDataGrid1.DoubleBuffered = True
-        Me.BunifuCustomDataGrid1.EnableHeadersVisualStyles = False
-        Me.BunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomDataGrid1.Location = New System.Drawing.Point(3, 6)
-        Me.BunifuCustomDataGrid1.Name = "BunifuCustomDataGrid1"
-        Me.BunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.BunifuCustomDataGrid1.Size = New System.Drawing.Size(534, 232)
-        Me.BunifuCustomDataGrid1.TabIndex = 1
+        Me.BunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.BunifuMaterialTextbox1.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.BunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty
+        Me.BunifuMaterialTextbox1.HintText = ""
+        Me.BunifuMaterialTextbox1.isPassword = False
+        Me.BunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.Blue
+        Me.BunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray
+        Me.BunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.BunifuMaterialTextbox1.LineThickness = 3
+        Me.BunifuMaterialTextbox1.Location = New System.Drawing.Point(134, 20)
+        Me.BunifuMaterialTextbox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuMaterialTextbox1.Name = "BunifuMaterialTextbox1"
+        Me.BunifuMaterialTextbox1.Size = New System.Drawing.Size(368, 33)
+        Me.BunifuMaterialTextbox1.TabIndex = 0
+        Me.BunifuMaterialTextbox1.Text = "BunifuMaterialTextbox1"
+        Me.BunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
-        'BunifuGradientPanel1
+        'BunifuCustomLabel1
         '
-        Me.BunifuGradientPanel1.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel1.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.White
-        Me.BunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White
-        Me.BunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White
-        Me.BunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White
-        Me.BunifuGradientPanel1.Location = New System.Drawing.Point(3, 244)
-        Me.BunifuGradientPanel1.Name = "BunifuGradientPanel1"
-        Me.BunifuGradientPanel1.Quality = 10
-        Me.BunifuGradientPanel1.Size = New System.Drawing.Size(534, 247)
-        Me.BunifuGradientPanel1.TabIndex = 2
+        Me.BunifuCustomLabel1.AutoSize = True
+        Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(24, 28)
+        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
+        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(98, 16)
+        Me.BunifuCustomLabel1.TabIndex = 1
+        Me.BunifuCustomLabel1.Text = "Kode Barang"
+        '
+        'BunifuCustomLabel2
+        '
+        Me.BunifuCustomLabel2.AutoSize = True
+        Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(24, 69)
+        Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
+        Me.BunifuCustomLabel2.Size = New System.Drawing.Size(103, 16)
+        Me.BunifuCustomLabel2.TabIndex = 3
+        Me.BunifuCustomLabel2.Text = "Nama Barang"
+        '
+        'BunifuMaterialTextbox2
+        '
+        Me.BunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.BunifuMaterialTextbox2.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.BunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty
+        Me.BunifuMaterialTextbox2.HintText = ""
+        Me.BunifuMaterialTextbox2.isPassword = False
+        Me.BunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.Blue
+        Me.BunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Gray
+        Me.BunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.BunifuMaterialTextbox2.LineThickness = 3
+        Me.BunifuMaterialTextbox2.Location = New System.Drawing.Point(134, 61)
+        Me.BunifuMaterialTextbox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuMaterialTextbox2.Name = "BunifuMaterialTextbox2"
+        Me.BunifuMaterialTextbox2.Size = New System.Drawing.Size(368, 33)
+        Me.BunifuMaterialTextbox2.TabIndex = 2
+        Me.BunifuMaterialTextbox2.Text = "BunifuMaterialTextbox2"
+        Me.BunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'BunifuCustomLabel3
+        '
+        Me.BunifuCustomLabel3.AutoSize = True
+        Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(24, 111)
+        Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
+        Me.BunifuCustomLabel3.Size = New System.Drawing.Size(99, 16)
+        Me.BunifuCustomLabel3.TabIndex = 5
+        Me.BunifuCustomLabel3.Text = "Jenis Barang"
+        '
+        'BunifuCustomLabel4
+        '
+        Me.BunifuCustomLabel4.AutoSize = True
+        Me.BunifuCustomLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(24, 153)
+        Me.BunifuCustomLabel4.Name = "BunifuCustomLabel4"
+        Me.BunifuCustomLabel4.Size = New System.Drawing.Size(47, 16)
+        Me.BunifuCustomLabel4.TabIndex = 7
+        Me.BunifuCustomLabel4.Text = "Stock"
+        '
+        'BunifuMaterialTextbox4
+        '
+        Me.BunifuMaterialTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.BunifuMaterialTextbox4.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.BunifuMaterialTextbox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BunifuMaterialTextbox4.HintForeColor = System.Drawing.Color.Empty
+        Me.BunifuMaterialTextbox4.HintText = ""
+        Me.BunifuMaterialTextbox4.isPassword = False
+        Me.BunifuMaterialTextbox4.LineFocusedColor = System.Drawing.Color.Blue
+        Me.BunifuMaterialTextbox4.LineIdleColor = System.Drawing.Color.Gray
+        Me.BunifuMaterialTextbox4.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.BunifuMaterialTextbox4.LineThickness = 3
+        Me.BunifuMaterialTextbox4.Location = New System.Drawing.Point(134, 143)
+        Me.BunifuMaterialTextbox4.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuMaterialTextbox4.Name = "BunifuMaterialTextbox4"
+        Me.BunifuMaterialTextbox4.Size = New System.Drawing.Size(368, 33)
+        Me.BunifuMaterialTextbox4.TabIndex = 6
+        Me.BunifuMaterialTextbox4.Text = "BunifuMaterialTextbox4"
+        Me.BunifuMaterialTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'BunifuCustomLabel5
+        '
+        Me.BunifuCustomLabel5.AutoSize = True
+        Me.BunifuCustomLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel5.Location = New System.Drawing.Point(24, 193)
+        Me.BunifuCustomLabel5.Name = "BunifuCustomLabel5"
+        Me.BunifuCustomLabel5.Size = New System.Drawing.Size(51, 16)
+        Me.BunifuCustomLabel5.TabIndex = 9
+        Me.BunifuCustomLabel5.Text = "Status"
+        '
+        'BunifuDropdown1
+        '
+        Me.BunifuDropdown1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuDropdown1.BorderRadius = 3
+        Me.BunifuDropdown1.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuDropdown1.ForeColor = System.Drawing.Color.White
+        Me.BunifuDropdown1.Items = New String(-1) {}
+        Me.BunifuDropdown1.Location = New System.Drawing.Point(134, 101)
+        Me.BunifuDropdown1.Name = "BunifuDropdown1"
+        Me.BunifuDropdown1.NomalColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.BunifuDropdown1.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.BunifuDropdown1.selectedIndex = -1
+        Me.BunifuDropdown1.Size = New System.Drawing.Size(193, 35)
+        Me.BunifuDropdown1.TabIndex = 10
+        '
+        'BunifuDropdown2
+        '
+        Me.BunifuDropdown2.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuDropdown2.BorderRadius = 3
+        Me.BunifuDropdown2.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuDropdown2.ForeColor = System.Drawing.Color.White
+        Me.BunifuDropdown2.Items = New String(-1) {}
+        Me.BunifuDropdown2.Location = New System.Drawing.Point(134, 183)
+        Me.BunifuDropdown2.Name = "BunifuDropdown2"
+        Me.BunifuDropdown2.NomalColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.BunifuDropdown2.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.BunifuDropdown2.selectedIndex = -1
+        Me.BunifuDropdown2.Size = New System.Drawing.Size(193, 35)
+        Me.BunifuDropdown2.TabIndex = 11
         '
         'Inventaris_Admin
         '
@@ -293,7 +455,9 @@ Partial Class Inventaris_Admin
         Me.Name = "Inventaris_Admin"
         Me.Text = "Inventaris"
         Me.Panel1.ResumeLayout(False)
-        CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BunifuGradientPanel1.ResumeLayout(False)
+        Me.BunifuGradientPanel1.PerformLayout()
+        CType(Me.DGBarang, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -306,5 +470,15 @@ Partial Class Inventaris_Admin
     Friend WithEvents btnCancel As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents btnAdd As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents BunifuGradientPanel1 As Bunifu.Framework.UI.BunifuGradientPanel
-    Friend WithEvents BunifuCustomDataGrid1 As Bunifu.Framework.UI.BunifuCustomDataGrid
+    Friend WithEvents DGBarang As Bunifu.Framework.UI.BunifuCustomDataGrid
+    Friend WithEvents BunifuCustomLabel5 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuCustomLabel4 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuMaterialTextbox4 As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents BunifuCustomLabel3 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuCustomLabel2 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuMaterialTextbox2 As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuMaterialTextbox1 As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents BunifuDropdown2 As Bunifu.Framework.UI.BunifuDropdown
+    Friend WithEvents BunifuDropdown1 As Bunifu.Framework.UI.BunifuDropdown
 End Class

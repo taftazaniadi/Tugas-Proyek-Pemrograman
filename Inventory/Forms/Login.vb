@@ -23,24 +23,58 @@
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         If chkAdmin.Checked = True Then
-            If txtUser.Text = "Admin" And txtPass.Text = "admin" Then
-                Me.Hide()
-                txtUser.Text = ""
-                txtPass.Text = ""
-                chkAdmin.Checked = False
-                Form1.Show()
+            DTGrid = KontrolAdmin.LoginAdmin(txtUser.Text).ToTable
+
+            If DTGrid.Rows.Count > 0 Then
+                EntitasAdmin.id_adminAdmin = DTGrid.Rows(0).Item(0)
+                EntitasAdmin.usernameAdmin = DTGrid.Rows(0).Item(1)
+                EntitasAdmin.passwordAdmin = DTGrid.Rows(0).Item(2)
+                EntitasAdmin.fullnameAdmin = DTGrid.Rows(0).Item(3)
+                EntitasAdmin.contactAdmin = DTGrid.Rows(0).Item(4)
+                EntitasAdmin.emailAdmin = DTGrid.Rows(0).Item(5)
+
+                If txtPass.Text = EntitasAdmin.passwordAdmin And chkAdmin.Checked = True Then
+                    Form1.Show()
+                    txtPass.Text = ""
+                    txtUser.Text = ""
+                Else
+                    MessageBox.Show("Password Anda SALAH!!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    txtPass.Text = ""
+                    chkAdmin.Checked = False
+                    txtPass.Focus()
+                End If
             Else
                 MessageBox.Show("Username tidak dikenal!!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                txtUser.Text = ""
                 txtPass.Text = ""
-                chkAdmin.Checked = False
+                txtUser.Text = ""
+                txtUser.Focus()
             End If
         Else
-            Me.Hide()
-            chkAdmin.Checked = False
-            txtUser.Text = ""
-            txtPass.Text = ""
-            Member.Show()
+            DTGrid = KontrolMember.LoginMember(txtUser.Text).ToTable
+
+            If DTGrid.Rows.Count > 0 Then
+                EntitasMember.NIMMember = DTGrid.Rows(0).Item(0)
+                EntitasMember.NamaMember = DTGrid.Rows(0).Item(1)
+                EntitasMember.PasswordMember = DTGrid.Rows(0).Item(2)
+                EntitasMember.JurusanMember = DTGrid.Rows(0).Item(3)
+                EntitasMember.ContactMember = DTGrid.Rows(0).Item(4)
+                EntitasMember.EmailMember = DTGrid.Rows(0).Item(5)
+
+                If txtPass.Text = EntitasMember.PasswordMember Then
+                    Member.Show()
+                    txtPass.Text = ""
+                    txtUser.Text = ""
+                Else
+                    MessageBox.Show("Password Anda SALAH!!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    txtPass.Text = ""
+                    txtPass.Focus()
+                End If
+            Else
+                MessageBox.Show("Username tidak dikenal!!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                txtPass.Text = ""
+                txtUser.Text = ""
+                txtUser.Focus()
+            End If
         End If
     End Sub
 

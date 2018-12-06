@@ -29,13 +29,13 @@ Partial Class Peminjaman_Admin
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New Bunifu.Framework.UI.BunifuCards()
         Me.txtSearch = New Bunifu.Framework.UI.BunifuTextbox()
-        Me.Tabel = New Bunifu.Framework.UI.BunifuCustomDataGrid()
+        Me.DGPinjam = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.btnEdit = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnSave = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnCancel = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnDelete = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Panel1.SuspendLayout()
-        CType(Me.Tabel, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGPinjam, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -50,7 +50,7 @@ Partial Class Peminjaman_Admin
         Me.Panel1.BottomSahddow = True
         Me.Panel1.color = System.Drawing.Color.Tomato
         Me.Panel1.Controls.Add(Me.txtSearch)
-        Me.Panel1.Controls.Add(Me.Tabel)
+        Me.Panel1.Controls.Add(Me.DGPinjam)
         Me.Panel1.LeftSahddow = False
         resources.ApplyResources(Me.Panel1, "Panel1")
         Me.Panel1.Name = "Panel1"
@@ -66,13 +66,13 @@ Partial Class Peminjaman_Admin
         Me.txtSearch.Name = "txtSearch"
         Me.txtSearch.text = ""
         '
-        'Tabel
+        'DGPinjam
         '
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Tabel.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.Tabel.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.Tabel.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Tabel.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.DGPinjam.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.DGPinjam.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.DGPinjam.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DGPinjam.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -80,15 +80,15 @@ Partial Class Peminjaman_Admin
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Tabel.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.Tabel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Tabel.DoubleBuffered = True
-        Me.Tabel.EnableHeadersVisualStyles = False
-        Me.Tabel.HeaderBgColor = System.Drawing.Color.SeaGreen
-        Me.Tabel.HeaderForeColor = System.Drawing.Color.SeaGreen
-        resources.ApplyResources(Me.Tabel, "Tabel")
-        Me.Tabel.Name = "Tabel"
-        Me.Tabel.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.DGPinjam.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.DGPinjam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGPinjam.DoubleBuffered = True
+        Me.DGPinjam.EnableHeadersVisualStyles = False
+        Me.DGPinjam.HeaderBgColor = System.Drawing.Color.SeaGreen
+        Me.DGPinjam.HeaderForeColor = System.Drawing.Color.SeaGreen
+        resources.ApplyResources(Me.DGPinjam, "DGPinjam")
+        Me.DGPinjam.Name = "DGPinjam"
+        Me.DGPinjam.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         '
         'btnEdit
         '
@@ -223,7 +223,7 @@ Partial Class Peminjaman_Admin
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Peminjaman_Admin"
         Me.Panel1.ResumeLayout(False)
-        CType(Me.Tabel, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGPinjam, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -234,6 +234,6 @@ Partial Class Peminjaman_Admin
     Friend WithEvents btnDelete As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents btnCancel As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents btnSave As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents Tabel As Bunifu.Framework.UI.BunifuCustomDataGrid
+    Friend WithEvents DGPinjam As Bunifu.Framework.UI.BunifuCustomDataGrid
     Friend WithEvents txtSearch As Bunifu.Framework.UI.BunifuTextbox
 End Class

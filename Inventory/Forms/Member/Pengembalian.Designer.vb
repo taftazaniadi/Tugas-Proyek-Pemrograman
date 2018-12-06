@@ -24,9 +24,14 @@ Partial Class Pengembalian
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Pengembalian))
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New Bunifu.Framework.UI.BunifuCards()
         Me.btnAdd = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.DGKembali = New Bunifu.Framework.UI.BunifuCustomDataGrid()
+        Me.Panel1.SuspendLayout()
+        CType(Me.DGKembali, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -40,6 +45,7 @@ Partial Class Pengembalian
         Me.Panel1.BorderRadius = 5
         Me.Panel1.BottomSahddow = True
         Me.Panel1.color = System.Drawing.Color.Tomato
+        Me.Panel1.Controls.Add(Me.DGKembali)
         Me.Panel1.LeftSahddow = False
         Me.Panel1.Location = New System.Drawing.Point(12, 12)
         Me.Panel1.Name = "Panel1"
@@ -83,6 +89,32 @@ Partial Class Pengembalian
         Me.btnAdd.Textcolor = System.Drawing.Color.White
         Me.btnAdd.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
+        'DGKembali
+        '
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.DGKembali.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.DGKembali.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.DGKembali.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DGKembali.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGKembali.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.DGKembali.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGKembali.DoubleBuffered = True
+        Me.DGKembali.EnableHeadersVisualStyles = False
+        Me.DGKembali.HeaderBgColor = System.Drawing.Color.SeaGreen
+        Me.DGKembali.HeaderForeColor = System.Drawing.Color.SeaGreen
+        Me.DGKembali.Location = New System.Drawing.Point(3, 7)
+        Me.DGKembali.Name = "DGKembali"
+        Me.DGKembali.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.DGKembali.Size = New System.Drawing.Size(534, 484)
+        Me.DGKembali.TabIndex = 1
+        '
         'Pengembalian
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -94,6 +126,8 @@ Partial Class Pengembalian
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Pengembalian"
         Me.Text = "Pengembalian"
+        Me.Panel1.ResumeLayout(False)
+        CType(Me.DGKembali, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -101,4 +135,5 @@ Partial Class Pengembalian
     Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
     Friend WithEvents Panel1 As Bunifu.Framework.UI.BunifuCards
     Friend WithEvents btnAdd As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents DGKembali As Bunifu.Framework.UI.BunifuCustomDataGrid
 End Class

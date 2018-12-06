@@ -76,6 +76,15 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\ClsCtlAdmin.vb" />
+    <Compile Include="Control\ClsCtlBarang.vb" />
+    <Compile Include="Control\ClsCtlMember.vb" />
+    <Compile Include="Control\ClsCtlPeminjaman.vb" />
+    <Compile Include="Control\ClsCtlPengembalian.vb" />
+    <Compile Include="Control\InfProses.vb" />
+    <Compile Include="Entity\ClsEntAdmin.vb" />
+    <Compile Include="Entity\ClsEntBarang.vb" />
+    <Compile Include="Entity\ClsEntMember.vb" />
     <Compile Include="Forms\Admin\Admin.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +146,8 @@
     <Compile Include="Forms\Member\Pengembalian.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Global\ModKoneksi.vb" />
+    <Compile Include="Global\ModObjekdanFungsi.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -203,10 +214,6 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Control\" />
-    <Folder Include="Entity\" />
-    <Folder Include="Global\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
