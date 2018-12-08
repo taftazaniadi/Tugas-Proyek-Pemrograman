@@ -8,7 +8,7 @@ Module ModKoneksi
     Public DTT As New DataTable
     Public DTGrid As New DataTable
 
-    Public strKon = "Provider=SQLNCLI11;Data Source=NEW-PC\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=Databases2"
+    Public strKon = "Provider=SQLNCLI11;Data Source=NEW\NEW;Integrated Security=SSPI;Initial Catalog=Inventory"
 
     Public koneksi As New OleDbConnection(strKon)
 

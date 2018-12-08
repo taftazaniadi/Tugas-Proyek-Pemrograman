@@ -3,9 +3,9 @@ Imports Inventory
 
 Public Class ClsCtlAdmin : Implements InfProses
 
-    Public Function LoginAdmin(id_admin As String) As DataView
+    Public Function LoginAdmin(username As String) As DataView
         Try
-            DTA = New OleDbDataAdapter("SELECT * FROM admin WHERE username = '" & id_admin & "'", BUKAKONEKSI)
+            DTA = New OleDbDataAdapter("SELECT * FROM admin WHERE username = '" & username & "'", BUKAKONEKSI)
             DTS = New DataSet()
             DTA.Fill(DTS, "cari_admin")
             Dim grid As New DataView(DTS.Tables("cari_admin"))

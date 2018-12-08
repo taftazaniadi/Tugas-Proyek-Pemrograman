@@ -161,7 +161,7 @@ Partial Class Login
         Me.txtUser.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.txtUser.ForeColor = System.Drawing.Color.White
         Me.txtUser.HintForeColor = System.Drawing.Color.White
-        Me.txtUser.HintText = "Username"
+        Me.txtUser.HintText = "Username or NPM"
         Me.txtUser.isPassword = False
         Me.txtUser.LineFocusedColor = System.Drawing.Color.Teal
         Me.txtUser.LineIdleColor = System.Drawing.Color.Gray

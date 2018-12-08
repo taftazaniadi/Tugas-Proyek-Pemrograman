@@ -14,8 +14,6 @@
         logoAnimator.Show(Garis1)
         logoAnimator.Show(Garis2)
         logoAnimator.Show(logo)
-        txtUser.Text = ""
-        txtPass.Text = ""
         Me.CenterToScreen()
     End Sub
 
@@ -30,8 +28,8 @@
                 EntitasAdmin.usernameAdmin = DTGrid.Rows(0).Item(1)
                 EntitasAdmin.passwordAdmin = DTGrid.Rows(0).Item(2)
                 EntitasAdmin.fullnameAdmin = DTGrid.Rows(0).Item(3)
-                EntitasAdmin.contactAdmin = DTGrid.Rows(0).Item(4)
-                EntitasAdmin.emailAdmin = DTGrid.Rows(0).Item(5)
+                EntitasAdmin.emailAdmin = DTGrid.Rows(0).Item(4)
+                EntitasAdmin.contactAdmin = DTGrid.Rows(0).Item(5)
 
                 If txtPass.Text = EntitasAdmin.passwordAdmin And chkAdmin.Checked = True Then
                     Form1.Show()
@@ -56,9 +54,9 @@
                 EntitasMember.NIMMember = DTGrid.Rows(0).Item(0)
                 EntitasMember.NamaMember = DTGrid.Rows(0).Item(1)
                 EntitasMember.PasswordMember = DTGrid.Rows(0).Item(2)
-                EntitasMember.JurusanMember = DTGrid.Rows(0).Item(3)
+                EntitasMember.EmailMember = DTGrid.Rows(0).Item(3)
                 EntitasMember.ContactMember = DTGrid.Rows(0).Item(4)
-                EntitasMember.EmailMember = DTGrid.Rows(0).Item(5)
+                EntitasMember.JurusanMember = DTGrid.Rows(0).Item(5)
 
                 If txtPass.Text = EntitasMember.PasswordMember Then
                     Member.Show()

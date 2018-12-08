@@ -3,8 +3,8 @@
     Private username As String
     Private password As String
     Private fullname As String
-    Private contact As Integer
     Private email As String
+    Private contact As String
 
     Public Property id_adminAdmin() As String
         Get
@@ -42,21 +42,21 @@
         End Set
     End Property
 
-    Public Property contactAdmin() As Integer
-        Get
-            Return contact
-        End Get
-        Set(value As Integer)
-            contact = value
-        End Set
-    End Property
-
     Public Property emailAdmin() As String
         Get
             Return email
         End Get
         Set(value As String)
             email = value
+        End Set
+    End Property
+
+    Public Property contactAdmin() As String
+        Get
+            Return contact
+        End Get
+        Set(value As String)
+            contact = value
         End Set
     End Property
 

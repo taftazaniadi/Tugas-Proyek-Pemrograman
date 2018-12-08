@@ -34,6 +34,7 @@ Partial Class Peminjaman_Admin
         Me.btnSave = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnCancel = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnDelete = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.no = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1.SuspendLayout()
         CType(Me.DGPinjam, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -76,16 +77,17 @@ Partial Class Peminjaman_Admin
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DGPinjam.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DGPinjam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGPinjam.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.no})
         Me.DGPinjam.DoubleBuffered = True
         Me.DGPinjam.EnableHeadersVisualStyles = False
         Me.DGPinjam.HeaderBgColor = System.Drawing.Color.SeaGreen
-        Me.DGPinjam.HeaderForeColor = System.Drawing.Color.SeaGreen
+        Me.DGPinjam.HeaderForeColor = System.Drawing.Color.White
         resources.ApplyResources(Me.DGPinjam, "DGPinjam")
         Me.DGPinjam.Name = "DGPinjam"
         Me.DGPinjam.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
@@ -210,6 +212,11 @@ Partial Class Peminjaman_Admin
         Me.btnDelete.Textcolor = System.Drawing.Color.White
         Me.btnDelete.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
+        'no
+        '
+        resources.ApplyResources(Me.no, "no")
+        Me.no.Name = "no"
+        '
         'Peminjaman_Admin
         '
         resources.ApplyResources(Me, "$this")
@@ -236,4 +243,5 @@ Partial Class Peminjaman_Admin
     Friend WithEvents btnSave As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents DGPinjam As Bunifu.Framework.UI.BunifuCustomDataGrid
     Friend WithEvents txtSearch As Bunifu.Framework.UI.BunifuTextbox
+    Friend WithEvents no As DataGridViewTextBoxColumn
 End Class

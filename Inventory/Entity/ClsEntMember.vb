@@ -2,9 +2,9 @@
     Private NIM As String
     Private Nama As String
     Private Password As String
-    Private Jurusan As String
-    Private Contact As Integer
     Private Email As String
+    Private Contact As String
+    Private Jurusan As String
 
     Public Property NIMMember() As String
         Get
@@ -33,30 +33,30 @@
         End Set
     End Property
 
-    Public Property JurusanMember() As String
-        Get
-            Return Jurusan
-        End Get
-        Set(value As String)
-            Jurusan = value
-        End Set
-    End Property
-
-    Public Property ContactMember() As Integer
-        Get
-            Return Contact
-        End Get
-        Set(value As Integer)
-            Contact = value
-        End Set
-    End Property
-
     Public Property EmailMember() As String
         Get
             Return Email
         End Get
         Set(value As String)
             Email = value
+        End Set
+    End Property
+
+    Public Property ContactMember() As String
+        Get
+            Return Contact
+        End Get
+        Set(value As String)
+            Contact = value
+        End Set
+    End Property
+
+    Public Property JurusanMember() As String
+        Get
+            Return Jurusan
+        End Get
+        Set(value As String)
+            Jurusan = value
         End Set
     End Property
 

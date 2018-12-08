@@ -34,6 +34,7 @@
         logo.Hide()
         logo_small.Hide()
         logoAnimator.Show(logo)
+        Dashboard.Show()
         Me.CenterToScreen()
     End Sub
 
