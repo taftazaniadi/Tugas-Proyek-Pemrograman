@@ -30,6 +30,15 @@ Partial Class Pengembalian_Admin
         Me.Panel1 = New Bunifu.Framework.UI.BunifuCards()
         Me.txtSearch = New Bunifu.Framework.UI.BunifuTextbox()
         Me.DGKembali = New Bunifu.Framework.UI.BunifuCustomDataGrid()
+        Me.no = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.id_pengembalian = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.id_peminjaman = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NIM = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.tgl_pinjam = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.tgl_kembali = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.tgl_dikembalikan = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.jumlah = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.id_status = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnDelete = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnCancel = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnSave = New Bunifu.Framework.UI.BunifuFlatButton()
@@ -82,21 +91,70 @@ Partial Class Pengembalian_Admin
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DGKembali.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DGKembali.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGKembali.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.no, Me.id_pengembalian, Me.id_peminjaman, Me.NIM, Me.tgl_pinjam, Me.tgl_kembali, Me.tgl_dikembalikan, Me.jumlah, Me.id_status})
         Me.DGKembali.DoubleBuffered = True
         Me.DGKembali.EnableHeadersVisualStyles = False
         Me.DGKembali.HeaderBgColor = System.Drawing.Color.SeaGreen
-        Me.DGKembali.HeaderForeColor = System.Drawing.Color.SeaGreen
+        Me.DGKembali.HeaderForeColor = System.Drawing.Color.White
         Me.DGKembali.Location = New System.Drawing.Point(3, 64)
         Me.DGKembali.Name = "DGKembali"
         Me.DGKembali.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.DGKembali.Size = New System.Drawing.Size(534, 427)
         Me.DGKembali.TabIndex = 1
+        '
+        'no
+        '
+        Me.no.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader
+        Me.no.HeaderText = "No."
+        Me.no.Name = "no"
+        Me.no.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.no.Width = 51
+        '
+        'id_pengembalian
+        '
+        Me.id_pengembalian.HeaderText = "ID Pengembalian"
+        Me.id_pengembalian.Name = "id_pengembalian"
+        '
+        'id_peminjaman
+        '
+        Me.id_peminjaman.HeaderText = "ID Peminjaman"
+        Me.id_peminjaman.Name = "id_peminjaman"
+        '
+        'NIM
+        '
+        Me.NIM.HeaderText = "NIM"
+        Me.NIM.Name = "NIM"
+        '
+        'tgl_pinjam
+        '
+        Me.tgl_pinjam.HeaderText = "Tanggal Pinjam"
+        Me.tgl_pinjam.Name = "tgl_pinjam"
+        '
+        'tgl_kembali
+        '
+        Me.tgl_kembali.HeaderText = "Tanggal Kembali"
+        Me.tgl_kembali.Name = "tgl_kembali"
+        '
+        'tgl_dikembalikan
+        '
+        Me.tgl_dikembalikan.HeaderText = "Tanggal Dikembalikan"
+        Me.tgl_dikembalikan.Name = "tgl_dikembalikan"
+        '
+        'jumlah
+        '
+        Me.jumlah.HeaderText = "Jumlah"
+        Me.jumlah.Name = "jumlah"
+        '
+        'id_status
+        '
+        Me.id_status.HeaderText = "Status"
+        Me.id_status.Name = "id_status"
         '
         'btnDelete
         '
@@ -268,4 +326,13 @@ Partial Class Pengembalian_Admin
     Friend WithEvents btnSave As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents DGKembali As Bunifu.Framework.UI.BunifuCustomDataGrid
     Friend WithEvents txtSearch As Bunifu.Framework.UI.BunifuTextbox
+    Friend WithEvents no As DataGridViewTextBoxColumn
+    Friend WithEvents id_pengembalian As DataGridViewTextBoxColumn
+    Friend WithEvents id_peminjaman As DataGridViewTextBoxColumn
+    Friend WithEvents NIM As DataGridViewTextBoxColumn
+    Friend WithEvents tgl_pinjam As DataGridViewTextBoxColumn
+    Friend WithEvents tgl_kembali As DataGridViewTextBoxColumn
+    Friend WithEvents tgl_dikembalikan As DataGridViewTextBoxColumn
+    Friend WithEvents jumlah As DataGridViewTextBoxColumn
+    Friend WithEvents id_status As DataGridViewTextBoxColumn
 End Class

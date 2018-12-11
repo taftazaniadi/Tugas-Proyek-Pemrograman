@@ -143,7 +143,7 @@
   <data name="btnCancel.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAANJElEQVR4Xu3d
+        vAAADrwBlbxySQAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAANJElEQVR4Xu3d
         a+hsZRUGcC/lDUKzMFOzrJPKMeKIwqkvoeSH/GAgplkfNEhKyIikkqORhrdMEyGiAikIsoI0S0u6qZRm
         ec8isdLKboplalB28/SsWWvgz5ln73n3zN6zZ708D/zgsM563/0Oc/aZy77MTtu3bxeRBrQoIo4WRcTR
         oog4WhQRR4si4mhRRBwtioijRRFxtCgijhZFxNGiiDhaFBFHiyLiaFFEHC2KiKNFEXG0KCKOFkXE0aKI
@@ -237,7 +237,7 @@
   <data name="btnSave.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAANJElEQVR4Xu3d
+        vAAADrwBlbxySQAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAANJElEQVR4Xu3d
         a+hsZRUGcC/lDUKzMFOzrJPKMeKIwqkvoeSH/GAgplkfNEhKyIikkqORhrdMEyGiAikIsoI0S0u6qZRm
         ec8isdLKboplalB28/SsWWvgz5ln73n3zN6zZ708D/zgsM563/0Oc/aZy77MTtu3bxeRBrQoIo4WRcTR
         oog4WhQRR4si4mhRRBwtioijRRFxtCgijhZFxNGiiDhaFBFHiyLiaFFEHC2KiKNFEXG0KCKOFkXE0aKI
@@ -330,7 +330,7 @@
   <data name="btnEdit.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAANJElEQVR4Xu3d
+        vAAADrwBlbxySQAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAANJElEQVR4Xu3d
         a+hsZRUGcC/lDUKzMFOzrJPKMeKIwqkvoeSH/GAgplkfNEhKyIikkqORhrdMEyGiAikIsoI0S0u6qZRm
         ec8isdLKboplalB28/SsWWvgz5ln73n3zN6zZ708D/zgsM563/0Oc/aZy77MTtu3bxeRBrQoIo4WRcTR
         oog4WhQRR4si4mhRRBwtioijRRFxtCgijhZFxNGiiDhaFBFHiyLiaFFEHC2KiKNFEXG0KCKOFkXE0aKI
@@ -414,6 +414,9 @@
   <data name="&gt;&gt;btnEdit.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <metadata name="BunifuCustomLabel4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="BunifuCustomLabel4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -421,7 +424,7 @@
     <value>NoControl</value>
   </data>
   <data name="BunifuCustomLabel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 397</value>
+    <value>82, 246</value>
   </data>
   <data name="BunifuCustomLabel4.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 13</value>
@@ -442,8 +445,11 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;BunifuCustomLabel4.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
+  <metadata name="BunifuCustomLabel3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="BunifuCustomLabel3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -451,7 +457,7 @@
     <value>NoControl</value>
   </data>
   <data name="BunifuCustomLabel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 327</value>
+    <value>82, 327</value>
   </data>
   <data name="BunifuCustomLabel3.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 13</value>
@@ -472,8 +478,11 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;BunifuCustomLabel3.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
+  <metadata name="BunifuCustomLabel2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="BunifuCustomLabel2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -481,7 +490,7 @@
     <value>NoControl</value>
   </data>
   <data name="BunifuCustomLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 250</value>
+    <value>82, 170</value>
   </data>
   <data name="BunifuCustomLabel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 13</value>
@@ -502,13 +511,16 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;BunifuCustomLabel2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
+  <metadata name="BunifuCustomLabel1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="BunifuCustomLabel1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="BunifuCustomLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 177</value>
+    <value>82, 97</value>
   </data>
   <data name="BunifuCustomLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 13</value>
@@ -529,115 +541,139 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;BunifuCustomLabel1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
   </data>
-  <data name="BunifuMaterialTextbox4.Font" type="System.Drawing.Font, System.Drawing">
+  <metadata name="txtEmail.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="txtEmail.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtEmail.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="BunifuMaterialTextbox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 414</value>
+  <data name="txtEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 263</value>
   </data>
-  <data name="BunifuMaterialTextbox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="txtEmail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="BunifuMaterialTextbox4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtEmail.Size" type="System.Drawing.Size, System.Drawing">
     <value>379, 33</value>
   </data>
-  <data name="BunifuMaterialTextbox4.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtEmail.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;BunifuMaterialTextbox4.Name" xml:space="preserve">
-    <value>BunifuMaterialTextbox4</value>
+  <data name="&gt;&gt;txtEmail.Name" xml:space="preserve">
+    <value>txtEmail</value>
   </data>
-  <data name="&gt;&gt;BunifuMaterialTextbox4.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtEmail.Type" xml:space="preserve">
     <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;BunifuMaterialTextbox4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtEmail.Parent" xml:space="preserve">
     <value>Panel1</value>
   </data>
-  <data name="&gt;&gt;BunifuMaterialTextbox4.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;txtEmail.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
-  <data name="BunifuMaterialTextbox3.Font" type="System.Drawing.Font, System.Drawing">
+  <metadata name="txtContact.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="txtContact.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtContact.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="BunifuMaterialTextbox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 344</value>
+  <data name="txtContact.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 344</value>
   </data>
-  <data name="BunifuMaterialTextbox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="txtContact.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="BunifuMaterialTextbox3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtContact.Size" type="System.Drawing.Size, System.Drawing">
     <value>379, 33</value>
   </data>
-  <data name="BunifuMaterialTextbox3.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtContact.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;BunifuMaterialTextbox3.Name" xml:space="preserve">
-    <value>BunifuMaterialTextbox3</value>
+  <data name="&gt;&gt;txtContact.Name" xml:space="preserve">
+    <value>txtContact</value>
   </data>
-  <data name="&gt;&gt;BunifuMaterialTextbox3.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtContact.Type" xml:space="preserve">
     <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;BunifuMaterialTextbox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtContact.Parent" xml:space="preserve">
     <value>Panel1</value>
   </data>
-  <data name="&gt;&gt;BunifuMaterialTextbox3.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;txtContact.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
-  <data name="BunifuMaterialTextbox2.Font" type="System.Drawing.Font, System.Drawing">
+  <metadata name="txtFull.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="txtFull.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtFull.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="BunifuMaterialTextbox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 267</value>
+  <data name="txtFull.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 187</value>
   </data>
-  <data name="BunifuMaterialTextbox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="txtFull.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="BunifuMaterialTextbox2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtFull.Size" type="System.Drawing.Size, System.Drawing">
     <value>379, 33</value>
   </data>
-  <data name="BunifuMaterialTextbox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtFull.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;BunifuMaterialTextbox2.Name" xml:space="preserve">
-    <value>BunifuMaterialTextbox2</value>
+  <data name="&gt;&gt;txtFull.Name" xml:space="preserve">
+    <value>txtFull</value>
   </data>
-  <data name="&gt;&gt;BunifuMaterialTextbox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtFull.Type" xml:space="preserve">
     <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;BunifuMaterialTextbox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtFull.Parent" xml:space="preserve">
     <value>Panel1</value>
   </data>
-  <data name="&gt;&gt;BunifuMaterialTextbox2.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;txtFull.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
-  <data name="BunifuMaterialTextbox1.Font" type="System.Drawing.Font, System.Drawing">
+  <metadata name="txtUser.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="txtUser.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtUser.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="BunifuMaterialTextbox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 194</value>
+  <data name="txtUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 114</value>
   </data>
-  <data name="BunifuMaterialTextbox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="txtUser.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="BunifuMaterialTextbox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtUser.Size" type="System.Drawing.Size, System.Drawing">
     <value>379, 33</value>
   </data>
-  <data name="BunifuMaterialTextbox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtUser.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;BunifuMaterialTextbox1.Name" xml:space="preserve">
-    <value>BunifuMaterialTextbox1</value>
+  <data name="&gt;&gt;txtUser.Name" xml:space="preserve">
+    <value>txtUser</value>
   </data>
-  <data name="&gt;&gt;BunifuMaterialTextbox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtUser.Type" xml:space="preserve">
     <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;BunifuMaterialTextbox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtUser.Parent" xml:space="preserve">
     <value>Panel1</value>
   </data>
-  <data name="&gt;&gt;BunifuMaterialTextbox1.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;txtUser.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="Panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>

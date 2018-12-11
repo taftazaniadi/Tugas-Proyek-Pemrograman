@@ -74,6 +74,7 @@
                 txtUser.Focus()
             End If
         End If
+        Me.Hide()
     End Sub
 
     Private Sub txtPass_OnValueChanged(sender As Object, e As EventArgs) Handles txtPass.OnValueChanged

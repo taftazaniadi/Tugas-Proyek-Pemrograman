@@ -590,6 +590,51 @@
   <data name="no.HeaderText" xml:space="preserve">
     <value>No.</value>
   </data>
+  <data name="no.Width" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <metadata name="id_peminjaman.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="id_peminjaman.HeaderText" xml:space="preserve">
+    <value>ID Peminjaman</value>
+  </data>
+  <metadata name="nim.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="nim.HeaderText" xml:space="preserve">
+    <value>NIM</value>
+  </data>
+  <metadata name="id_barang.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="id_barang.HeaderText" xml:space="preserve">
+    <value>Nama Barang</value>
+  </data>
+  <metadata name="tgl_pinjam.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="tgl_pinjam.HeaderText" xml:space="preserve">
+    <value>Tanggal Pinjam</value>
+  </data>
+  <metadata name="tgl_kembali.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="tgl_kembali.HeaderText" xml:space="preserve">
+    <value>Tanggal Kembali</value>
+  </data>
+  <metadata name="jumlah.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="jumlah.HeaderText" xml:space="preserve">
+    <value>Jumlah</value>
+  </data>
+  <metadata name="id_status.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="id_status.HeaderText" xml:space="preserve">
+    <value>Status</value>
+  </data>
   <data name="DGPinjam.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 64</value>
   </data>
@@ -645,6 +690,48 @@
     <value>no</value>
   </data>
   <data name="&gt;&gt;no.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;id_peminjaman.Name" xml:space="preserve">
+    <value>id_peminjaman</value>
+  </data>
+  <data name="&gt;&gt;id_peminjaman.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nim.Name" xml:space="preserve">
+    <value>nim</value>
+  </data>
+  <data name="&gt;&gt;nim.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;id_barang.Name" xml:space="preserve">
+    <value>id_barang</value>
+  </data>
+  <data name="&gt;&gt;id_barang.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tgl_pinjam.Name" xml:space="preserve">
+    <value>tgl_pinjam</value>
+  </data>
+  <data name="&gt;&gt;tgl_pinjam.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tgl_kembali.Name" xml:space="preserve">
+    <value>tgl_kembali</value>
+  </data>
+  <data name="&gt;&gt;tgl_kembali.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;jumlah.Name" xml:space="preserve">
+    <value>jumlah</value>
+  </data>
+  <data name="&gt;&gt;jumlah.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;id_status.Name" xml:space="preserve">
+    <value>id_status</value>
+  </data>
+  <data name="&gt;&gt;id_status.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

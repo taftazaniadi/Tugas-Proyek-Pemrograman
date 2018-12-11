@@ -3,6 +3,14 @@
         Me.MdiParent = Form1
         btnSave.Visible = False
         btnCancel.Visible = False
+        RefreshData_Admin()
+    End Sub
+
+    Private Sub RefreshData_Admin()
+        txtUser.Text = EntitasAdmin.usernameAdmin
+        txtFull.Text = EntitasAdmin.fullnameAdmin
+        txtContact.Text = EntitasAdmin.contactAdmin
+        txtEmail.Text = EntitasAdmin.emailAdmin
     End Sub
 
     Private Sub BunifuCards1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
@@ -19,6 +27,10 @@
         btnSave.Enabled = True
         btnCancel.Visible = True
         btnCancel.Enabled = True
+        txtUser.Enabled = True
+        txtFull.Enabled = True
+        txtContact.Enabled = True
+        txtEmail.Enabled = True
     End Sub
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
@@ -28,6 +40,23 @@
         btnSave.Enabled = False
         btnCancel.Enabled = False
         btnCancel.Visible = False
+        txtUser.Enabled = False
+        txtFull.Enabled = False
+        txtContact.Enabled = False
+        txtEmail.Enabled = False
+
+        With EntitasAdmin
+            .usernameAdmin = txtUser.Text
+            .fullnameAdmin = txtFull.Text
+            .emailAdmin = txtEmail.Text
+            .contactAdmin = txtContact.Text
+        End With
+
+        KontrolAdmin.updateData(EntitasAdmin)
+
+        MsgBox("Data has been Updated..", MsgBoxStyle.Information, "Information")
+        RefreshData_Admin()
+
     End Sub
 
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
@@ -37,6 +66,10 @@
         btnSave.Enabled = False
         btnCancel.Enabled = False
         btnCancel.Visible = False
+        txtUser.Enabled = False
+        txtFull.Enabled = False
+        txtContact.Enabled = False
+        txtEmail.Enabled = False
     End Sub
 
 End Class

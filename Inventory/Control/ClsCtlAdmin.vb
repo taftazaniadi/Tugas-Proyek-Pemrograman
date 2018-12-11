@@ -21,7 +21,13 @@ Public Class ClsCtlAdmin : Implements InfProses
     End Function
 
     Public Function updateData(Ob As Object) As OleDbCommand Implements InfProses.updateData
-        Throw New NotImplementedException()
+        Dim data As New ClsEntAdmin
+        data = Ob
+        CMD = New OleDbCommand("UPDATE admin SET username ='" & data.usernameAdmin & "', nama = '" & data.fullnameAdmin & "', email = '" & data.emailAdmin & "', contact = '" & data.contactAdmin & "' WHERE id_admin = '" & data.id_adminAdmin & "'", BUKAKONEKSI)
+        CMD.CommandType = CommandType.Text
+        CMD.ExecuteNonQuery()
+        CMD = New OleDbCommand("", TUTUPKONEKSI)
+        Return CMD
     End Function
 
     Public Function deleteData(kunci As String) As OleDbCommand Implements InfProses.deleteData

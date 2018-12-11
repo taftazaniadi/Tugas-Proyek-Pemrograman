@@ -35,6 +35,13 @@ Partial Class Peminjaman_Admin
         Me.btnCancel = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnDelete = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.no = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.id_peminjaman = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nim = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.id_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.tgl_pinjam = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.tgl_kembali = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.jumlah = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.id_status = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1.SuspendLayout()
         CType(Me.DGPinjam, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -83,7 +90,7 @@ Partial Class Peminjaman_Admin
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DGPinjam.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DGPinjam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGPinjam.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.no})
+        Me.DGPinjam.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.no, Me.id_peminjaman, Me.nim, Me.id_barang, Me.tgl_pinjam, Me.tgl_kembali, Me.jumlah, Me.id_status})
         Me.DGPinjam.DoubleBuffered = True
         Me.DGPinjam.EnableHeadersVisualStyles = False
         Me.DGPinjam.HeaderBgColor = System.Drawing.Color.SeaGreen
@@ -214,8 +221,45 @@ Partial Class Peminjaman_Admin
         '
         'no
         '
+        Me.no.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader
         resources.ApplyResources(Me.no, "no")
         Me.no.Name = "no"
+        Me.no.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        '
+        'id_peminjaman
+        '
+        resources.ApplyResources(Me.id_peminjaman, "id_peminjaman")
+        Me.id_peminjaman.Name = "id_peminjaman"
+        '
+        'nim
+        '
+        resources.ApplyResources(Me.nim, "nim")
+        Me.nim.Name = "nim"
+        '
+        'id_barang
+        '
+        resources.ApplyResources(Me.id_barang, "id_barang")
+        Me.id_barang.Name = "id_barang"
+        '
+        'tgl_pinjam
+        '
+        resources.ApplyResources(Me.tgl_pinjam, "tgl_pinjam")
+        Me.tgl_pinjam.Name = "tgl_pinjam"
+        '
+        'tgl_kembali
+        '
+        resources.ApplyResources(Me.tgl_kembali, "tgl_kembali")
+        Me.tgl_kembali.Name = "tgl_kembali"
+        '
+        'jumlah
+        '
+        resources.ApplyResources(Me.jumlah, "jumlah")
+        Me.jumlah.Name = "jumlah"
+        '
+        'id_status
+        '
+        resources.ApplyResources(Me.id_status, "id_status")
+        Me.id_status.Name = "id_status"
         '
         'Peminjaman_Admin
         '
@@ -244,4 +288,11 @@ Partial Class Peminjaman_Admin
     Friend WithEvents DGPinjam As Bunifu.Framework.UI.BunifuCustomDataGrid
     Friend WithEvents txtSearch As Bunifu.Framework.UI.BunifuTextbox
     Friend WithEvents no As DataGridViewTextBoxColumn
+    Friend WithEvents id_peminjaman As DataGridViewTextBoxColumn
+    Friend WithEvents nim As DataGridViewTextBoxColumn
+    Friend WithEvents id_barang As DataGridViewTextBoxColumn
+    Friend WithEvents tgl_pinjam As DataGridViewTextBoxColumn
+    Friend WithEvents tgl_kembali As DataGridViewTextBoxColumn
+    Friend WithEvents jumlah As DataGridViewTextBoxColumn
+    Friend WithEvents id_status As DataGridViewTextBoxColumn
 End Class

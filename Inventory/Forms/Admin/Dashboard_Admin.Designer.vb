@@ -26,17 +26,17 @@ Partial Class Dashboard_Admin
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard_Admin))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New Bunifu.Framework.UI.BunifuCards()
+        Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.txtEmail = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.txtContact = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.txtFull = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.txtUser = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.btnEdit = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnSave = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnCancel = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.BunifuMaterialTextbox1 = New Bunifu.Framework.UI.BunifuMaterialTextbox()
-        Me.BunifuMaterialTextbox2 = New Bunifu.Framework.UI.BunifuMaterialTextbox()
-        Me.BunifuMaterialTextbox3 = New Bunifu.Framework.UI.BunifuMaterialTextbox()
-        Me.BunifuMaterialTextbox4 = New Bunifu.Framework.UI.BunifuMaterialTextbox()
-        Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -55,15 +55,95 @@ Partial Class Dashboard_Admin
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel3)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel2)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel1)
-        Me.Panel1.Controls.Add(Me.BunifuMaterialTextbox4)
-        Me.Panel1.Controls.Add(Me.BunifuMaterialTextbox3)
-        Me.Panel1.Controls.Add(Me.BunifuMaterialTextbox2)
-        Me.Panel1.Controls.Add(Me.BunifuMaterialTextbox1)
+        Me.Panel1.Controls.Add(Me.txtEmail)
+        Me.Panel1.Controls.Add(Me.txtContact)
+        Me.Panel1.Controls.Add(Me.txtFull)
+        Me.Panel1.Controls.Add(Me.txtUser)
         Me.Panel1.LeftSahddow = False
         resources.ApplyResources(Me.Panel1, "Panel1")
         Me.Panel1.Name = "Panel1"
         Me.Panel1.RightSahddow = True
         Me.Panel1.ShadowDepth = 20
+        '
+        'BunifuCustomLabel4
+        '
+        resources.ApplyResources(Me.BunifuCustomLabel4, "BunifuCustomLabel4")
+        Me.BunifuCustomLabel4.Name = "BunifuCustomLabel4"
+        '
+        'BunifuCustomLabel3
+        '
+        resources.ApplyResources(Me.BunifuCustomLabel3, "BunifuCustomLabel3")
+        Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
+        '
+        'BunifuCustomLabel2
+        '
+        resources.ApplyResources(Me.BunifuCustomLabel2, "BunifuCustomLabel2")
+        Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
+        '
+        'BunifuCustomLabel1
+        '
+        resources.ApplyResources(Me.BunifuCustomLabel1, "BunifuCustomLabel1")
+        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
+        '
+        'txtEmail
+        '
+        Me.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam
+        resources.ApplyResources(Me.txtEmail, "txtEmail")
+        Me.txtEmail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtEmail.HintForeColor = System.Drawing.Color.Empty
+        Me.txtEmail.HintText = ""
+        Me.txtEmail.isPassword = False
+        Me.txtEmail.LineFocusedColor = System.Drawing.Color.Blue
+        Me.txtEmail.LineIdleColor = System.Drawing.Color.Gray
+        Me.txtEmail.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.txtEmail.LineThickness = 3
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'txtContact
+        '
+        Me.txtContact.Cursor = System.Windows.Forms.Cursors.IBeam
+        resources.ApplyResources(Me.txtContact, "txtContact")
+        Me.txtContact.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtContact.HintForeColor = System.Drawing.Color.Empty
+        Me.txtContact.HintText = ""
+        Me.txtContact.isPassword = False
+        Me.txtContact.LineFocusedColor = System.Drawing.Color.Blue
+        Me.txtContact.LineIdleColor = System.Drawing.Color.Gray
+        Me.txtContact.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.txtContact.LineThickness = 3
+        Me.txtContact.Name = "txtContact"
+        Me.txtContact.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'txtFull
+        '
+        Me.txtFull.Cursor = System.Windows.Forms.Cursors.IBeam
+        resources.ApplyResources(Me.txtFull, "txtFull")
+        Me.txtFull.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtFull.HintForeColor = System.Drawing.Color.Empty
+        Me.txtFull.HintText = ""
+        Me.txtFull.isPassword = False
+        Me.txtFull.LineFocusedColor = System.Drawing.Color.Blue
+        Me.txtFull.LineIdleColor = System.Drawing.Color.Gray
+        Me.txtFull.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.txtFull.LineThickness = 3
+        Me.txtFull.Name = "txtFull"
+        Me.txtFull.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'txtUser
+        '
+        Me.txtUser.Cursor = System.Windows.Forms.Cursors.IBeam
+        resources.ApplyResources(Me.txtUser, "txtUser")
+        Me.txtUser.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtUser.HintForeColor = System.Drawing.Color.Empty
+        Me.txtUser.HintText = ""
+        Me.txtUser.isPassword = False
+        Me.txtUser.LineFocusedColor = System.Drawing.Color.Blue
+        Me.txtUser.LineIdleColor = System.Drawing.Color.Gray
+        Me.txtUser.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.txtUser.LineThickness = 3
+        Me.txtUser.Name = "txtUser"
+        Me.txtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'btnEdit
         '
@@ -155,86 +235,6 @@ Partial Class Dashboard_Admin
         Me.btnCancel.Textcolor = System.Drawing.Color.White
         Me.btnCancel.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
-        'BunifuMaterialTextbox1
-        '
-        Me.BunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        resources.ApplyResources(Me.BunifuMaterialTextbox1, "BunifuMaterialTextbox1")
-        Me.BunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty
-        Me.BunifuMaterialTextbox1.HintText = ""
-        Me.BunifuMaterialTextbox1.isPassword = False
-        Me.BunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.Blue
-        Me.BunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray
-        Me.BunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue
-        Me.BunifuMaterialTextbox1.LineThickness = 3
-        Me.BunifuMaterialTextbox1.Name = "BunifuMaterialTextbox1"
-        Me.BunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'BunifuMaterialTextbox2
-        '
-        Me.BunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam
-        resources.ApplyResources(Me.BunifuMaterialTextbox2, "BunifuMaterialTextbox2")
-        Me.BunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty
-        Me.BunifuMaterialTextbox2.HintText = ""
-        Me.BunifuMaterialTextbox2.isPassword = False
-        Me.BunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.Blue
-        Me.BunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Gray
-        Me.BunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.Blue
-        Me.BunifuMaterialTextbox2.LineThickness = 3
-        Me.BunifuMaterialTextbox2.Name = "BunifuMaterialTextbox2"
-        Me.BunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'BunifuMaterialTextbox3
-        '
-        Me.BunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam
-        resources.ApplyResources(Me.BunifuMaterialTextbox3, "BunifuMaterialTextbox3")
-        Me.BunifuMaterialTextbox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.Empty
-        Me.BunifuMaterialTextbox3.HintText = ""
-        Me.BunifuMaterialTextbox3.isPassword = False
-        Me.BunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.Blue
-        Me.BunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.Gray
-        Me.BunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.Blue
-        Me.BunifuMaterialTextbox3.LineThickness = 3
-        Me.BunifuMaterialTextbox3.Name = "BunifuMaterialTextbox3"
-        Me.BunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'BunifuMaterialTextbox4
-        '
-        Me.BunifuMaterialTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam
-        resources.ApplyResources(Me.BunifuMaterialTextbox4, "BunifuMaterialTextbox4")
-        Me.BunifuMaterialTextbox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMaterialTextbox4.HintForeColor = System.Drawing.Color.Empty
-        Me.BunifuMaterialTextbox4.HintText = ""
-        Me.BunifuMaterialTextbox4.isPassword = False
-        Me.BunifuMaterialTextbox4.LineFocusedColor = System.Drawing.Color.Blue
-        Me.BunifuMaterialTextbox4.LineIdleColor = System.Drawing.Color.Gray
-        Me.BunifuMaterialTextbox4.LineMouseHoverColor = System.Drawing.Color.Blue
-        Me.BunifuMaterialTextbox4.LineThickness = 3
-        Me.BunifuMaterialTextbox4.Name = "BunifuMaterialTextbox4"
-        Me.BunifuMaterialTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'BunifuCustomLabel1
-        '
-        resources.ApplyResources(Me.BunifuCustomLabel1, "BunifuCustomLabel1")
-        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
-        '
-        'BunifuCustomLabel2
-        '
-        resources.ApplyResources(Me.BunifuCustomLabel2, "BunifuCustomLabel2")
-        Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
-        '
-        'BunifuCustomLabel3
-        '
-        resources.ApplyResources(Me.BunifuCustomLabel3, "BunifuCustomLabel3")
-        Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
-        '
-        'BunifuCustomLabel4
-        '
-        resources.ApplyResources(Me.BunifuCustomLabel4, "BunifuCustomLabel4")
-        Me.BunifuCustomLabel4.Name = "BunifuCustomLabel4"
-        '
         'Dashboard_Admin
         '
         resources.ApplyResources(Me, "$this")
@@ -261,8 +261,8 @@ Partial Class Dashboard_Admin
     Friend WithEvents BunifuCustomLabel3 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel2 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuMaterialTextbox4 As Bunifu.Framework.UI.BunifuMaterialTextbox
-    Friend WithEvents BunifuMaterialTextbox3 As Bunifu.Framework.UI.BunifuMaterialTextbox
-    Friend WithEvents BunifuMaterialTextbox2 As Bunifu.Framework.UI.BunifuMaterialTextbox
-    Friend WithEvents BunifuMaterialTextbox1 As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents txtEmail As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents txtContact As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents txtFull As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents txtUser As Bunifu.Framework.UI.BunifuMaterialTextbox
 End Class
