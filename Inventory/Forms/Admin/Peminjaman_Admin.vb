@@ -16,7 +16,6 @@
 
     Private Sub RefreshGrid()
         DTGrid = KontrolPeminjaman.tampilData.ToTable
-        DGPinjam.DataSource = DTGrid
     End Sub
 
 End Class

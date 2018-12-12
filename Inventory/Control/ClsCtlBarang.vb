@@ -66,7 +66,6 @@ Public Class ClsCtlBarang : Implements InfProses
     Public Function tampilData() As DataView Implements InfProses.tampilData
         Try
             DTA = New OleDbDataAdapter("SELECT * FROM Barang", BUKAKONEKSI)
-
             DTS = New DataSet()
             DTA.Fill(DTS, "Tabel_Barang")
             Dim grid As New DataView(DTS.Tables("Tabel_Barang"))

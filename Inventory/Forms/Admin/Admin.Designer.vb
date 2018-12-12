@@ -43,6 +43,7 @@ Partial Class Form1
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         Me.logoAnimator = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.PanelAnimator = New BunifuAnimatorNS.BunifuTransition(Me.components)
+        Me.btnMember = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Sidemenu.SuspendLayout()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -59,6 +60,7 @@ Partial Class Form1
         'Sidemenu
         '
         Me.Sidemenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.Sidemenu.Controls.Add(Me.btnMember)
         Me.Sidemenu.Controls.Add(Me.btnLog)
         Me.Sidemenu.Controls.Add(Me.btnInventaris)
         Me.Sidemenu.Controls.Add(Me.btnKembali)
@@ -399,6 +401,42 @@ Partial Class Form1
         Animation2.TransparencyCoeff = 0!
         Me.PanelAnimator.DefaultAnimation = Animation2
         '
+        'btnMember
+        '
+        Me.btnMember.Activecolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.btnMember.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.btnMember.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnMember.BorderRadius = 0
+        Me.btnMember.ButtonText = "     Member"
+        Me.btnMember.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PanelAnimator.SetDecoration(Me.btnMember, BunifuAnimatorNS.DecorationType.None)
+        Me.logoAnimator.SetDecoration(Me.btnMember, BunifuAnimatorNS.DecorationType.None)
+        Me.btnMember.DisabledColor = System.Drawing.Color.Gray
+        Me.btnMember.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnMember.Iconimage = CType(resources.GetObject("btnMember.Iconimage"), System.Drawing.Image)
+        Me.btnMember.Iconimage_right = Nothing
+        Me.btnMember.Iconimage_right_Selected = Nothing
+        Me.btnMember.Iconimage_Selected = Nothing
+        Me.btnMember.IconMarginLeft = 0
+        Me.btnMember.IconMarginRight = 0
+        Me.btnMember.IconRightVisible = True
+        Me.btnMember.IconRightZoom = 0R
+        Me.btnMember.IconVisible = True
+        Me.btnMember.IconZoom = 60.0R
+        Me.btnMember.IsTab = True
+        Me.btnMember.Location = New System.Drawing.Point(0, 355)
+        Me.btnMember.Name = "btnMember"
+        Me.btnMember.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.btnMember.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.btnMember.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnMember.selected = False
+        Me.btnMember.Size = New System.Drawing.Size(200, 48)
+        Me.btnMember.TabIndex = 7
+        Me.btnMember.Text = "     Member"
+        Me.btnMember.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnMember.Textcolor = System.Drawing.Color.White
+        Me.btnMember.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -442,4 +480,5 @@ Partial Class Form1
     Friend WithEvents logoAnimator As BunifuAnimatorNS.BunifuTransition
     Friend WithEvents PanelAnimator As BunifuAnimatorNS.BunifuTransition
     Friend WithEvents logo_small As PictureBox
+    Friend WithEvents btnMember As Bunifu.Framework.UI.BunifuFlatButton
 End Class
