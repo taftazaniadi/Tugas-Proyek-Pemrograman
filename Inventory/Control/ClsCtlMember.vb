@@ -17,13 +17,19 @@ Public Class ClsCtlMember : Implements InfProses
     End Function
 
     Public Function InsertData(Ob As Object) As OleDbCommand Implements InfProses.InsertData
-        Throw New NotImplementedException()
+        Dim data As New ClsEntMember
+        data = Ob
+        CMD = New OleDbCommand("INSERT INTO member VALUES('" & data.NIMMember & "', '" & data.NamaMember & "', '" & data.PasswordMember & "', '" & data.EmailMember & "', '" & data.ContactMember & "', '" & data.JurusanMember & "')", BUKAKONEKSI)
+        CMD.CommandType = CommandType.Text
+        CMD.ExecuteNonQuery()
+        CMD = New OleDbCommand("", TUTUPKONEKSI)
+        Return CMD
     End Function
 
     Public Function updateData(Ob As Object) As OleDbCommand Implements InfProses.updateData
         Dim data As New ClsEntMember
         data = Ob
-        CMD = New OleDbCommand("UPDATE member SET nama ='" & data.NamaMember & "', email = '" & data.EmailMember & "', contact = '" & data.ContactMember & "' WHERE NIM = '" & data.NIMMember & "'", BUKAKONEKSI)
+        CMD = New OleDbCommand("UPDATE member SET nama ='" & data.NamaMember & "', email = '" & data.EmailMember & "', contact = " & data.ContactMember & ", jurusan = '" & data.JurusanMember & "' WHERE NIM = '" & data.NIMMember & "'", BUKAKONEKSI)
         CMD.CommandType = CommandType.Text
         CMD.ExecuteNonQuery()
         CMD = New OleDbCommand("", TUTUPKONEKSI)
@@ -31,7 +37,11 @@ Public Class ClsCtlMember : Implements InfProses
     End Function
 
     Public Function deleteData(kunci As String) As OleDbCommand Implements InfProses.deleteData
-        Throw New NotImplementedException()
+        CMD = New OleDbCommand("DELETE FROM peminjaman WHERE id_peminjaman = '" & kunci & "'", BUKAKONEKSI)
+        CMD.CommandType = CommandType.Text
+        CMD.ExecuteNonQuery()
+        CMD = New OleDbCommand("", TUTUPKONEKSI)
+        Return CMD
     End Function
 
     Public Function tampilData() As DataView Implements InfProses.tampilData

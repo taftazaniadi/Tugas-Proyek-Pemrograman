@@ -28,9 +28,9 @@ Partial Class Form1
         Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Sidemenu = New System.Windows.Forms.Panel()
+        Me.btnMember = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnLog = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnInventaris = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.btnKembali = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnPinjam = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnDash = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.logo = New System.Windows.Forms.PictureBox()
@@ -43,7 +43,6 @@ Partial Class Form1
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         Me.logoAnimator = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.PanelAnimator = New BunifuAnimatorNS.BunifuTransition(Me.components)
-        Me.btnMember = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Sidemenu.SuspendLayout()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -63,7 +62,6 @@ Partial Class Form1
         Me.Sidemenu.Controls.Add(Me.btnMember)
         Me.Sidemenu.Controls.Add(Me.btnLog)
         Me.Sidemenu.Controls.Add(Me.btnInventaris)
-        Me.Sidemenu.Controls.Add(Me.btnKembali)
         Me.Sidemenu.Controls.Add(Me.btnPinjam)
         Me.Sidemenu.Controls.Add(Me.btnDash)
         Me.Sidemenu.Controls.Add(Me.logo)
@@ -77,6 +75,42 @@ Partial Class Form1
         Me.Sidemenu.Name = "Sidemenu"
         Me.Sidemenu.Size = New System.Drawing.Size(200, 562)
         Me.Sidemenu.TabIndex = 0
+        '
+        'btnMember
+        '
+        Me.btnMember.Activecolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.btnMember.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.btnMember.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnMember.BorderRadius = 0
+        Me.btnMember.ButtonText = "     Member"
+        Me.btnMember.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PanelAnimator.SetDecoration(Me.btnMember, BunifuAnimatorNS.DecorationType.None)
+        Me.logoAnimator.SetDecoration(Me.btnMember, BunifuAnimatorNS.DecorationType.None)
+        Me.btnMember.DisabledColor = System.Drawing.Color.Gray
+        Me.btnMember.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnMember.Iconimage = CType(resources.GetObject("btnMember.Iconimage"), System.Drawing.Image)
+        Me.btnMember.Iconimage_right = Nothing
+        Me.btnMember.Iconimage_right_Selected = Nothing
+        Me.btnMember.Iconimage_Selected = Nothing
+        Me.btnMember.IconMarginLeft = 0
+        Me.btnMember.IconMarginRight = 0
+        Me.btnMember.IconRightVisible = True
+        Me.btnMember.IconRightZoom = 0R
+        Me.btnMember.IconVisible = True
+        Me.btnMember.IconZoom = 60.0R
+        Me.btnMember.IsTab = True
+        Me.btnMember.Location = New System.Drawing.Point(3, 301)
+        Me.btnMember.Name = "btnMember"
+        Me.btnMember.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.btnMember.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.btnMember.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnMember.selected = False
+        Me.btnMember.Size = New System.Drawing.Size(200, 48)
+        Me.btnMember.TabIndex = 7
+        Me.btnMember.Text = "     Member"
+        Me.btnMember.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnMember.Textcolor = System.Drawing.Color.White
+        Me.btnMember.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'btnLog
         '
@@ -137,7 +171,7 @@ Partial Class Form1
         Me.btnInventaris.IconVisible = True
         Me.btnInventaris.IconZoom = 60.0R
         Me.btnInventaris.IsTab = True
-        Me.btnInventaris.Location = New System.Drawing.Point(0, 301)
+        Me.btnInventaris.Location = New System.Drawing.Point(3, 247)
         Me.btnInventaris.Name = "btnInventaris"
         Me.btnInventaris.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.btnInventaris.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
@@ -150,49 +184,13 @@ Partial Class Form1
         Me.btnInventaris.Textcolor = System.Drawing.Color.White
         Me.btnInventaris.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
-        'btnKembali
-        '
-        Me.btnKembali.Activecolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.btnKembali.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.btnKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnKembali.BorderRadius = 0
-        Me.btnKembali.ButtonText = "    Pengembalian"
-        Me.btnKembali.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PanelAnimator.SetDecoration(Me.btnKembali, BunifuAnimatorNS.DecorationType.None)
-        Me.logoAnimator.SetDecoration(Me.btnKembali, BunifuAnimatorNS.DecorationType.None)
-        Me.btnKembali.DisabledColor = System.Drawing.Color.Gray
-        Me.btnKembali.Iconcolor = System.Drawing.Color.Transparent
-        Me.btnKembali.Iconimage = CType(resources.GetObject("btnKembali.Iconimage"), System.Drawing.Image)
-        Me.btnKembali.Iconimage_right = Nothing
-        Me.btnKembali.Iconimage_right_Selected = Nothing
-        Me.btnKembali.Iconimage_Selected = Nothing
-        Me.btnKembali.IconMarginLeft = 0
-        Me.btnKembali.IconMarginRight = 0
-        Me.btnKembali.IconRightVisible = True
-        Me.btnKembali.IconRightZoom = 0R
-        Me.btnKembali.IconVisible = True
-        Me.btnKembali.IconZoom = 65.0R
-        Me.btnKembali.IsTab = True
-        Me.btnKembali.Location = New System.Drawing.Point(0, 247)
-        Me.btnKembali.Name = "btnKembali"
-        Me.btnKembali.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.btnKembali.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.btnKembali.OnHoverTextColor = System.Drawing.Color.White
-        Me.btnKembali.selected = False
-        Me.btnKembali.Size = New System.Drawing.Size(200, 48)
-        Me.btnKembali.TabIndex = 4
-        Me.btnKembali.Text = "    Pengembalian"
-        Me.btnKembali.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnKembali.Textcolor = System.Drawing.Color.White
-        Me.btnKembali.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
         'btnPinjam
         '
         Me.btnPinjam.Activecolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.btnPinjam.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.btnPinjam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnPinjam.BorderRadius = 0
-        Me.btnPinjam.ButtonText = "    Peminjaman"
+        Me.btnPinjam.ButtonText = "    Transaksi"
         Me.btnPinjam.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PanelAnimator.SetDecoration(Me.btnPinjam, BunifuAnimatorNS.DecorationType.None)
         Me.logoAnimator.SetDecoration(Me.btnPinjam, BunifuAnimatorNS.DecorationType.None)
@@ -217,7 +215,7 @@ Partial Class Form1
         Me.btnPinjam.selected = False
         Me.btnPinjam.Size = New System.Drawing.Size(200, 48)
         Me.btnPinjam.TabIndex = 3
-        Me.btnPinjam.Text = "    Peminjaman"
+        Me.btnPinjam.Text = "    Transaksi"
         Me.btnPinjam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnPinjam.Textcolor = System.Drawing.Color.White
         Me.btnPinjam.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -401,42 +399,6 @@ Partial Class Form1
         Animation2.TransparencyCoeff = 0!
         Me.PanelAnimator.DefaultAnimation = Animation2
         '
-        'btnMember
-        '
-        Me.btnMember.Activecolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.btnMember.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.btnMember.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnMember.BorderRadius = 0
-        Me.btnMember.ButtonText = "     Member"
-        Me.btnMember.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PanelAnimator.SetDecoration(Me.btnMember, BunifuAnimatorNS.DecorationType.None)
-        Me.logoAnimator.SetDecoration(Me.btnMember, BunifuAnimatorNS.DecorationType.None)
-        Me.btnMember.DisabledColor = System.Drawing.Color.Gray
-        Me.btnMember.Iconcolor = System.Drawing.Color.Transparent
-        Me.btnMember.Iconimage = CType(resources.GetObject("btnMember.Iconimage"), System.Drawing.Image)
-        Me.btnMember.Iconimage_right = Nothing
-        Me.btnMember.Iconimage_right_Selected = Nothing
-        Me.btnMember.Iconimage_Selected = Nothing
-        Me.btnMember.IconMarginLeft = 0
-        Me.btnMember.IconMarginRight = 0
-        Me.btnMember.IconRightVisible = True
-        Me.btnMember.IconRightZoom = 0R
-        Me.btnMember.IconVisible = True
-        Me.btnMember.IconZoom = 60.0R
-        Me.btnMember.IsTab = True
-        Me.btnMember.Location = New System.Drawing.Point(0, 355)
-        Me.btnMember.Name = "btnMember"
-        Me.btnMember.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.btnMember.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.btnMember.OnHoverTextColor = System.Drawing.Color.White
-        Me.btnMember.selected = False
-        Me.btnMember.Size = New System.Drawing.Size(200, 48)
-        Me.btnMember.TabIndex = 7
-        Me.btnMember.Text = "     Member"
-        Me.btnMember.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnMember.Textcolor = System.Drawing.Color.White
-        Me.btnMember.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -474,7 +436,6 @@ Partial Class Form1
     Friend WithEvents BunifuCustomLabel2 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents btnLog As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents btnInventaris As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents btnKembali As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents btnPinjam As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents btnDash As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents logoAnimator As BunifuAnimatorNS.BunifuTransition

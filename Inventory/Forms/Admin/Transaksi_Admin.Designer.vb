@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Peminjaman_Admin
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class Transaksi_Admin
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,30 +20,22 @@ Partial Class Peminjaman_Admin
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Peminjaman_Admin))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Transaksi_Admin))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New Bunifu.Framework.UI.BunifuCards()
         Me.txtSearch = New Bunifu.Framework.UI.BunifuTextbox()
-        Me.DGPinjam = New Bunifu.Framework.UI.BunifuCustomDataGrid()
+        Me.DGTransaksi = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.btnEdit = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnSave = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnCancel = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnDelete = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.no = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.id_peminjaman = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nim = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.id_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.tgl_pinjam = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.tgl_kembali = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.jumlah = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.id_status = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1.SuspendLayout()
-        CType(Me.DGPinjam, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGTransaksi, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -58,7 +50,7 @@ Partial Class Peminjaman_Admin
         Me.Panel1.BottomSahddow = True
         Me.Panel1.color = System.Drawing.Color.Tomato
         Me.Panel1.Controls.Add(Me.txtSearch)
-        Me.Panel1.Controls.Add(Me.DGPinjam)
+        Me.Panel1.Controls.Add(Me.DGTransaksi)
         Me.Panel1.LeftSahddow = False
         resources.ApplyResources(Me.Panel1, "Panel1")
         Me.Panel1.Name = "Panel1"
@@ -74,13 +66,13 @@ Partial Class Peminjaman_Admin
         Me.txtSearch.Name = "txtSearch"
         Me.txtSearch.text = ""
         '
-        'DGPinjam
+        'DGTransaksi
         '
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.DGPinjam.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.DGPinjam.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.DGPinjam.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.DGPinjam.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.DGTransaksi.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.DGTransaksi.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.DGTransaksi.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DGTransaksi.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -88,16 +80,15 @@ Partial Class Peminjaman_Admin
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGPinjam.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.DGPinjam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGPinjam.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.no, Me.id_peminjaman, Me.nim, Me.id_barang, Me.tgl_pinjam, Me.tgl_kembali, Me.jumlah, Me.id_status})
-        Me.DGPinjam.DoubleBuffered = True
-        Me.DGPinjam.EnableHeadersVisualStyles = False
-        Me.DGPinjam.HeaderBgColor = System.Drawing.Color.SeaGreen
-        Me.DGPinjam.HeaderForeColor = System.Drawing.Color.White
-        resources.ApplyResources(Me.DGPinjam, "DGPinjam")
-        Me.DGPinjam.Name = "DGPinjam"
-        Me.DGPinjam.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.DGTransaksi.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.DGTransaksi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGTransaksi.DoubleBuffered = True
+        Me.DGTransaksi.EnableHeadersVisualStyles = False
+        Me.DGTransaksi.HeaderBgColor = System.Drawing.Color.SeaGreen
+        Me.DGTransaksi.HeaderForeColor = System.Drawing.Color.White
+        resources.ApplyResources(Me.DGTransaksi, "DGTransaksi")
+        Me.DGTransaksi.Name = "DGTransaksi"
+        Me.DGTransaksi.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         '
         'btnEdit
         '
@@ -219,49 +210,7 @@ Partial Class Peminjaman_Admin
         Me.btnDelete.Textcolor = System.Drawing.Color.White
         Me.btnDelete.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
-        'no
-        '
-        Me.no.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader
-        resources.ApplyResources(Me.no, "no")
-        Me.no.Name = "no"
-        Me.no.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        '
-        'id_peminjaman
-        '
-        resources.ApplyResources(Me.id_peminjaman, "id_peminjaman")
-        Me.id_peminjaman.Name = "id_peminjaman"
-        '
-        'nim
-        '
-        resources.ApplyResources(Me.nim, "nim")
-        Me.nim.Name = "nim"
-        '
-        'id_barang
-        '
-        resources.ApplyResources(Me.id_barang, "id_barang")
-        Me.id_barang.Name = "id_barang"
-        '
-        'tgl_pinjam
-        '
-        resources.ApplyResources(Me.tgl_pinjam, "tgl_pinjam")
-        Me.tgl_pinjam.Name = "tgl_pinjam"
-        '
-        'tgl_kembali
-        '
-        resources.ApplyResources(Me.tgl_kembali, "tgl_kembali")
-        Me.tgl_kembali.Name = "tgl_kembali"
-        '
-        'jumlah
-        '
-        resources.ApplyResources(Me.jumlah, "jumlah")
-        Me.jumlah.Name = "jumlah"
-        '
-        'id_status
-        '
-        resources.ApplyResources(Me.id_status, "id_status")
-        Me.id_status.Name = "id_status"
-        '
-        'Peminjaman_Admin
+        'Transaksi_Admin
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -272,9 +221,9 @@ Partial Class Peminjaman_Admin
         Me.Controls.Add(Me.btnEdit)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Peminjaman_Admin"
+        Me.Name = "Transaksi_Admin"
         Me.Panel1.ResumeLayout(False)
-        CType(Me.DGPinjam, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGTransaksi, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -285,14 +234,6 @@ Partial Class Peminjaman_Admin
     Friend WithEvents btnDelete As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents btnCancel As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents btnSave As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents DGPinjam As Bunifu.Framework.UI.BunifuCustomDataGrid
+    Friend WithEvents DGTransaksi As Bunifu.Framework.UI.BunifuCustomDataGrid
     Friend WithEvents txtSearch As Bunifu.Framework.UI.BunifuTextbox
-    Friend WithEvents no As DataGridViewTextBoxColumn
-    Friend WithEvents id_peminjaman As DataGridViewTextBoxColumn
-    Friend WithEvents nim As DataGridViewTextBoxColumn
-    Friend WithEvents id_barang As DataGridViewTextBoxColumn
-    Friend WithEvents tgl_pinjam As DataGridViewTextBoxColumn
-    Friend WithEvents tgl_kembali As DataGridViewTextBoxColumn
-    Friend WithEvents jumlah As DataGridViewTextBoxColumn
-    Friend WithEvents id_status As DataGridViewTextBoxColumn
 End Class

@@ -79,12 +79,12 @@
     <Compile Include="Control\ClsCtlAdmin.vb" />
     <Compile Include="Control\ClsCtlBarang.vb" />
     <Compile Include="Control\ClsCtlMember.vb" />
-    <Compile Include="Control\ClsCtlPeminjaman.vb" />
-    <Compile Include="Control\ClsCtlPengembalian.vb" />
+    <Compile Include="Control\ClsCtlTransaksi.vb" />
     <Compile Include="Control\InfProses.vb" />
     <Compile Include="Entity\ClsEntAdmin.vb" />
     <Compile Include="Entity\ClsEntBarang.vb" />
     <Compile Include="Entity\ClsEntMember.vb" />
+    <Compile Include="Entity\ClsEntTransaksi.vb" />
     <Compile Include="Forms\Admin\Admin.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -98,22 +98,22 @@
     <Compile Include="Forms\Admin\Dashboard_Admin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Admin\Info_Member.Designer.vb">
+      <DependentUpon>Info_Member.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Admin\Info_Member.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Admin\Inventaris_Admin.Designer.vb">
       <DependentUpon>Inventaris_Admin.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\Admin\Inventaris_Admin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Admin\Peminjaman_Admin.Designer.vb">
-      <DependentUpon>Peminjaman_Admin.vb</DependentUpon>
+    <Compile Include="Forms\Admin\Transaksi_Admin.Designer.vb">
+      <DependentUpon>Transaksi_Admin.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Admin\Peminjaman_Admin.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Admin\Pengembalian_Admin.Designer.vb">
-      <DependentUpon>Pengembalian_Admin.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Admin\Pengembalian_Admin.vb">
+    <Compile Include="Forms\Admin\Transaksi_Admin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Login.Designer.vb">
@@ -134,16 +134,10 @@
     <Compile Include="Forms\Member\Member.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Member\Peminjaman.Designer.vb">
-      <DependentUpon>Peminjaman.vb</DependentUpon>
+    <Compile Include="Forms\Member\Transaksi.Designer.vb">
+      <DependentUpon>Transaksi.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Member\Peminjaman.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Member\Pengembalian.Designer.vb">
-      <DependentUpon>Pengembalian.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Member\Pengembalian.vb">
+    <Compile Include="Forms\Member\Transaksi.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Global\ModKoneksi.vb" />
@@ -171,14 +165,14 @@
     <EmbeddedResource Include="Forms\Admin\Dashboard_Admin.resx">
       <DependentUpon>Dashboard_Admin.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin\Info_Member.resx">
+      <DependentUpon>Info_Member.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin\Inventaris_Admin.resx">
       <DependentUpon>Inventaris_Admin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Admin\Peminjaman_Admin.resx">
-      <DependentUpon>Peminjaman_Admin.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Admin\Pengembalian_Admin.resx">
-      <DependentUpon>Pengembalian_Admin.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Admin\Transaksi_Admin.resx">
+      <DependentUpon>Transaksi_Admin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
@@ -189,11 +183,8 @@
     <EmbeddedResource Include="Forms\Member\Member.resx">
       <DependentUpon>Member.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Member\Peminjaman.resx">
-      <DependentUpon>Peminjaman.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Member\Pengembalian.resx">
-      <DependentUpon>Pengembalian.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Member\Transaksi.resx">
+      <DependentUpon>Transaksi.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

@@ -1,5 +1,5 @@
-﻿Public Class Pengembalian
-    Private Sub Pengembalian_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+﻿Public Class Transaksi
+    Private Sub Peminjaman_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.MdiParent = Member
         RefreshGrid()
     End Sub
@@ -13,7 +13,6 @@
     End Sub
 
     Private Sub RefreshGrid()
-        DTGrid = KontrolPeminjaman.tampilData.ToTable
-        DGKembali.DataSource = DTGrid
+        DTGrid = KontrolTransaksi.tampilData.ToTable
     End Sub
 End Class

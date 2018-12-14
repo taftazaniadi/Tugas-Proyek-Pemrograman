@@ -28,7 +28,13 @@ Partial Class Inventaris_Admin
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Inventaris_Admin))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New Bunifu.Framework.UI.BunifuCards()
-        Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
+        Me.DGBarang = New Bunifu.Framework.UI.BunifuCustomDataGrid()
+        Me.btnDelete = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.btnEdit = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.btnCancel = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.btnSave = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.btnAdd = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.cbStatus = New Bunifu.Framework.UI.BunifuDropdown()
         Me.cbJenis = New Bunifu.Framework.UI.BunifuDropdown()
         Me.BunifuCustomLabel5 = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -39,20 +45,9 @@ Partial Class Inventaris_Admin
         Me.txtNama = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.txtKode = New Bunifu.Framework.UI.BunifuMaterialTextbox()
-        Me.DGBarang = New Bunifu.Framework.UI.BunifuCustomDataGrid()
-        Me.btnDelete = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.btnEdit = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.btnCancel = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.btnSave = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.btnAdd = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.no = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.id_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.id_jenis = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.stock = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.id_status = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1.SuspendLayout()
-        Me.BunifuGradientPanel1.SuspendLayout()
         CType(Me.DGBarang, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -66,177 +61,14 @@ Partial Class Inventaris_Admin
         Me.Panel1.BorderRadius = 5
         Me.Panel1.BottomSahddow = True
         Me.Panel1.color = System.Drawing.Color.Tomato
-        Me.Panel1.Controls.Add(Me.BunifuGradientPanel1)
         Me.Panel1.Controls.Add(Me.DGBarang)
         Me.Panel1.LeftSahddow = False
         Me.Panel1.Location = New System.Drawing.Point(12, 12)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.RightSahddow = True
         Me.Panel1.ShadowDepth = 20
-        Me.Panel1.Size = New System.Drawing.Size(540, 494)
+        Me.Panel1.Size = New System.Drawing.Size(540, 247)
         Me.Panel1.TabIndex = 0
-        '
-        'BunifuGradientPanel1
-        '
-        Me.BunifuGradientPanel1.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel1.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuGradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.BunifuGradientPanel1.Controls.Add(Me.cbStatus)
-        Me.BunifuGradientPanel1.Controls.Add(Me.cbJenis)
-        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuCustomLabel5)
-        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuCustomLabel4)
-        Me.BunifuGradientPanel1.Controls.Add(Me.txtStock)
-        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuCustomLabel3)
-        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuCustomLabel2)
-        Me.BunifuGradientPanel1.Controls.Add(Me.txtNama)
-        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuCustomLabel1)
-        Me.BunifuGradientPanel1.Controls.Add(Me.txtKode)
-        Me.BunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.White
-        Me.BunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White
-        Me.BunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White
-        Me.BunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White
-        Me.BunifuGradientPanel1.Location = New System.Drawing.Point(3, 244)
-        Me.BunifuGradientPanel1.Name = "BunifuGradientPanel1"
-        Me.BunifuGradientPanel1.Quality = 10
-        Me.BunifuGradientPanel1.Size = New System.Drawing.Size(534, 247)
-        Me.BunifuGradientPanel1.TabIndex = 2
-        '
-        'cbStatus
-        '
-        Me.cbStatus.BackColor = System.Drawing.Color.Transparent
-        Me.cbStatus.BorderRadius = 3
-        Me.cbStatus.DisabledColor = System.Drawing.Color.Gray
-        Me.cbStatus.ForeColor = System.Drawing.Color.White
-        Me.cbStatus.Items = New String(-1) {}
-        Me.cbStatus.Location = New System.Drawing.Point(134, 183)
-        Me.cbStatus.Name = "cbStatus"
-        Me.cbStatus.NomalColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.cbStatus.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.cbStatus.selectedIndex = -1
-        Me.cbStatus.Size = New System.Drawing.Size(193, 35)
-        Me.cbStatus.TabIndex = 11
-        '
-        'cbJenis
-        '
-        Me.cbJenis.BackColor = System.Drawing.Color.Transparent
-        Me.cbJenis.BorderRadius = 3
-        Me.cbJenis.DisabledColor = System.Drawing.Color.Gray
-        Me.cbJenis.ForeColor = System.Drawing.Color.White
-        Me.cbJenis.Items = New String(-1) {}
-        Me.cbJenis.Location = New System.Drawing.Point(134, 101)
-        Me.cbJenis.Name = "cbJenis"
-        Me.cbJenis.NomalColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.cbJenis.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.cbJenis.selectedIndex = -1
-        Me.cbJenis.Size = New System.Drawing.Size(193, 35)
-        Me.cbJenis.TabIndex = 10
-        '
-        'BunifuCustomLabel5
-        '
-        Me.BunifuCustomLabel5.AutoSize = True
-        Me.BunifuCustomLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel5.Location = New System.Drawing.Point(24, 193)
-        Me.BunifuCustomLabel5.Name = "BunifuCustomLabel5"
-        Me.BunifuCustomLabel5.Size = New System.Drawing.Size(51, 16)
-        Me.BunifuCustomLabel5.TabIndex = 9
-        Me.BunifuCustomLabel5.Text = "Status"
-        '
-        'BunifuCustomLabel4
-        '
-        Me.BunifuCustomLabel4.AutoSize = True
-        Me.BunifuCustomLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(24, 153)
-        Me.BunifuCustomLabel4.Name = "BunifuCustomLabel4"
-        Me.BunifuCustomLabel4.Size = New System.Drawing.Size(47, 16)
-        Me.BunifuCustomLabel4.TabIndex = 7
-        Me.BunifuCustomLabel4.Text = "Stock"
-        '
-        'txtStock
-        '
-        Me.txtStock.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtStock.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.txtStock.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtStock.HintForeColor = System.Drawing.Color.Empty
-        Me.txtStock.HintText = ""
-        Me.txtStock.isPassword = False
-        Me.txtStock.LineFocusedColor = System.Drawing.Color.Blue
-        Me.txtStock.LineIdleColor = System.Drawing.Color.Gray
-        Me.txtStock.LineMouseHoverColor = System.Drawing.Color.Blue
-        Me.txtStock.LineThickness = 3
-        Me.txtStock.Location = New System.Drawing.Point(134, 143)
-        Me.txtStock.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtStock.Name = "txtStock"
-        Me.txtStock.Size = New System.Drawing.Size(368, 33)
-        Me.txtStock.TabIndex = 6
-        Me.txtStock.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'BunifuCustomLabel3
-        '
-        Me.BunifuCustomLabel3.AutoSize = True
-        Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(24, 111)
-        Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
-        Me.BunifuCustomLabel3.Size = New System.Drawing.Size(99, 16)
-        Me.BunifuCustomLabel3.TabIndex = 5
-        Me.BunifuCustomLabel3.Text = "Jenis Barang"
-        '
-        'BunifuCustomLabel2
-        '
-        Me.BunifuCustomLabel2.AutoSize = True
-        Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(24, 69)
-        Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
-        Me.BunifuCustomLabel2.Size = New System.Drawing.Size(103, 16)
-        Me.BunifuCustomLabel2.TabIndex = 3
-        Me.BunifuCustomLabel2.Text = "Nama Barang"
-        '
-        'txtNama
-        '
-        Me.txtNama.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtNama.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.txtNama.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtNama.HintForeColor = System.Drawing.Color.Empty
-        Me.txtNama.HintText = ""
-        Me.txtNama.isPassword = False
-        Me.txtNama.LineFocusedColor = System.Drawing.Color.Blue
-        Me.txtNama.LineIdleColor = System.Drawing.Color.Gray
-        Me.txtNama.LineMouseHoverColor = System.Drawing.Color.Blue
-        Me.txtNama.LineThickness = 3
-        Me.txtNama.Location = New System.Drawing.Point(134, 61)
-        Me.txtNama.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtNama.Name = "txtNama"
-        Me.txtNama.Size = New System.Drawing.Size(368, 33)
-        Me.txtNama.TabIndex = 2
-        Me.txtNama.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'BunifuCustomLabel1
-        '
-        Me.BunifuCustomLabel1.AutoSize = True
-        Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(24, 28)
-        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
-        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(98, 16)
-        Me.BunifuCustomLabel1.TabIndex = 1
-        Me.BunifuCustomLabel1.Text = "Kode Barang"
-        '
-        'txtKode
-        '
-        Me.txtKode.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtKode.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.txtKode.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtKode.HintForeColor = System.Drawing.Color.Empty
-        Me.txtKode.HintText = ""
-        Me.txtKode.isPassword = False
-        Me.txtKode.LineFocusedColor = System.Drawing.Color.Blue
-        Me.txtKode.LineIdleColor = System.Drawing.Color.Gray
-        Me.txtKode.LineMouseHoverColor = System.Drawing.Color.Blue
-        Me.txtKode.LineThickness = 3
-        Me.txtKode.Location = New System.Drawing.Point(134, 20)
-        Me.txtKode.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtKode.Name = "txtKode"
-        Me.txtKode.Size = New System.Drawing.Size(368, 33)
-        Me.txtKode.TabIndex = 0
-        Me.txtKode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'DGBarang
         '
@@ -254,7 +86,6 @@ Partial Class Inventaris_Admin
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DGBarang.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DGBarang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGBarang.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.no, Me.id_barang, Me.id_jenis, Me.stock, Me.id_status})
         Me.DGBarang.DoubleBuffered = True
         Me.DGBarang.EnableHeadersVisualStyles = False
         Me.DGBarang.HeaderBgColor = System.Drawing.Color.SeaGreen
@@ -262,7 +93,7 @@ Partial Class Inventaris_Admin
         Me.DGBarang.Location = New System.Drawing.Point(3, 6)
         Me.DGBarang.Name = "DGBarang"
         Me.DGBarang.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.DGBarang.Size = New System.Drawing.Size(534, 232)
+        Me.DGBarang.Size = New System.Drawing.Size(534, 238)
         Me.DGBarang.TabIndex = 1
         '
         'btnDelete
@@ -442,33 +273,160 @@ Partial Class Inventaris_Admin
         Me.btnAdd.Textcolor = System.Drawing.Color.White
         Me.btnAdd.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
-        'no
+        'GroupBox1
         '
-        Me.no.HeaderText = "No."
-        Me.no.Name = "no"
+        Me.GroupBox1.Controls.Add(Me.cbStatus)
+        Me.GroupBox1.Controls.Add(Me.cbJenis)
+        Me.GroupBox1.Controls.Add(Me.BunifuCustomLabel5)
+        Me.GroupBox1.Controls.Add(Me.BunifuCustomLabel4)
+        Me.GroupBox1.Controls.Add(Me.txtStock)
+        Me.GroupBox1.Controls.Add(Me.BunifuCustomLabel3)
+        Me.GroupBox1.Controls.Add(Me.BunifuCustomLabel2)
+        Me.GroupBox1.Controls.Add(Me.txtNama)
+        Me.GroupBox1.Controls.Add(Me.BunifuCustomLabel1)
+        Me.GroupBox1.Controls.Add(Me.txtKode)
+        Me.GroupBox1.Location = New System.Drawing.Point(15, 255)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(534, 251)
+        Me.GroupBox1.TabIndex = 17
+        Me.GroupBox1.TabStop = False
         '
-        'id_barang
+        'cbStatus
         '
-        Me.id_barang.HeaderText = "Kode Barang"
-        Me.id_barang.Name = "id_barang"
+        Me.cbStatus.BackColor = System.Drawing.Color.Transparent
+        Me.cbStatus.BorderRadius = 3
+        Me.cbStatus.DisabledColor = System.Drawing.Color.Gray
+        Me.cbStatus.ForeColor = System.Drawing.Color.White
+        Me.cbStatus.Items = New String(-1) {}
+        Me.cbStatus.Location = New System.Drawing.Point(138, 189)
+        Me.cbStatus.Name = "cbStatus"
+        Me.cbStatus.NomalColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.cbStatus.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.cbStatus.selectedIndex = -1
+        Me.cbStatus.Size = New System.Drawing.Size(193, 35)
+        Me.cbStatus.TabIndex = 21
         '
-        'id_jenis
+        'cbJenis
         '
-        Me.id_jenis.HeaderText = "Jenis Barang"
-        Me.id_jenis.Name = "id_jenis"
+        Me.cbJenis.BackColor = System.Drawing.Color.Transparent
+        Me.cbJenis.BorderRadius = 3
+        Me.cbJenis.DisabledColor = System.Drawing.Color.Gray
+        Me.cbJenis.ForeColor = System.Drawing.Color.White
+        Me.cbJenis.Items = New String(-1) {}
+        Me.cbJenis.Location = New System.Drawing.Point(138, 107)
+        Me.cbJenis.Name = "cbJenis"
+        Me.cbJenis.NomalColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.cbJenis.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.cbJenis.selectedIndex = -1
+        Me.cbJenis.Size = New System.Drawing.Size(193, 35)
+        Me.cbJenis.TabIndex = 20
         '
-        'stock
+        'BunifuCustomLabel5
         '
-        Me.stock.HeaderText = "Jumlah"
-        Me.stock.Name = "stock"
+        Me.BunifuCustomLabel5.AutoSize = True
+        Me.BunifuCustomLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel5.Location = New System.Drawing.Point(28, 199)
+        Me.BunifuCustomLabel5.Name = "BunifuCustomLabel5"
+        Me.BunifuCustomLabel5.Size = New System.Drawing.Size(51, 16)
+        Me.BunifuCustomLabel5.TabIndex = 19
+        Me.BunifuCustomLabel5.Text = "Status"
         '
-        'id_status
+        'BunifuCustomLabel4
         '
-        Me.id_status.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader
-        Me.id_status.HeaderText = "Status"
-        Me.id_status.Name = "id_status"
-        Me.id_status.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.id_status.Width = 68
+        Me.BunifuCustomLabel4.AutoSize = True
+        Me.BunifuCustomLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(28, 159)
+        Me.BunifuCustomLabel4.Name = "BunifuCustomLabel4"
+        Me.BunifuCustomLabel4.Size = New System.Drawing.Size(47, 16)
+        Me.BunifuCustomLabel4.TabIndex = 18
+        Me.BunifuCustomLabel4.Text = "Stock"
+        '
+        'txtStock
+        '
+        Me.txtStock.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtStock.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.txtStock.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtStock.HintForeColor = System.Drawing.Color.Empty
+        Me.txtStock.HintText = ""
+        Me.txtStock.isPassword = False
+        Me.txtStock.LineFocusedColor = System.Drawing.Color.Blue
+        Me.txtStock.LineIdleColor = System.Drawing.Color.Gray
+        Me.txtStock.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.txtStock.LineThickness = 3
+        Me.txtStock.Location = New System.Drawing.Point(138, 149)
+        Me.txtStock.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtStock.Name = "txtStock"
+        Me.txtStock.Size = New System.Drawing.Size(368, 33)
+        Me.txtStock.TabIndex = 17
+        Me.txtStock.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'BunifuCustomLabel3
+        '
+        Me.BunifuCustomLabel3.AutoSize = True
+        Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(28, 117)
+        Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
+        Me.BunifuCustomLabel3.Size = New System.Drawing.Size(99, 16)
+        Me.BunifuCustomLabel3.TabIndex = 16
+        Me.BunifuCustomLabel3.Text = "Jenis Barang"
+        '
+        'BunifuCustomLabel2
+        '
+        Me.BunifuCustomLabel2.AutoSize = True
+        Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(28, 75)
+        Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
+        Me.BunifuCustomLabel2.Size = New System.Drawing.Size(103, 16)
+        Me.BunifuCustomLabel2.TabIndex = 15
+        Me.BunifuCustomLabel2.Text = "Nama Barang"
+        '
+        'txtNama
+        '
+        Me.txtNama.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtNama.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.txtNama.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtNama.HintForeColor = System.Drawing.Color.Empty
+        Me.txtNama.HintText = ""
+        Me.txtNama.isPassword = False
+        Me.txtNama.LineFocusedColor = System.Drawing.Color.Blue
+        Me.txtNama.LineIdleColor = System.Drawing.Color.Gray
+        Me.txtNama.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.txtNama.LineThickness = 3
+        Me.txtNama.Location = New System.Drawing.Point(138, 67)
+        Me.txtNama.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtNama.Name = "txtNama"
+        Me.txtNama.Size = New System.Drawing.Size(368, 33)
+        Me.txtNama.TabIndex = 14
+        Me.txtNama.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'BunifuCustomLabel1
+        '
+        Me.BunifuCustomLabel1.AutoSize = True
+        Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(28, 34)
+        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
+        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(98, 16)
+        Me.BunifuCustomLabel1.TabIndex = 13
+        Me.BunifuCustomLabel1.Text = "Kode Barang"
+        '
+        'txtKode
+        '
+        Me.txtKode.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtKode.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.txtKode.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtKode.HintForeColor = System.Drawing.Color.Empty
+        Me.txtKode.HintText = ""
+        Me.txtKode.isPassword = False
+        Me.txtKode.LineFocusedColor = System.Drawing.Color.Blue
+        Me.txtKode.LineIdleColor = System.Drawing.Color.Gray
+        Me.txtKode.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.txtKode.LineThickness = 3
+        Me.txtKode.Location = New System.Drawing.Point(138, 26)
+        Me.txtKode.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtKode.Name = "txtKode"
+        Me.txtKode.Size = New System.Drawing.Size(368, 33)
+        Me.txtKode.TabIndex = 12
+        Me.txtKode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'Inventaris_Admin
         '
@@ -476,6 +434,7 @@ Partial Class Inventaris_Admin
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(705, 518)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnDelete)
@@ -486,9 +445,9 @@ Partial Class Inventaris_Admin
         Me.Name = "Inventaris_Admin"
         Me.Text = "Inventaris"
         Me.Panel1.ResumeLayout(False)
-        Me.BunifuGradientPanel1.ResumeLayout(False)
-        Me.BunifuGradientPanel1.PerformLayout()
         CType(Me.DGBarang, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -500,8 +459,10 @@ Partial Class Inventaris_Admin
     Friend WithEvents btnSave As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents btnCancel As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents btnAdd As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents BunifuGradientPanel1 As Bunifu.Framework.UI.BunifuGradientPanel
     Friend WithEvents DGBarang As Bunifu.Framework.UI.BunifuCustomDataGrid
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents cbStatus As Bunifu.Framework.UI.BunifuDropdown
+    Friend WithEvents cbJenis As Bunifu.Framework.UI.BunifuDropdown
     Friend WithEvents BunifuCustomLabel5 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel4 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents txtStock As Bunifu.Framework.UI.BunifuMaterialTextbox
@@ -510,11 +471,4 @@ Partial Class Inventaris_Admin
     Friend WithEvents txtNama As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents txtKode As Bunifu.Framework.UI.BunifuMaterialTextbox
-    Friend WithEvents cbStatus As Bunifu.Framework.UI.BunifuDropdown
-    Friend WithEvents cbJenis As Bunifu.Framework.UI.BunifuDropdown
-    Friend WithEvents no As DataGridViewTextBoxColumn
-    Friend WithEvents id_barang As DataGridViewTextBoxColumn
-    Friend WithEvents id_jenis As DataGridViewTextBoxColumn
-    Friend WithEvents stock As DataGridViewTextBoxColumn
-    Friend WithEvents id_status As DataGridViewTextBoxColumn
 End Class

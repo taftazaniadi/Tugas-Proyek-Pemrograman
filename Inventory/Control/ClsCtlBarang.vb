@@ -24,7 +24,7 @@ Public Class ClsCtlBarang : Implements InfProses
         cek = False
 
         Try
-            DTA = New OleDbDataAdapter("SELECT COUNT(id_barang) FROM Peminjaman WHERE id_barang = '" & kunci & "'", BUKAKONEKSI)
+            DTA = New OleDbDataAdapter("SELECT COUNT(id_barang) FROM Transaksi WHERE id_barang = '" & kunci & "'", BUKAKONEKSI)
             DTS = New DataSet()
             DTA.Fill(DTS, "cek")
 
@@ -65,7 +65,7 @@ Public Class ClsCtlBarang : Implements InfProses
 
     Public Function tampilData() As DataView Implements InfProses.tampilData
         Try
-            DTA = New OleDbDataAdapter("SELECT * FROM Barang", BUKAKONEKSI)
+            DTA = New OleDbDataAdapter("SELECT b.id_barang, b.nama, j.nama, b.stock, s.nama FROM barang AS b JOIN jenis_barang AS j ON b.id_jenis = j.id_jenis JOIN status_barang AS s ON b.id_status = s.id_status", BUKAKONEKSI)
             DTS = New DataSet()
             DTA.Fill(DTS, "Tabel_Barang")
             Dim grid As New DataView(DTS.Tables("Tabel_Barang"))

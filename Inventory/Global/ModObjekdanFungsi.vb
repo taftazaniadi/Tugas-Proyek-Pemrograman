@@ -5,6 +5,6 @@
     Public KontrolAdmin As New ClsCtlAdmin
     Public EntitasMember As New ClsEntMember
     Public KontrolMember As New ClsCtlMember
-    Public KontrolPeminjaman As New ClsCtlPeminjaman
-    Public KontrolPengembalian As New ClsCtlPengembalian
+    Public EntitasTransaksi As New ClsEntTransaksi
+    Public KontrolTransaksi As New ClsCtlTransaksi
 End Module

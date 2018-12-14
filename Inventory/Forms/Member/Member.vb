@@ -9,8 +9,7 @@
             Sidemenu.Visible = True
             Sidemenu.Width = 200
             Dashboard.Width = 705
-            Peminjaman.Width = 705
-            Pengembalian.Width = 705
+            Transaksi.Width = 705
             PanelAnimator.ShowSync(Sidemenu)
             logoAnimator.ShowSync(logo)
         Else
@@ -18,8 +17,7 @@
             Sidemenu.Width = 50
             Sidemenu.Visible = False
             Dashboard.Width = 705 + 150
-            Peminjaman.Width = 705 + 150
-            Pengembalian.Width = 705 + 150
+            Transaksi.Width = 705 + 150
             PanelAnimator.ShowSync(Sidemenu)
             logoAnimator.ShowSync(logo_small)
         End If
@@ -46,21 +44,13 @@
     Private Sub btnDash_Click(sender As Object, e As EventArgs) Handles btnDash.Click
         Dashboard.Show()
         Dashboard.Location = New System.Drawing.Point(0, 0)
-        Peminjaman.Hide()
-        Pengembalian.Hide()
+        Transaksi.Hide()
     End Sub
 
-    Private Sub btnPinjam_Click(sender As Object, e As EventArgs) Handles btnPinjam.Click
-        Peminjaman.Show()
-        Peminjaman.Location = New System.Drawing.Point(0, 0)
+    Private Sub btnPinjam_Click(sender As Object, e As EventArgs) Handles btnTransaksi.Click
+        Transaksi.Show()
+        Transaksi.Location = New System.Drawing.Point(0, 0)
         Dashboard.Hide()
-        Pengembalian.Hide()
     End Sub
 
-    Private Sub btnKembali_Click(sender As Object, e As EventArgs) Handles btnKembali.Click
-        Pengembalian.Show()
-        Pengembalian.Location = New System.Drawing.Point(0, 0)
-        Dashboard.Hide()
-        Peminjaman.Hide()
-    End Sub
 End Class

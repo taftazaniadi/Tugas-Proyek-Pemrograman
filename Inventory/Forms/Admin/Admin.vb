@@ -9,9 +9,7 @@
             Sidemenu.Visible = True
             Sidemenu.Width = 200
             Dashboard_Admin.Width = 705
-            Peminjaman_Admin.Width = 705
-            Pengembalian_Admin.Width = 705
-            Pengembalian_Admin.Width = 705
+            Transaksi_Admin.Width = 705
             Inventaris_Admin.Width = 705
             PanelAnimator.ShowSync(Sidemenu)
             logoAnimator.ShowSync(logo)
@@ -20,8 +18,7 @@
             Sidemenu.Width = 50
             Sidemenu.Visible = False
             Dashboard_Admin.Width = 705 + 150
-            Peminjaman_Admin.Width = 705 + 150
-            Pengembalian_Admin.Width = 705 + 150
+            Transaksi_Admin.Width = 705 + 150
             Inventaris_Admin.Width = 705 + 150
             PanelAnimator.ShowSync(Sidemenu)
             logoAnimator.ShowSync(logo_small)
@@ -48,24 +45,14 @@
     Private Sub btnDash_Click(sender As Object, e As EventArgs) Handles btnDash.Click
         Dashboard_Admin.Show()
         Dashboard_Admin.Location = New System.Drawing.Point(0, 0)
-        Peminjaman_Admin.Hide()
-        Pengembalian_Admin.Hide()
+        Transaksi_Admin.Hide()
         Inventaris_Admin.Hide()
     End Sub
 
     Private Sub btnPinjam_Click(sender As Object, e As EventArgs) Handles btnPinjam.Click
-        Peminjaman_Admin.Show()
-        Peminjaman_Admin.Location = New System.Drawing.Point(0, 0)
+        Transaksi_Admin.Show()
+        Transaksi_Admin.Location = New System.Drawing.Point(0, 0)
         Dashboard_Admin.Hide()
-        Pengembalian_Admin.Hide()
-        Inventaris_Admin.Hide()
-    End Sub
-
-    Private Sub btnKembali_Click(sender As Object, e As EventArgs) Handles btnKembali.Click
-        Pengembalian_Admin.Show()
-        Pengembalian_Admin.Location = New System.Drawing.Point(0, 0)
-        Dashboard_Admin.Hide()
-        Peminjaman_Admin.Hide()
         Inventaris_Admin.Hide()
     End Sub
 
@@ -73,7 +60,14 @@
         Inventaris_Admin.Show()
         Inventaris_Admin.Location = New System.Drawing.Point(0, 0)
         Dashboard_Admin.Hide()
-        Peminjaman_Admin.Hide()
-        Pengembalian_Admin.Hide()
+        Transaksi_Admin.Hide()
+    End Sub
+
+    Private Sub btnMember_Click(sender As Object, e As EventArgs) Handles btnMember.Click
+        Info_Member.Show()
+        Info_Member.Location = New System.Drawing.Point(0, 0)
+        Dashboard_Admin.Hide()
+        Transaksi_Admin.Hide()
+        Inventaris_Admin.Hide()
     End Sub
 End Class

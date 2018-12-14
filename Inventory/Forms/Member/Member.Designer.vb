@@ -23,14 +23,13 @@ Partial Class Member
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Animation3 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation1 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Member))
-        Dim Animation4 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Sidemenu = New System.Windows.Forms.Panel()
         Me.btnLog = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.btnKembali = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.btnPinjam = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.btnTransaksi = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnDash = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.logo = New System.Windows.Forms.PictureBox()
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -59,8 +58,7 @@ Partial Class Member
         '
         Me.Sidemenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.Sidemenu.Controls.Add(Me.btnLog)
-        Me.Sidemenu.Controls.Add(Me.btnKembali)
-        Me.Sidemenu.Controls.Add(Me.btnPinjam)
+        Me.Sidemenu.Controls.Add(Me.btnTransaksi)
         Me.Sidemenu.Controls.Add(Me.btnDash)
         Me.Sidemenu.Controls.Add(Me.logo)
         Me.Sidemenu.Controls.Add(Me.BunifuCustomLabel1)
@@ -110,77 +108,41 @@ Partial Class Member
         Me.btnLog.Textcolor = System.Drawing.Color.White
         Me.btnLog.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
-        'btnKembali
+        'btnTransaksi
         '
-        Me.btnKembali.Activecolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.btnKembali.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.btnKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnKembali.BorderRadius = 0
-        Me.btnKembali.ButtonText = "    Pengembalian"
-        Me.btnKembali.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PanelAnimator.SetDecoration(Me.btnKembali, BunifuAnimatorNS.DecorationType.None)
-        Me.logoAnimator.SetDecoration(Me.btnKembali, BunifuAnimatorNS.DecorationType.None)
-        Me.btnKembali.DisabledColor = System.Drawing.Color.Gray
-        Me.btnKembali.Iconcolor = System.Drawing.Color.Transparent
-        Me.btnKembali.Iconimage = CType(resources.GetObject("btnKembali.Iconimage"), System.Drawing.Image)
-        Me.btnKembali.Iconimage_right = Nothing
-        Me.btnKembali.Iconimage_right_Selected = Nothing
-        Me.btnKembali.Iconimage_Selected = Nothing
-        Me.btnKembali.IconMarginLeft = 0
-        Me.btnKembali.IconMarginRight = 0
-        Me.btnKembali.IconRightVisible = True
-        Me.btnKembali.IconRightZoom = 0R
-        Me.btnKembali.IconVisible = True
-        Me.btnKembali.IconZoom = 65.0R
-        Me.btnKembali.IsTab = True
-        Me.btnKembali.Location = New System.Drawing.Point(0, 248)
-        Me.btnKembali.Name = "btnKembali"
-        Me.btnKembali.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.btnKembali.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.btnKembali.OnHoverTextColor = System.Drawing.Color.White
-        Me.btnKembali.selected = False
-        Me.btnKembali.Size = New System.Drawing.Size(200, 48)
-        Me.btnKembali.TabIndex = 15
-        Me.btnKembali.Text = "    Pengembalian"
-        Me.btnKembali.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnKembali.Textcolor = System.Drawing.Color.White
-        Me.btnKembali.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'btnPinjam
-        '
-        Me.btnPinjam.Activecolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.btnPinjam.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.btnPinjam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnPinjam.BorderRadius = 0
-        Me.btnPinjam.ButtonText = "    Peminjaman"
-        Me.btnPinjam.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PanelAnimator.SetDecoration(Me.btnPinjam, BunifuAnimatorNS.DecorationType.None)
-        Me.logoAnimator.SetDecoration(Me.btnPinjam, BunifuAnimatorNS.DecorationType.None)
-        Me.btnPinjam.DisabledColor = System.Drawing.Color.Gray
-        Me.btnPinjam.Iconcolor = System.Drawing.Color.Transparent
-        Me.btnPinjam.Iconimage = CType(resources.GetObject("btnPinjam.Iconimage"), System.Drawing.Image)
-        Me.btnPinjam.Iconimage_right = Nothing
-        Me.btnPinjam.Iconimage_right_Selected = Nothing
-        Me.btnPinjam.Iconimage_Selected = Nothing
-        Me.btnPinjam.IconMarginLeft = 0
-        Me.btnPinjam.IconMarginRight = 0
-        Me.btnPinjam.IconRightVisible = True
-        Me.btnPinjam.IconRightZoom = 0R
-        Me.btnPinjam.IconVisible = True
-        Me.btnPinjam.IconZoom = 70.0R
-        Me.btnPinjam.IsTab = True
-        Me.btnPinjam.Location = New System.Drawing.Point(0, 193)
-        Me.btnPinjam.Name = "btnPinjam"
-        Me.btnPinjam.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.btnPinjam.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.btnPinjam.OnHoverTextColor = System.Drawing.Color.White
-        Me.btnPinjam.selected = False
-        Me.btnPinjam.Size = New System.Drawing.Size(200, 48)
-        Me.btnPinjam.TabIndex = 14
-        Me.btnPinjam.Text = "    Peminjaman"
-        Me.btnPinjam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnPinjam.Textcolor = System.Drawing.Color.White
-        Me.btnPinjam.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTransaksi.Activecolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.btnTransaksi.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.btnTransaksi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnTransaksi.BorderRadius = 0
+        Me.btnTransaksi.ButtonText = "    Transaksi"
+        Me.btnTransaksi.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PanelAnimator.SetDecoration(Me.btnTransaksi, BunifuAnimatorNS.DecorationType.None)
+        Me.logoAnimator.SetDecoration(Me.btnTransaksi, BunifuAnimatorNS.DecorationType.None)
+        Me.btnTransaksi.DisabledColor = System.Drawing.Color.Gray
+        Me.btnTransaksi.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnTransaksi.Iconimage = CType(resources.GetObject("btnTransaksi.Iconimage"), System.Drawing.Image)
+        Me.btnTransaksi.Iconimage_right = Nothing
+        Me.btnTransaksi.Iconimage_right_Selected = Nothing
+        Me.btnTransaksi.Iconimage_Selected = Nothing
+        Me.btnTransaksi.IconMarginLeft = 0
+        Me.btnTransaksi.IconMarginRight = 0
+        Me.btnTransaksi.IconRightVisible = True
+        Me.btnTransaksi.IconRightZoom = 0R
+        Me.btnTransaksi.IconVisible = True
+        Me.btnTransaksi.IconZoom = 70.0R
+        Me.btnTransaksi.IsTab = True
+        Me.btnTransaksi.Location = New System.Drawing.Point(0, 193)
+        Me.btnTransaksi.Name = "btnTransaksi"
+        Me.btnTransaksi.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.btnTransaksi.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.btnTransaksi.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnTransaksi.selected = False
+        Me.btnTransaksi.Size = New System.Drawing.Size(200, 48)
+        Me.btnTransaksi.TabIndex = 14
+        Me.btnTransaksi.Text = "    Transaksi"
+        Me.btnTransaksi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnTransaksi.Textcolor = System.Drawing.Color.White
+        Me.btnTransaksi.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'btnDash
         '
@@ -323,43 +285,43 @@ Partial Class Member
         '
         Me.logoAnimator.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate
         Me.logoAnimator.Cursor = Nothing
-        Animation3.AnimateOnlyDifferences = True
-        Animation3.BlindCoeff = CType(resources.GetObject("Animation3.BlindCoeff"), System.Drawing.PointF)
-        Animation3.LeafCoeff = 0!
-        Animation3.MaxTime = 1.0!
-        Animation3.MinTime = 0!
-        Animation3.MosaicCoeff = CType(resources.GetObject("Animation3.MosaicCoeff"), System.Drawing.PointF)
-        Animation3.MosaicShift = CType(resources.GetObject("Animation3.MosaicShift"), System.Drawing.PointF)
-        Animation3.MosaicSize = 0
-        Animation3.Padding = New System.Windows.Forms.Padding(30)
-        Animation3.RotateCoeff = 0.5!
-        Animation3.RotateLimit = 0.2!
-        Animation3.ScaleCoeff = CType(resources.GetObject("Animation3.ScaleCoeff"), System.Drawing.PointF)
-        Animation3.SlideCoeff = CType(resources.GetObject("Animation3.SlideCoeff"), System.Drawing.PointF)
-        Animation3.TimeCoeff = 0!
-        Animation3.TransparencyCoeff = 0!
-        Me.logoAnimator.DefaultAnimation = Animation3
+        Animation1.AnimateOnlyDifferences = True
+        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
+        Animation1.LeafCoeff = 0!
+        Animation1.MaxTime = 1.0!
+        Animation1.MinTime = 0!
+        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
+        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
+        Animation1.MosaicSize = 0
+        Animation1.Padding = New System.Windows.Forms.Padding(30)
+        Animation1.RotateCoeff = 0.5!
+        Animation1.RotateLimit = 0.2!
+        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
+        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
+        Animation1.TimeCoeff = 0!
+        Animation1.TransparencyCoeff = 0!
+        Me.logoAnimator.DefaultAnimation = Animation1
         '
         'PanelAnimator
         '
         Me.PanelAnimator.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide
         Me.PanelAnimator.Cursor = Nothing
-        Animation4.AnimateOnlyDifferences = True
-        Animation4.BlindCoeff = CType(resources.GetObject("Animation4.BlindCoeff"), System.Drawing.PointF)
-        Animation4.LeafCoeff = 0!
-        Animation4.MaxTime = 1.0!
-        Animation4.MinTime = 0!
-        Animation4.MosaicCoeff = CType(resources.GetObject("Animation4.MosaicCoeff"), System.Drawing.PointF)
-        Animation4.MosaicShift = CType(resources.GetObject("Animation4.MosaicShift"), System.Drawing.PointF)
-        Animation4.MosaicSize = 0
-        Animation4.Padding = New System.Windows.Forms.Padding(0)
-        Animation4.RotateCoeff = 0!
-        Animation4.RotateLimit = 0!
-        Animation4.ScaleCoeff = CType(resources.GetObject("Animation4.ScaleCoeff"), System.Drawing.PointF)
-        Animation4.SlideCoeff = CType(resources.GetObject("Animation4.SlideCoeff"), System.Drawing.PointF)
-        Animation4.TimeCoeff = 0!
-        Animation4.TransparencyCoeff = 0!
-        Me.PanelAnimator.DefaultAnimation = Animation4
+        Animation2.AnimateOnlyDifferences = True
+        Animation2.BlindCoeff = CType(resources.GetObject("Animation2.BlindCoeff"), System.Drawing.PointF)
+        Animation2.LeafCoeff = 0!
+        Animation2.MaxTime = 1.0!
+        Animation2.MinTime = 0!
+        Animation2.MosaicCoeff = CType(resources.GetObject("Animation2.MosaicCoeff"), System.Drawing.PointF)
+        Animation2.MosaicShift = CType(resources.GetObject("Animation2.MosaicShift"), System.Drawing.PointF)
+        Animation2.MosaicSize = 0
+        Animation2.Padding = New System.Windows.Forms.Padding(0)
+        Animation2.RotateCoeff = 0!
+        Animation2.RotateLimit = 0!
+        Animation2.ScaleCoeff = CType(resources.GetObject("Animation2.ScaleCoeff"), System.Drawing.PointF)
+        Animation2.SlideCoeff = CType(resources.GetObject("Animation2.SlideCoeff"), System.Drawing.PointF)
+        Animation2.TimeCoeff = 0!
+        Animation2.TransparencyCoeff = 0!
+        Me.PanelAnimator.DefaultAnimation = Animation2
         '
         'Member
         '
@@ -400,7 +362,6 @@ Partial Class Member
     Friend WithEvents PanelAnimator As BunifuAnimatorNS.BunifuTransition
     Friend WithEvents logo_small As PictureBox
     Friend WithEvents btnDash As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents btnKembali As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents btnPinjam As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents btnTransaksi As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents btnLog As Bunifu.Framework.UI.BunifuFlatButton
 End Class
