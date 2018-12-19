@@ -40,10 +40,12 @@ Partial Class Login
         Me.txtPass = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.chkAdmin = New Bunifu.Framework.UI.BunifuCheckbox()
         Me.btnLogin = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.BunifuImageButton3 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.Panel1.SuspendLayout()
         CType(Me.amcc, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnExit, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -277,12 +279,28 @@ Partial Class Login
         Me.btnLogin.TabIndex = 18
         Me.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'BunifuImageButton3
+        '
+        Me.BunifuImageButton3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BunifuImageButton3.BackColor = System.Drawing.Color.Transparent
+        Me.logoAnimator.SetDecoration(Me.BunifuImageButton3, BunifuAnimatorNS.DecorationType.None)
+        Me.BunifuImageButton3.Image = CType(resources.GetObject("BunifuImageButton3.Image"), System.Drawing.Image)
+        Me.BunifuImageButton3.ImageActive = Nothing
+        Me.BunifuImageButton3.Location = New System.Drawing.Point(592, 5)
+        Me.BunifuImageButton3.Name = "BunifuImageButton3"
+        Me.BunifuImageButton3.Size = New System.Drawing.Size(22, 22)
+        Me.BunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton3.TabIndex = 20
+        Me.BunifuImageButton3.TabStop = False
+        Me.BunifuImageButton3.Zoom = 10
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(650, 400)
+        Me.Controls.Add(Me.BunifuImageButton3)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.chkAdmin)
         Me.Controls.Add(Me.txtPass)
@@ -293,6 +311,7 @@ Partial Class Login
         Me.Controls.Add(Me.Panel1)
         Me.logoAnimator.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Login"
         Me.Text = "Login"
         Me.Panel1.ResumeLayout(False)
@@ -300,6 +319,7 @@ Partial Class Login
         CType(Me.amcc, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnExit, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -320,4 +340,5 @@ Partial Class Login
     Friend WithEvents amcc As PictureBox
     Friend WithEvents Garis1 As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents Garis2 As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents BunifuImageButton3 As Bunifu.Framework.UI.BunifuImageButton
 End Class

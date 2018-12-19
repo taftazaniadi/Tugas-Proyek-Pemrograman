@@ -1,6 +1,8 @@
 ﻿Public Class Form1
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
-        Environment.Exit(1)
+        If MsgBox("Are you sure to Exit?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Confirmation") = MsgBoxResult.Yes Then
+            Environment.Exit(1)
+        End If
     End Sub
 
     Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs) Handles BunifuImageButton1.Click
@@ -70,4 +72,14 @@
         Transaksi_Admin.Hide()
         Inventaris_Admin.Hide()
     End Sub
+
+    Private Sub BunifuImageButton3_Click(sender As Object, e As EventArgs) Handles BunifuImageButton3.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub BunifuImageButton2_Click(sender As Object, e As EventArgs) Handles BunifuImageButton2.Click
+        System.Diagnostics.Process.Start("http://new-learn.000webhostapp.com/")
+    End Sub
+
+
 End Class

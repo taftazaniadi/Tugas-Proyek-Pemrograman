@@ -84,4 +84,8 @@
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
     End Sub
+
+    Private Sub BunifuImageButton3_Click(sender As Object, e As EventArgs) Handles BunifuImageButton3.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
 End Class
