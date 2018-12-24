@@ -414,9 +414,42 @@
   <data name="&gt;&gt;btnEdit.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="BunifuCustomLabel4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="BunifuCustomLabel5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="BunifuCustomLabel5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
+  </data>
+  <data name="BunifuCustomLabel5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 26.25pt, style=Bold</value>
+  </data>
+  <data name="BunifuCustomLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 54</value>
+  </data>
+  <data name="BunifuCustomLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 39</value>
+  </data>
+  <data name="BunifuCustomLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="BunifuCustomLabel5.Text" xml:space="preserve">
+    <value>SELAMAT DATANG</value>
+  </data>
+  <data name="&gt;&gt;BunifuCustomLabel5.Name" xml:space="preserve">
+    <value>BunifuCustomLabel5</value>
+  </data>
+  <data name="&gt;&gt;BunifuCustomLabel5.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BunifuCustomLabel5.Parent" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;BunifuCustomLabel5.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="BunifuCustomLabel4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
   <data name="BunifuCustomLabel4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -424,7 +457,7 @@
     <value>NoControl</value>
   </data>
   <data name="BunifuCustomLabel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 246</value>
+    <value>73, 313</value>
   </data>
   <data name="BunifuCustomLabel4.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 13</value>
@@ -445,11 +478,11 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;BunifuCustomLabel4.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
-  <metadata name="BunifuCustomLabel3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="BunifuCustomLabel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
   <data name="BunifuCustomLabel3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -457,7 +490,7 @@
     <value>NoControl</value>
   </data>
   <data name="BunifuCustomLabel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 327</value>
+    <value>73, 394</value>
   </data>
   <data name="BunifuCustomLabel3.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 13</value>
@@ -478,11 +511,11 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;BunifuCustomLabel3.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
-  <metadata name="BunifuCustomLabel2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="BunifuCustomLabel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
   <data name="BunifuCustomLabel2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -490,7 +523,7 @@
     <value>NoControl</value>
   </data>
   <data name="BunifuCustomLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 170</value>
+    <value>73, 237</value>
   </data>
   <data name="BunifuCustomLabel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 13</value>
@@ -511,16 +544,16 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;BunifuCustomLabel2.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
-  <metadata name="BunifuCustomLabel1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="BunifuCustomLabel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
   <data name="BunifuCustomLabel1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="BunifuCustomLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 97</value>
+    <value>73, 164</value>
   </data>
   <data name="BunifuCustomLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 13</value>
@@ -541,77 +574,44 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;BunifuCustomLabel1.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <metadata name="txtEmail.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="txtEmail.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="txtEmail.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
-  </data>
-  <data name="txtEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 263</value>
-  </data>
-  <data name="txtEmail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="txtEmail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>379, 33</value>
-  </data>
-  <data name="txtEmail.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;txtEmail.Name" xml:space="preserve">
-    <value>txtEmail</value>
-  </data>
-  <data name="&gt;&gt;txtEmail.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;txtEmail.Parent" xml:space="preserve">
-    <value>Panel1</value>
-  </data>
-  <data name="&gt;&gt;txtEmail.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <metadata name="txtContact.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="txtContact.Enabled" type="System.Boolean, mscorlib">
+  <data name="txtUser.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="txtUser.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="txtContact.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txtUser.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="txtContact.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 344</value>
+  <data name="txtUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 181</value>
   </data>
-  <data name="txtContact.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="txtUser.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="txtContact.Size" type="System.Drawing.Size, System.Drawing">
-    <value>379, 33</value>
+  <data name="txtUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>379, 35</value>
   </data>
-  <data name="txtContact.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="txtUser.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;txtContact.Name" xml:space="preserve">
-    <value>txtContact</value>
+  <data name="&gt;&gt;txtUser.Name" xml:space="preserve">
+    <value>txtUser</value>
   </data>
-  <data name="&gt;&gt;txtContact.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtUser.Type" xml:space="preserve">
     <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;txtContact.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtUser.Parent" xml:space="preserve">
     <value>Panel1</value>
   </data>
-  <data name="&gt;&gt;txtContact.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtUser.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <metadata name="txtFull.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="txtFull.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
   <data name="txtFull.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -619,7 +619,7 @@
     <value>Century Gothic, 9.75pt</value>
   </data>
   <data name="txtFull.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 187</value>
+    <value>76, 254</value>
   </data>
   <data name="txtFull.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -628,7 +628,7 @@
     <value>379, 33</value>
   </data>
   <data name="txtFull.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;txtFull.Name" xml:space="preserve">
     <value>txtFull</value>
@@ -642,38 +642,71 @@
   <data name="&gt;&gt;txtFull.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <metadata name="txtUser.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="txtUser.Enabled" type="System.Boolean, mscorlib">
+  <data name="txtContact.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="txtContact.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="txtUser.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txtContact.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="txtUser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 114</value>
+  <data name="txtContact.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 411</value>
   </data>
-  <data name="txtUser.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="txtContact.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="txtUser.Size" type="System.Drawing.Size, System.Drawing">
-    <value>379, 33</value>
+  <data name="txtContact.Size" type="System.Drawing.Size, System.Drawing">
+    <value>379, 29</value>
   </data>
-  <data name="txtUser.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="txtContact.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;txtUser.Name" xml:space="preserve">
-    <value>txtUser</value>
+  <data name="&gt;&gt;txtContact.Name" xml:space="preserve">
+    <value>txtContact</value>
   </data>
-  <data name="&gt;&gt;txtUser.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtContact.Type" xml:space="preserve">
     <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;txtUser.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtContact.Parent" xml:space="preserve">
     <value>Panel1</value>
   </data>
-  <data name="&gt;&gt;txtUser.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtContact.ZOrder" xml:space="preserve">
     <value>11</value>
+  </data>
+  <data name="txtEmail.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="txtEmail.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtEmail.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
+  <data name="txtEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 330</value>
+  </data>
+  <data name="txtEmail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="txtEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>379, 34</value>
+  </data>
+  <data name="txtEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtEmail.Name" xml:space="preserve">
+    <value>txtEmail</value>
+  </data>
+  <data name="&gt;&gt;txtEmail.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtEmail.Parent" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;txtEmail.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="Panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>

@@ -30,21 +30,23 @@ Partial Class Info_Member
         Me.Panel1 = New Bunifu.Framework.UI.BunifuCards()
         Me.DGMember = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.cbStatus = New Bunifu.Framework.UI.BunifuDropdown()
-        Me.txtKode = New Bunifu.Framework.UI.BunifuMaterialTextbox()
-        Me.cbJenis = New Bunifu.Framework.UI.BunifuDropdown()
+        Me.txtNIM = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel5 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.txtNama = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.txtStock = New Bunifu.Framework.UI.BunifuMaterialTextbox()
-        Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.txtEmail = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.btnAdd = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnDelete = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnEdit = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnSave = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnCancel = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.txtPass = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.txtKontak = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.txtJurusan = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.BunifuCustomLabel6 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.Panel1.SuspendLayout()
         CType(Me.DGMember, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -98,15 +100,17 @@ Partial Class Info_Member
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.cbStatus)
-        Me.GroupBox1.Controls.Add(Me.txtKode)
-        Me.GroupBox1.Controls.Add(Me.cbJenis)
+        Me.GroupBox1.Controls.Add(Me.txtJurusan)
+        Me.GroupBox1.Controls.Add(Me.BunifuCustomLabel6)
+        Me.GroupBox1.Controls.Add(Me.txtKontak)
+        Me.GroupBox1.Controls.Add(Me.txtPass)
+        Me.GroupBox1.Controls.Add(Me.txtNIM)
         Me.GroupBox1.Controls.Add(Me.BunifuCustomLabel1)
         Me.GroupBox1.Controls.Add(Me.BunifuCustomLabel5)
         Me.GroupBox1.Controls.Add(Me.txtNama)
         Me.GroupBox1.Controls.Add(Me.BunifuCustomLabel4)
         Me.GroupBox1.Controls.Add(Me.BunifuCustomLabel2)
-        Me.GroupBox1.Controls.Add(Me.txtStock)
+        Me.GroupBox1.Controls.Add(Me.txtEmail)
         Me.GroupBox1.Controls.Add(Me.BunifuCustomLabel3)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 259)
         Me.GroupBox1.Name = "GroupBox1"
@@ -114,77 +118,59 @@ Partial Class Info_Member
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         '
-        'cbStatus
+        'txtNIM
         '
-        Me.cbStatus.BackColor = System.Drawing.Color.Transparent
-        Me.cbStatus.BorderRadius = 3
-        Me.cbStatus.DisabledColor = System.Drawing.Color.Gray
-        Me.cbStatus.ForeColor = System.Drawing.Color.White
-        Me.cbStatus.Items = New String(-1) {}
-        Me.cbStatus.Location = New System.Drawing.Point(138, 183)
-        Me.cbStatus.Name = "cbStatus"
-        Me.cbStatus.NomalColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.cbStatus.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.cbStatus.selectedIndex = -1
-        Me.cbStatus.Size = New System.Drawing.Size(193, 35)
-        Me.cbStatus.TabIndex = 31
-        '
-        'txtKode
-        '
-        Me.txtKode.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtKode.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.txtKode.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtKode.HintForeColor = System.Drawing.Color.Empty
-        Me.txtKode.HintText = ""
-        Me.txtKode.isPassword = False
-        Me.txtKode.LineFocusedColor = System.Drawing.Color.Blue
-        Me.txtKode.LineIdleColor = System.Drawing.Color.Gray
-        Me.txtKode.LineMouseHoverColor = System.Drawing.Color.Blue
-        Me.txtKode.LineThickness = 3
-        Me.txtKode.Location = New System.Drawing.Point(138, 20)
-        Me.txtKode.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtKode.Name = "txtKode"
-        Me.txtKode.Size = New System.Drawing.Size(368, 33)
-        Me.txtKode.TabIndex = 22
-        Me.txtKode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'cbJenis
-        '
-        Me.cbJenis.BackColor = System.Drawing.Color.Transparent
-        Me.cbJenis.BorderRadius = 3
-        Me.cbJenis.DisabledColor = System.Drawing.Color.Gray
-        Me.cbJenis.ForeColor = System.Drawing.Color.White
-        Me.cbJenis.Items = New String(-1) {}
-        Me.cbJenis.Location = New System.Drawing.Point(138, 101)
-        Me.cbJenis.Name = "cbJenis"
-        Me.cbJenis.NomalColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.cbJenis.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.cbJenis.selectedIndex = -1
-        Me.cbJenis.Size = New System.Drawing.Size(193, 35)
-        Me.cbJenis.TabIndex = 30
+        Me.txtNIM.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtNIM.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtNIM.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.txtNIM.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtNIM.HintForeColor = System.Drawing.Color.Empty
+        Me.txtNIM.HintText = ""
+        Me.txtNIM.isPassword = False
+        Me.txtNIM.LineFocusedColor = System.Drawing.Color.Blue
+        Me.txtNIM.LineIdleColor = System.Drawing.Color.Gray
+        Me.txtNIM.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.txtNIM.LineThickness = 3
+        Me.txtNIM.Location = New System.Drawing.Point(138, 9)
+        Me.txtNIM.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtNIM.Name = "txtNIM"
+        Me.txtNIM.Size = New System.Drawing.Size(368, 33)
+        Me.txtNIM.TabIndex = 22
+        Me.txtNIM.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'BunifuCustomLabel1
         '
+        Me.BunifuCustomLabel1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuCustomLabel1.AutoSize = True
         Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(28, 28)
+        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(28, 17)
         Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
-        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(98, 16)
+        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(35, 16)
         Me.BunifuCustomLabel1.TabIndex = 23
-        Me.BunifuCustomLabel1.Text = "Kode Barang"
+        Me.BunifuCustomLabel1.Text = "NIM"
         '
         'BunifuCustomLabel5
         '
+        Me.BunifuCustomLabel5.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuCustomLabel5.AutoSize = True
         Me.BunifuCustomLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel5.Location = New System.Drawing.Point(28, 193)
+        Me.BunifuCustomLabel5.Location = New System.Drawing.Point(28, 182)
         Me.BunifuCustomLabel5.Name = "BunifuCustomLabel5"
-        Me.BunifuCustomLabel5.Size = New System.Drawing.Size(51, 16)
+        Me.BunifuCustomLabel5.Size = New System.Drawing.Size(55, 16)
         Me.BunifuCustomLabel5.TabIndex = 29
-        Me.BunifuCustomLabel5.Text = "Status"
+        Me.BunifuCustomLabel5.Text = "Kontak"
         '
         'txtNama
         '
+        Me.txtNama.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtNama.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtNama.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.txtNama.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -195,7 +181,7 @@ Partial Class Info_Member
         Me.txtNama.LineIdleColor = System.Drawing.Color.Gray
         Me.txtNama.LineMouseHoverColor = System.Drawing.Color.Blue
         Me.txtNama.LineThickness = 3
-        Me.txtNama.Location = New System.Drawing.Point(138, 61)
+        Me.txtNama.Location = New System.Drawing.Point(138, 50)
         Me.txtNama.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNama.Name = "txtNama"
         Me.txtNama.Size = New System.Drawing.Size(368, 33)
@@ -204,52 +190,51 @@ Partial Class Info_Member
         '
         'BunifuCustomLabel4
         '
+        Me.BunifuCustomLabel4.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuCustomLabel4.AutoSize = True
         Me.BunifuCustomLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(28, 153)
+        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(28, 142)
         Me.BunifuCustomLabel4.Name = "BunifuCustomLabel4"
         Me.BunifuCustomLabel4.Size = New System.Drawing.Size(47, 16)
         Me.BunifuCustomLabel4.TabIndex = 28
-        Me.BunifuCustomLabel4.Text = "Stock"
+        Me.BunifuCustomLabel4.Text = "Email"
         '
         'BunifuCustomLabel2
         '
+        Me.BunifuCustomLabel2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuCustomLabel2.AutoSize = True
         Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(28, 69)
+        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(28, 58)
         Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
-        Me.BunifuCustomLabel2.Size = New System.Drawing.Size(103, 16)
+        Me.BunifuCustomLabel2.Size = New System.Drawing.Size(49, 16)
         Me.BunifuCustomLabel2.TabIndex = 25
-        Me.BunifuCustomLabel2.Text = "Nama Barang"
+        Me.BunifuCustomLabel2.Text = "Nama"
         '
-        'txtStock
+        'txtEmail
         '
-        Me.txtStock.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtStock.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.txtStock.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtStock.HintForeColor = System.Drawing.Color.Empty
-        Me.txtStock.HintText = ""
-        Me.txtStock.isPassword = False
-        Me.txtStock.LineFocusedColor = System.Drawing.Color.Blue
-        Me.txtStock.LineIdleColor = System.Drawing.Color.Gray
-        Me.txtStock.LineMouseHoverColor = System.Drawing.Color.Blue
-        Me.txtStock.LineThickness = 3
-        Me.txtStock.Location = New System.Drawing.Point(138, 143)
-        Me.txtStock.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtStock.Name = "txtStock"
-        Me.txtStock.Size = New System.Drawing.Size(368, 33)
-        Me.txtStock.TabIndex = 27
-        Me.txtStock.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'BunifuCustomLabel3
-        '
-        Me.BunifuCustomLabel3.AutoSize = True
-        Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(28, 111)
-        Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
-        Me.BunifuCustomLabel3.Size = New System.Drawing.Size(99, 16)
-        Me.BunifuCustomLabel3.TabIndex = 26
-        Me.BunifuCustomLabel3.Text = "Jenis Barang"
+        Me.txtEmail.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtEmail.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.txtEmail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtEmail.HintForeColor = System.Drawing.Color.Empty
+        Me.txtEmail.HintText = ""
+        Me.txtEmail.isPassword = False
+        Me.txtEmail.LineFocusedColor = System.Drawing.Color.Blue
+        Me.txtEmail.LineIdleColor = System.Drawing.Color.Gray
+        Me.txtEmail.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.txtEmail.LineThickness = 3
+        Me.txtEmail.Location = New System.Drawing.Point(138, 132)
+        Me.txtEmail.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(368, 33)
+        Me.txtEmail.TabIndex = 27
+        Me.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'btnAdd
         '
@@ -428,6 +413,98 @@ Partial Class Info_Member
         Me.btnCancel.Textcolor = System.Drawing.Color.White
         Me.btnCancel.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
+        'BunifuCustomLabel3
+        '
+        Me.BunifuCustomLabel3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BunifuCustomLabel3.AutoSize = True
+        Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(28, 100)
+        Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
+        Me.BunifuCustomLabel3.Size = New System.Drawing.Size(76, 16)
+        Me.BunifuCustomLabel3.TabIndex = 26
+        Me.BunifuCustomLabel3.Text = "Password"
+        '
+        'txtPass
+        '
+        Me.txtPass.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtPass.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtPass.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.txtPass.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtPass.HintForeColor = System.Drawing.Color.Empty
+        Me.txtPass.HintText = ""
+        Me.txtPass.isPassword = False
+        Me.txtPass.LineFocusedColor = System.Drawing.Color.Blue
+        Me.txtPass.LineIdleColor = System.Drawing.Color.Gray
+        Me.txtPass.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.txtPass.LineThickness = 3
+        Me.txtPass.Location = New System.Drawing.Point(138, 91)
+        Me.txtPass.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtPass.Name = "txtPass"
+        Me.txtPass.Size = New System.Drawing.Size(368, 33)
+        Me.txtPass.TabIndex = 30
+        Me.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'txtKontak
+        '
+        Me.txtKontak.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtKontak.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtKontak.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.txtKontak.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtKontak.HintForeColor = System.Drawing.Color.Empty
+        Me.txtKontak.HintText = ""
+        Me.txtKontak.isPassword = False
+        Me.txtKontak.LineFocusedColor = System.Drawing.Color.Blue
+        Me.txtKontak.LineIdleColor = System.Drawing.Color.Gray
+        Me.txtKontak.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.txtKontak.LineThickness = 3
+        Me.txtKontak.Location = New System.Drawing.Point(138, 169)
+        Me.txtKontak.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtKontak.Name = "txtKontak"
+        Me.txtKontak.Size = New System.Drawing.Size(368, 33)
+        Me.txtKontak.TabIndex = 31
+        Me.txtKontak.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'txtJurusan
+        '
+        Me.txtJurusan.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtJurusan.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtJurusan.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.txtJurusan.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtJurusan.HintForeColor = System.Drawing.Color.Empty
+        Me.txtJurusan.HintText = ""
+        Me.txtJurusan.isPassword = False
+        Me.txtJurusan.LineFocusedColor = System.Drawing.Color.Blue
+        Me.txtJurusan.LineIdleColor = System.Drawing.Color.Gray
+        Me.txtJurusan.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.txtJurusan.LineThickness = 3
+        Me.txtJurusan.Location = New System.Drawing.Point(138, 207)
+        Me.txtJurusan.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtJurusan.Name = "txtJurusan"
+        Me.txtJurusan.Size = New System.Drawing.Size(368, 33)
+        Me.txtJurusan.TabIndex = 33
+        Me.txtJurusan.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'BunifuCustomLabel6
+        '
+        Me.BunifuCustomLabel6.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BunifuCustomLabel6.AutoSize = True
+        Me.BunifuCustomLabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel6.Location = New System.Drawing.Point(28, 220)
+        Me.BunifuCustomLabel6.Name = "BunifuCustomLabel6"
+        Me.BunifuCustomLabel6.Size = New System.Drawing.Size(62, 16)
+        Me.BunifuCustomLabel6.TabIndex = 32
+        Me.BunifuCustomLabel6.Text = "Jurusan"
+        '
         'Info_Member
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -461,14 +538,16 @@ Partial Class Info_Member
     Friend WithEvents btnEdit As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents btnSave As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents btnCancel As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents cbStatus As Bunifu.Framework.UI.BunifuDropdown
-    Friend WithEvents txtKode As Bunifu.Framework.UI.BunifuMaterialTextbox
-    Friend WithEvents cbJenis As Bunifu.Framework.UI.BunifuDropdown
+    Friend WithEvents txtNIM As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel5 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents txtNama As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents BunifuCustomLabel4 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel2 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents txtStock As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents txtEmail As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents txtKontak As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents txtPass As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents BunifuCustomLabel3 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents txtJurusan As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents BunifuCustomLabel6 As Bunifu.Framework.UI.BunifuCustomLabel
 End Class

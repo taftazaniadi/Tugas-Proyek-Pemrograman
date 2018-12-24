@@ -13,6 +13,7 @@
             Dashboard_Admin.Width = 705
             Transaksi_Admin.Width = 705
             Inventaris_Admin.Width = 705
+            Info_Member.Width = 705
             PanelAnimator.ShowSync(Sidemenu)
             logoAnimator.ShowSync(logo)
         Else
@@ -22,6 +23,7 @@
             Dashboard_Admin.Width = 705 + 150
             Transaksi_Admin.Width = 705 + 150
             Inventaris_Admin.Width = 705 + 150
+            Info_Member.Width = 705 + 150
             PanelAnimator.ShowSync(Sidemenu)
             logoAnimator.ShowSync(logo_small)
         End If
@@ -78,7 +80,7 @@
     End Sub
 
     Private Sub BunifuImageButton2_Click(sender As Object, e As EventArgs) Handles BunifuImageButton2.Click
-        System.Diagnostics.Process.Start("http://new-learn.000webhostapp.com/")
+        System.Diagnostics.Process.Start("http://amcc-inventory.000webhostapp.com/")
     End Sub
 
 

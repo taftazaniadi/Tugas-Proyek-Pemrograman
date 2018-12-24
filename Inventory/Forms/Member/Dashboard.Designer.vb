@@ -73,6 +73,9 @@ Partial Class Dashboard
         '
         'BunifuCustomLabel5
         '
+        Me.BunifuCustomLabel5.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuCustomLabel5.AutoSize = True
         Me.BunifuCustomLabel5.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.BunifuCustomLabel5.Location = New System.Drawing.Point(82, 387)
@@ -83,6 +86,9 @@ Partial Class Dashboard
         '
         'txtJurusan
         '
+        Me.txtJurusan.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtJurusan.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtJurusan.Enabled = False
         Me.txtJurusan.Font = New System.Drawing.Font("Century Gothic", 9.75!)
@@ -103,6 +109,9 @@ Partial Class Dashboard
         '
         'BunifuCustomLabel4
         '
+        Me.BunifuCustomLabel4.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuCustomLabel4.AutoSize = True
         Me.BunifuCustomLabel4.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.BunifuCustomLabel4.Location = New System.Drawing.Point(82, 316)
@@ -113,6 +122,9 @@ Partial Class Dashboard
         '
         'BunifuCustomLabel3
         '
+        Me.BunifuCustomLabel3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuCustomLabel3.AutoSize = True
         Me.BunifuCustomLabel3.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.BunifuCustomLabel3.Location = New System.Drawing.Point(82, 246)
@@ -123,6 +135,9 @@ Partial Class Dashboard
         '
         'BunifuCustomLabel2
         '
+        Me.BunifuCustomLabel2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuCustomLabel2.AutoSize = True
         Me.BunifuCustomLabel2.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.BunifuCustomLabel2.Location = New System.Drawing.Point(82, 169)
@@ -133,6 +148,9 @@ Partial Class Dashboard
         '
         'BunifuCustomLabel1
         '
+        Me.BunifuCustomLabel1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuCustomLabel1.AutoSize = True
         Me.BunifuCustomLabel1.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.BunifuCustomLabel1.Location = New System.Drawing.Point(82, 96)
@@ -143,6 +161,9 @@ Partial Class Dashboard
         '
         'txtEmail
         '
+        Me.txtEmail.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtEmail.Enabled = False
         Me.txtEmail.Font = New System.Drawing.Font("Century Gothic", 9.75!)
@@ -163,6 +184,9 @@ Partial Class Dashboard
         '
         'txtNIM
         '
+        Me.txtNIM.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtNIM.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtNIM.Enabled = False
         Me.txtNIM.Font = New System.Drawing.Font("Century Gothic", 9.75!)
@@ -183,6 +207,9 @@ Partial Class Dashboard
         '
         'txtContact
         '
+        Me.txtContact.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtContact.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtContact.Enabled = False
         Me.txtContact.Font = New System.Drawing.Font("Century Gothic", 9.75!)
@@ -203,6 +230,9 @@ Partial Class Dashboard
         '
         'txtFull
         '
+        Me.txtFull.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtFull.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtFull.Enabled = False
         Me.txtFull.Font = New System.Drawing.Font("Century Gothic", 9.75!)

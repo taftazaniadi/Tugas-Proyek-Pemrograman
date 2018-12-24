@@ -36,21 +36,21 @@ Partial Class Member
         Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.logo_small = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.BunifuImageButton3 = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.BunifuImageButton2 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.btnExit = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         Me.logoAnimator = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.PanelAnimator = New BunifuAnimatorNS.BunifuTransition(Me.components)
-        Me.BunifuImageButton3 = New Bunifu.Framework.UI.BunifuImageButton()
-        Me.BunifuImageButton2 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.Sidemenu.SuspendLayout()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.logo_small, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
-        CType(Me.btnExit, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnExit, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -189,9 +189,9 @@ Partial Class Member
         Me.logoAnimator.SetDecoration(Me.logo, BunifuAnimatorNS.DecorationType.None)
         Me.PanelAnimator.SetDecoration(Me.logo, BunifuAnimatorNS.DecorationType.None)
         Me.logo.Image = CType(resources.GetObject("logo.Image"), System.Drawing.Image)
-        Me.logo.Location = New System.Drawing.Point(12, 54)
+        Me.logo.Location = New System.Drawing.Point(23, 48)
         Me.logo.Name = "logo"
-        Me.logo.Size = New System.Drawing.Size(173, 50)
+        Me.logo.Size = New System.Drawing.Size(155, 64)
         Me.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.logo.TabIndex = 4
         Me.logo.TabStop = False
@@ -250,6 +250,38 @@ Partial Class Member
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(709, 40)
         Me.Panel2.TabIndex = 1
+        '
+        'BunifuImageButton3
+        '
+        Me.BunifuImageButton3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BunifuImageButton3.BackColor = System.Drawing.Color.Transparent
+        Me.PanelAnimator.SetDecoration(Me.BunifuImageButton3, BunifuAnimatorNS.DecorationType.None)
+        Me.logoAnimator.SetDecoration(Me.BunifuImageButton3, BunifuAnimatorNS.DecorationType.None)
+        Me.BunifuImageButton3.Image = CType(resources.GetObject("BunifuImageButton3.Image"), System.Drawing.Image)
+        Me.BunifuImageButton3.ImageActive = Nothing
+        Me.BunifuImageButton3.Location = New System.Drawing.Point(623, 10)
+        Me.BunifuImageButton3.Name = "BunifuImageButton3"
+        Me.BunifuImageButton3.Size = New System.Drawing.Size(22, 22)
+        Me.BunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton3.TabIndex = 12
+        Me.BunifuImageButton3.TabStop = False
+        Me.BunifuImageButton3.Zoom = 10
+        '
+        'BunifuImageButton2
+        '
+        Me.BunifuImageButton2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BunifuImageButton2.BackColor = System.Drawing.Color.Transparent
+        Me.PanelAnimator.SetDecoration(Me.BunifuImageButton2, BunifuAnimatorNS.DecorationType.None)
+        Me.logoAnimator.SetDecoration(Me.BunifuImageButton2, BunifuAnimatorNS.DecorationType.None)
+        Me.BunifuImageButton2.Image = CType(resources.GetObject("BunifuImageButton2.Image"), System.Drawing.Image)
+        Me.BunifuImageButton2.ImageActive = Nothing
+        Me.BunifuImageButton2.Location = New System.Drawing.Point(649, 9)
+        Me.BunifuImageButton2.Name = "BunifuImageButton2"
+        Me.BunifuImageButton2.Size = New System.Drawing.Size(22, 22)
+        Me.BunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton2.TabIndex = 11
+        Me.BunifuImageButton2.TabStop = False
+        Me.BunifuImageButton2.Zoom = 10
         '
         'BunifuCustomLabel2
         '
@@ -329,38 +361,6 @@ Partial Class Member
         Animation1.TransparencyCoeff = 0!
         Me.PanelAnimator.DefaultAnimation = Animation1
         '
-        'BunifuImageButton3
-        '
-        Me.BunifuImageButton3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BunifuImageButton3.BackColor = System.Drawing.Color.Transparent
-        Me.PanelAnimator.SetDecoration(Me.BunifuImageButton3, BunifuAnimatorNS.DecorationType.None)
-        Me.logoAnimator.SetDecoration(Me.BunifuImageButton3, BunifuAnimatorNS.DecorationType.None)
-        Me.BunifuImageButton3.Image = CType(resources.GetObject("BunifuImageButton3.Image"), System.Drawing.Image)
-        Me.BunifuImageButton3.ImageActive = Nothing
-        Me.BunifuImageButton3.Location = New System.Drawing.Point(623, 10)
-        Me.BunifuImageButton3.Name = "BunifuImageButton3"
-        Me.BunifuImageButton3.Size = New System.Drawing.Size(22, 22)
-        Me.BunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuImageButton3.TabIndex = 12
-        Me.BunifuImageButton3.TabStop = False
-        Me.BunifuImageButton3.Zoom = 10
-        '
-        'BunifuImageButton2
-        '
-        Me.BunifuImageButton2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BunifuImageButton2.BackColor = System.Drawing.Color.Transparent
-        Me.PanelAnimator.SetDecoration(Me.BunifuImageButton2, BunifuAnimatorNS.DecorationType.None)
-        Me.logoAnimator.SetDecoration(Me.BunifuImageButton2, BunifuAnimatorNS.DecorationType.None)
-        Me.BunifuImageButton2.Image = CType(resources.GetObject("BunifuImageButton2.Image"), System.Drawing.Image)
-        Me.BunifuImageButton2.ImageActive = Nothing
-        Me.BunifuImageButton2.Location = New System.Drawing.Point(649, 9)
-        Me.BunifuImageButton2.Name = "BunifuImageButton2"
-        Me.BunifuImageButton2.Size = New System.Drawing.Size(22, 22)
-        Me.BunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuImageButton2.TabIndex = 11
-        Me.BunifuImageButton2.TabStop = False
-        Me.BunifuImageButton2.Zoom = 10
-        '
         'Member
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -383,9 +383,9 @@ Partial Class Member
         CType(Me.logo_small, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        CType(Me.btnExit, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnExit, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

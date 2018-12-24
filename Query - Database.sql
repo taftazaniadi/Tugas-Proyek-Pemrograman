@@ -15,7 +15,7 @@ create table admin
 create table member
 (
 	NIM varchar(10) not null primary key,
-	nama varchar(100) not null,
+	nama_member varchar(100) not null,
 	password varchar(20) not null,
 	email varchar(100) not null,
 	contact varchar(13) not null,
@@ -39,28 +39,28 @@ insert into barang values('B0001', 'Meja', 'J0001', 5, 1)
 
 select * from status_transaksi
 
-create table Jenis_Barang
+create table jenis_barang
 (
 	id_jenis varchar(5) not null primary key,
-	nama varchar(50) not null,
+	nama_jenis varchar(50) not null,
 )
 
 create table status_barang
 (
 	id_status int not null primary key,
-	nama varchar(15) not null,
+	nama_status varchar(15) not null,
 )
 
 create table status_transaksi
 (
 	id_status_transaksi int not null primary key,
-	nama varchar(15) not null,
+	nama_transaksi varchar(15) not null,
 )
 
 create table barang
 (
 	id_barang varchar(5) not null primary key,
-	nama varchar(50) not null,
+	nama_barang varchar(50) not null,
 	id_jenis varchar(5) not null foreign key references Jenis_Barang(id_jenis),
 	stock int not null,
 	id_status int not null foreign key references status_barang(id_status)
@@ -78,3 +78,5 @@ create table Transaksi
 )
 
 SELECT b.id_barang, b.nama, j.nama, b.stock, s.nama FROM barang AS b JOIN jenis_barang AS j ON b.id_jenis = j.id_jenis JOIN status_barang AS s ON b.id_status = s.id_status
+
+INSERT INTO Transaksi VALUES('T0001', '16.12.8983', 'B0001', '2018-11-01', '2018-11-02', 1, 1)

@@ -7,10 +7,10 @@
     End Sub
 
     Private Sub RefreshData_Admin()
-        txtUser.Text = EntitasAdmin.usernameAdmin
-        txtFull.Text = EntitasAdmin.fullnameAdmin
-        txtContact.Text = EntitasAdmin.contactAdmin
-        txtEmail.Text = EntitasAdmin.emailAdmin
+        txtEmail.Text = EntitasAdmin.usernameAdmin
+        txtContact.Text = EntitasAdmin.fullnameAdmin
+        txtFull.Text = EntitasAdmin.contactAdmin
+        txtUser.Text = EntitasAdmin.emailAdmin
     End Sub
 
     Private Sub BunifuCards1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
@@ -27,10 +27,10 @@
         btnSave.Enabled = True
         btnCancel.Visible = True
         btnCancel.Enabled = True
-        txtUser.Enabled = True
-        txtFull.Enabled = True
-        txtContact.Enabled = True
         txtEmail.Enabled = True
+        txtContact.Enabled = True
+        txtFull.Enabled = True
+        txtUser.Enabled = True
     End Sub
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
@@ -40,16 +40,16 @@
         btnSave.Enabled = False
         btnCancel.Enabled = False
         btnCancel.Visible = False
-        txtUser.Enabled = False
-        txtFull.Enabled = False
-        txtContact.Enabled = False
         txtEmail.Enabled = False
+        txtContact.Enabled = False
+        txtFull.Enabled = False
+        txtUser.Enabled = False
 
         With EntitasAdmin
-            .usernameAdmin = txtUser.Text
-            .fullnameAdmin = txtFull.Text
-            .emailAdmin = txtEmail.Text
-            .contactAdmin = txtContact.Text
+            .usernameAdmin = txtEmail.Text
+            .fullnameAdmin = txtContact.Text
+            .emailAdmin = txtUser.Text
+            .contactAdmin = txtFull.Text
         End With
 
         KontrolAdmin.updateData(EntitasAdmin)
@@ -66,10 +66,10 @@
         btnSave.Enabled = False
         btnCancel.Enabled = False
         btnCancel.Visible = False
-        txtUser.Enabled = False
-        txtFull.Enabled = False
-        txtContact.Enabled = False
         txtEmail.Enabled = False
+        txtContact.Enabled = False
+        txtFull.Enabled = False
+        txtUser.Enabled = False
     End Sub
 
 End Class

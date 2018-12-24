@@ -60,6 +60,10 @@
     End Sub
 
     Private Sub BunifuImageButton2_Click(sender As Object, e As EventArgs)
-        System.Diagnostics.Process.Start("http://new-learn.000webhostapp.com/")
+        System.Diagnostics.Process.Start("http://amcc-inventory.000webhostapp.com/")
+    End Sub
+
+    Private Sub BunifuImageButton2_Click_1(sender As Object, e As EventArgs) Handles BunifuImageButton2.Click
+
     End Sub
 End Class

@@ -7,13 +7,13 @@
     Private Sub BunifuCards1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
         If Me.Width = 855 Then
             Panel1.Width = 540 + 150
+            DGBarang.Width = 534 + 150
+            GroupBox1.Width = 534 + 150
         Else
             Panel1.Width = 540
+            DGBarang.Width = 534
+            GroupBox1.Width = 534
         End If
-    End Sub
-
-    Private Sub BunifuCustomDataGrid1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGBarang.CellContentClick
-
     End Sub
 
     Private Sub RefreshGrid()
@@ -46,5 +46,29 @@
                 cbStatus.Text = .Cells(4).Value.ToString
             End With
         End If
+    End Sub
+
+    Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
+        btnAdd.Enabled = False
+        btnDelete.Enabled = False
+        btnEdit.Enabled = False
+        btnSave.Enabled = True
+        btnCancel.Enabled = True
+    End Sub
+
+    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        btnAdd.Enabled = False
+        btnDelete.Enabled = False
+        btnEdit.Enabled = False
+        btnSave.Enabled = True
+        btnCancel.Enabled = True
+    End Sub
+
+    Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
+        btnAdd.Enabled = True
+        btnDelete.Enabled = True
+        btnEdit.Enabled = True
+        btnSave.Enabled = False
+        btnCancel.Enabled = False
     End Sub
 End Class
