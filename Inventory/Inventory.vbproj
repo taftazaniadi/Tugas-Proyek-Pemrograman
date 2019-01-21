@@ -131,6 +131,12 @@
     <Compile Include="Forms\Member\Dashboard.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Member\Input.Designer.vb">
+      <DependentUpon>Input.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Member\Input.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Member\Member.Designer.vb">
       <DependentUpon>Member.vb</DependentUpon>
     </Compile>
@@ -182,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Member\Dashboard.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Member\Input.resx">
+      <DependentUpon>Input.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Member\Member.resx">
       <DependentUpon>Member.vb</DependentUpon>

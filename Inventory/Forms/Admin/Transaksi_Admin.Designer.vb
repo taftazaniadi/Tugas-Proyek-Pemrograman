@@ -28,13 +28,19 @@ Partial Class Transaksi_Admin
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Transaksi_Admin))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New Bunifu.Framework.UI.BunifuCards()
-        Me.txtSearch = New Bunifu.Framework.UI.BunifuTextbox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.DGTransaksi = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.btnEdit = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.btnSave = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnCancel = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnDelete = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.btnSave = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.btnPrint = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.txtID_Transaksi = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.cbStatus = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         CType(Me.DGTransaksi, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -49,7 +55,7 @@ Partial Class Transaksi_Admin
         Me.Panel1.BorderRadius = 5
         Me.Panel1.BottomSahddow = True
         Me.Panel1.color = System.Drawing.Color.Tomato
-        Me.Panel1.Controls.Add(Me.txtSearch)
+        Me.Panel1.Controls.Add(Me.GroupBox1)
         Me.Panel1.Controls.Add(Me.DGTransaksi)
         Me.Panel1.LeftSahddow = False
         resources.ApplyResources(Me.Panel1, "Panel1")
@@ -57,19 +63,21 @@ Partial Class Transaksi_Admin
         Me.Panel1.RightSahddow = True
         Me.Panel1.ShadowDepth = 20
         '
-        'txtSearch
+        'GroupBox1
         '
-        Me.txtSearch.BackColor = System.Drawing.Color.Snow
-        resources.ApplyResources(Me.txtSearch, "txtSearch")
-        Me.txtSearch.ForeColor = System.Drawing.Color.SteelBlue
-        Me.txtSearch.Icon = CType(resources.GetObject("txtSearch.Icon"), System.Drawing.Image)
-        Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.text = ""
+        Me.GroupBox1.Controls.Add(Me.cbStatus)
+        Me.GroupBox1.Controls.Add(Me.BunifuCustomLabel2)
+        Me.GroupBox1.Controls.Add(Me.txtID_Transaksi)
+        Me.GroupBox1.Controls.Add(Me.BunifuCustomLabel1)
+        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.TabStop = False
         '
         'DGTransaksi
         '
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.DGTransaksi.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        resources.ApplyResources(Me.DGTransaksi, "DGTransaksi")
         Me.DGTransaksi.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.DGTransaksi.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DGTransaksi.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
@@ -86,7 +94,6 @@ Partial Class Transaksi_Admin
         Me.DGTransaksi.EnableHeadersVisualStyles = False
         Me.DGTransaksi.HeaderBgColor = System.Drawing.Color.SeaGreen
         Me.DGTransaksi.HeaderForeColor = System.Drawing.Color.White
-        resources.ApplyResources(Me.DGTransaksi, "DGTransaksi")
         Me.DGTransaksi.Name = "DGTransaksi"
         Me.DGTransaksi.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         '
@@ -119,36 +126,6 @@ Partial Class Transaksi_Admin
         Me.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnEdit.Textcolor = System.Drawing.Color.White
         Me.btnEdit.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'btnSave
-        '
-        Me.btnSave.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        resources.ApplyResources(Me.btnSave, "btnSave")
-        Me.btnSave.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.btnSave.BorderRadius = 0
-        Me.btnSave.ButtonText = "Save"
-        Me.btnSave.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnSave.DisabledColor = System.Drawing.Color.Gray
-        Me.btnSave.Iconcolor = System.Drawing.Color.Transparent
-        Me.btnSave.Iconimage = CType(resources.GetObject("btnSave.Iconimage"), System.Drawing.Image)
-        Me.btnSave.Iconimage_right = Nothing
-        Me.btnSave.Iconimage_right_Selected = Nothing
-        Me.btnSave.Iconimage_Selected = Nothing
-        Me.btnSave.IconMarginLeft = 0
-        Me.btnSave.IconMarginRight = 0
-        Me.btnSave.IconRightVisible = True
-        Me.btnSave.IconRightZoom = 0R
-        Me.btnSave.IconVisible = True
-        Me.btnSave.IconZoom = 90.0R
-        Me.btnSave.IsTab = False
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.btnSave.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.btnSave.OnHoverTextColor = System.Drawing.Color.White
-        Me.btnSave.selected = False
-        Me.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnSave.Textcolor = System.Drawing.Color.White
-        Me.btnSave.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'btnCancel
         '
@@ -210,19 +187,114 @@ Partial Class Transaksi_Admin
         Me.btnDelete.Textcolor = System.Drawing.Color.White
         Me.btnDelete.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
+        'btnSave
+        '
+        Me.btnSave.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        resources.ApplyResources(Me.btnSave, "btnSave")
+        Me.btnSave.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnSave.BorderRadius = 0
+        Me.btnSave.ButtonText = "Save"
+        Me.btnSave.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSave.DisabledColor = System.Drawing.Color.Gray
+        Me.btnSave.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnSave.Iconimage = CType(resources.GetObject("btnSave.Iconimage"), System.Drawing.Image)
+        Me.btnSave.Iconimage_right = Nothing
+        Me.btnSave.Iconimage_right_Selected = Nothing
+        Me.btnSave.Iconimage_Selected = Nothing
+        Me.btnSave.IconMarginLeft = 0
+        Me.btnSave.IconMarginRight = 0
+        Me.btnSave.IconRightVisible = True
+        Me.btnSave.IconRightZoom = 0R
+        Me.btnSave.IconVisible = True
+        Me.btnSave.IconZoom = 90.0R
+        Me.btnSave.IsTab = False
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnSave.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnSave.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnSave.selected = False
+        Me.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnSave.Textcolor = System.Drawing.Color.White
+        Me.btnSave.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'btnPrint
+        '
+        Me.btnPrint.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        resources.ApplyResources(Me.btnPrint, "btnPrint")
+        Me.btnPrint.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnPrint.BorderRadius = 0
+        Me.btnPrint.ButtonText = "Print"
+        Me.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnPrint.DisabledColor = System.Drawing.Color.Gray
+        Me.btnPrint.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnPrint.Iconimage = CType(resources.GetObject("btnPrint.Iconimage"), System.Drawing.Image)
+        Me.btnPrint.Iconimage_right = Nothing
+        Me.btnPrint.Iconimage_right_Selected = Nothing
+        Me.btnPrint.Iconimage_Selected = Nothing
+        Me.btnPrint.IconMarginLeft = 0
+        Me.btnPrint.IconMarginRight = 0
+        Me.btnPrint.IconRightVisible = True
+        Me.btnPrint.IconRightZoom = 0R
+        Me.btnPrint.IconVisible = True
+        Me.btnPrint.IconZoom = 90.0R
+        Me.btnPrint.IsTab = False
+        Me.btnPrint.Name = "btnPrint"
+        Me.btnPrint.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnPrint.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnPrint.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnPrint.selected = False
+        Me.btnPrint.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnPrint.Textcolor = System.Drawing.Color.White
+        Me.btnPrint.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'BunifuCustomLabel1
+        '
+        resources.ApplyResources(Me.BunifuCustomLabel1, "BunifuCustomLabel1")
+        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
+        '
+        'txtID_Transaksi
+        '
+        resources.ApplyResources(Me.txtID_Transaksi, "txtID_Transaksi")
+        Me.txtID_Transaksi.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtID_Transaksi.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtID_Transaksi.HintForeColor = System.Drawing.Color.Empty
+        Me.txtID_Transaksi.HintText = ""
+        Me.txtID_Transaksi.isPassword = False
+        Me.txtID_Transaksi.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.txtID_Transaksi.LineIdleColor = System.Drawing.Color.Gray
+        Me.txtID_Transaksi.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.txtID_Transaksi.LineThickness = 3
+        Me.txtID_Transaksi.Name = "txtID_Transaksi"
+        Me.txtID_Transaksi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'BunifuCustomLabel2
+        '
+        resources.ApplyResources(Me.BunifuCustomLabel2, "BunifuCustomLabel2")
+        Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
+        '
+        'cbStatus
+        '
+        resources.ApplyResources(Me.cbStatus, "cbStatus")
+        Me.cbStatus.FormattingEnabled = True
+        Me.cbStatus.Items.AddRange(New Object() {resources.GetString("cbStatus.Items"), resources.GetString("cbStatus.Items1"), resources.GetString("cbStatus.Items2"), resources.GetString("cbStatus.Items3")})
+        Me.cbStatus.Name = "cbStatus"
+        '
         'Transaksi_Admin
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.Controls.Add(Me.btnPrint)
+        Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.btnCancel)
-        Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.btnEdit)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Transaksi_Admin"
         Me.Panel1.ResumeLayout(False)
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         CType(Me.DGTransaksi, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -233,7 +305,12 @@ Partial Class Transaksi_Admin
     Friend WithEvents btnEdit As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents btnDelete As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents btnCancel As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents btnSave As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents DGTransaksi As Bunifu.Framework.UI.BunifuCustomDataGrid
-    Friend WithEvents txtSearch As Bunifu.Framework.UI.BunifuTextbox
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents btnSave As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents btnPrint As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuCustomLabel2 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents txtID_Transaksi As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents cbStatus As ComboBox
 End Class

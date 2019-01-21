@@ -23,8 +23,8 @@ Partial Class Inventaris_Admin
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Inventaris_Admin))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New Bunifu.Framework.UI.BunifuCards()
@@ -35,8 +35,9 @@ Partial Class Inventaris_Admin
         Me.btnSave = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnAdd = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.cbStatus = New Bunifu.Framework.UI.BunifuDropdown()
-        Me.cbJenis = New Bunifu.Framework.UI.BunifuDropdown()
+        Me.BunifuCustomLabel8 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel7 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel6 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel5 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.txtStock = New Bunifu.Framework.UI.BunifuMaterialTextbox()
@@ -45,6 +46,12 @@ Partial Class Inventaris_Admin
         Me.txtNama = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.txtKode = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.btnPrint = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.cbJenis = New System.Windows.Forms.ComboBox()
+        Me.cbSatuan = New System.Windows.Forms.ComboBox()
+        Me.cbKet = New System.Windows.Forms.ComboBox()
+        Me.cbTempat = New System.Windows.Forms.ComboBox()
+        Me.cbStatus = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         CType(Me.DGBarang, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -72,19 +79,19 @@ Partial Class Inventaris_Admin
         '
         'DGBarang
         '
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.DGBarang.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.DGBarang.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DGBarang.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.DGBarang.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DGBarang.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGBarang.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGBarang.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DGBarang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGBarang.DoubleBuffered = True
         Me.DGBarang.EnableHeadersVisualStyles = False
@@ -276,7 +283,13 @@ Partial Class Inventaris_Admin
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.cbStatus)
+        Me.GroupBox1.Controls.Add(Me.cbTempat)
+        Me.GroupBox1.Controls.Add(Me.cbKet)
+        Me.GroupBox1.Controls.Add(Me.cbSatuan)
         Me.GroupBox1.Controls.Add(Me.cbJenis)
+        Me.GroupBox1.Controls.Add(Me.BunifuCustomLabel8)
+        Me.GroupBox1.Controls.Add(Me.BunifuCustomLabel7)
+        Me.GroupBox1.Controls.Add(Me.BunifuCustomLabel6)
         Me.GroupBox1.Controls.Add(Me.BunifuCustomLabel5)
         Me.GroupBox1.Controls.Add(Me.BunifuCustomLabel4)
         Me.GroupBox1.Controls.Add(Me.txtStock)
@@ -291,41 +304,44 @@ Partial Class Inventaris_Admin
         Me.GroupBox1.TabIndex = 17
         Me.GroupBox1.TabStop = False
         '
-        'cbStatus
+        'BunifuCustomLabel8
         '
-        Me.cbStatus.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.BunifuCustomLabel8.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.cbStatus.BackColor = System.Drawing.Color.Transparent
-        Me.cbStatus.BorderRadius = 3
-        Me.cbStatus.DisabledColor = System.Drawing.Color.Gray
-        Me.cbStatus.ForeColor = System.Drawing.Color.White
-        Me.cbStatus.Items = New String(-1) {}
-        Me.cbStatus.Location = New System.Drawing.Point(138, 189)
-        Me.cbStatus.Name = "cbStatus"
-        Me.cbStatus.NomalColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.cbStatus.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.cbStatus.selectedIndex = -1
-        Me.cbStatus.Size = New System.Drawing.Size(193, 35)
-        Me.cbStatus.TabIndex = 21
+        Me.BunifuCustomLabel8.AutoSize = True
+        Me.BunifuCustomLabel8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel8.Location = New System.Drawing.Point(31, 196)
+        Me.BunifuCustomLabel8.Name = "BunifuCustomLabel8"
+        Me.BunifuCustomLabel8.Size = New System.Drawing.Size(61, 16)
+        Me.BunifuCustomLabel8.TabIndex = 26
+        Me.BunifuCustomLabel8.Text = "Tempat"
         '
-        'cbJenis
+        'BunifuCustomLabel7
         '
-        Me.cbJenis.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.BunifuCustomLabel7.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.cbJenis.BackColor = System.Drawing.Color.Transparent
-        Me.cbJenis.BorderRadius = 3
-        Me.cbJenis.DisabledColor = System.Drawing.Color.Gray
-        Me.cbJenis.ForeColor = System.Drawing.Color.White
-        Me.cbJenis.Items = New String(-1) {}
-        Me.cbJenis.Location = New System.Drawing.Point(138, 107)
-        Me.cbJenis.Name = "cbJenis"
-        Me.cbJenis.NomalColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.cbJenis.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.cbJenis.selectedIndex = -1
-        Me.cbJenis.Size = New System.Drawing.Size(193, 35)
-        Me.cbJenis.TabIndex = 20
+        Me.BunifuCustomLabel7.AutoSize = True
+        Me.BunifuCustomLabel7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel7.Location = New System.Drawing.Point(32, 170)
+        Me.BunifuCustomLabel7.Name = "BunifuCustomLabel7"
+        Me.BunifuCustomLabel7.Size = New System.Drawing.Size(87, 16)
+        Me.BunifuCustomLabel7.TabIndex = 24
+        Me.BunifuCustomLabel7.Text = "Keterangan"
+        '
+        'BunifuCustomLabel6
+        '
+        Me.BunifuCustomLabel6.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BunifuCustomLabel6.AutoSize = True
+        Me.BunifuCustomLabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel6.Location = New System.Drawing.Point(31, 143)
+        Me.BunifuCustomLabel6.Name = "BunifuCustomLabel6"
+        Me.BunifuCustomLabel6.Size = New System.Drawing.Size(56, 16)
+        Me.BunifuCustomLabel6.TabIndex = 22
+        Me.BunifuCustomLabel6.Text = "Satuan"
         '
         'BunifuCustomLabel5
         '
@@ -334,7 +350,7 @@ Partial Class Inventaris_Admin
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuCustomLabel5.AutoSize = True
         Me.BunifuCustomLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel5.Location = New System.Drawing.Point(28, 199)
+        Me.BunifuCustomLabel5.Location = New System.Drawing.Point(34, 224)
         Me.BunifuCustomLabel5.Name = "BunifuCustomLabel5"
         Me.BunifuCustomLabel5.Size = New System.Drawing.Size(51, 16)
         Me.BunifuCustomLabel5.TabIndex = 19
@@ -347,7 +363,7 @@ Partial Class Inventaris_Admin
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuCustomLabel4.AutoSize = True
         Me.BunifuCustomLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(28, 159)
+        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(30, 116)
         Me.BunifuCustomLabel4.Name = "BunifuCustomLabel4"
         Me.BunifuCustomLabel4.Size = New System.Drawing.Size(47, 16)
         Me.BunifuCustomLabel4.TabIndex = 18
@@ -368,7 +384,7 @@ Partial Class Inventaris_Admin
         Me.txtStock.LineIdleColor = System.Drawing.Color.Gray
         Me.txtStock.LineMouseHoverColor = System.Drawing.Color.Blue
         Me.txtStock.LineThickness = 3
-        Me.txtStock.Location = New System.Drawing.Point(138, 149)
+        Me.txtStock.Location = New System.Drawing.Point(138, 99)
         Me.txtStock.Margin = New System.Windows.Forms.Padding(4)
         Me.txtStock.Name = "txtStock"
         Me.txtStock.Size = New System.Drawing.Size(368, 33)
@@ -382,7 +398,7 @@ Partial Class Inventaris_Admin
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuCustomLabel3.AutoSize = True
         Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(28, 117)
+        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(28, 86)
         Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
         Me.BunifuCustomLabel3.Size = New System.Drawing.Size(99, 16)
         Me.BunifuCustomLabel3.TabIndex = 16
@@ -395,7 +411,7 @@ Partial Class Inventaris_Admin
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuCustomLabel2.AutoSize = True
         Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(28, 75)
+        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(28, 56)
         Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
         Me.BunifuCustomLabel2.Size = New System.Drawing.Size(103, 16)
         Me.BunifuCustomLabel2.TabIndex = 15
@@ -416,7 +432,7 @@ Partial Class Inventaris_Admin
         Me.txtNama.LineIdleColor = System.Drawing.Color.Gray
         Me.txtNama.LineMouseHoverColor = System.Drawing.Color.Blue
         Me.txtNama.LineThickness = 3
-        Me.txtNama.Location = New System.Drawing.Point(138, 67)
+        Me.txtNama.Location = New System.Drawing.Point(138, 41)
         Me.txtNama.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNama.Name = "txtNama"
         Me.txtNama.Size = New System.Drawing.Size(368, 33)
@@ -430,7 +446,7 @@ Partial Class Inventaris_Admin
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuCustomLabel1.AutoSize = True
         Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(28, 34)
+        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(28, 24)
         Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
         Me.BunifuCustomLabel1.Size = New System.Drawing.Size(98, 16)
         Me.BunifuCustomLabel1.TabIndex = 13
@@ -447,16 +463,111 @@ Partial Class Inventaris_Admin
         Me.txtKode.HintForeColor = System.Drawing.Color.Empty
         Me.txtKode.HintText = ""
         Me.txtKode.isPassword = False
-        Me.txtKode.LineFocusedColor = System.Drawing.Color.Blue
+        Me.txtKode.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.txtKode.LineIdleColor = System.Drawing.Color.Gray
-        Me.txtKode.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.txtKode.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.txtKode.LineThickness = 3
-        Me.txtKode.Location = New System.Drawing.Point(138, 26)
+        Me.txtKode.Location = New System.Drawing.Point(138, 8)
         Me.txtKode.Margin = New System.Windows.Forms.Padding(4)
         Me.txtKode.Name = "txtKode"
         Me.txtKode.Size = New System.Drawing.Size(368, 33)
         Me.txtKode.TabIndex = 12
         Me.txtKode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'btnPrint
+        '
+        Me.btnPrint.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnPrint.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnPrint.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnPrint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnPrint.BorderRadius = 0
+        Me.btnPrint.ButtonText = "Print"
+        Me.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnPrint.DisabledColor = System.Drawing.Color.Gray
+        Me.btnPrint.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnPrint.Iconimage = CType(resources.GetObject("btnPrint.Iconimage"), System.Drawing.Image)
+        Me.btnPrint.Iconimage_right = Nothing
+        Me.btnPrint.Iconimage_right_Selected = Nothing
+        Me.btnPrint.Iconimage_Selected = Nothing
+        Me.btnPrint.IconMarginLeft = 0
+        Me.btnPrint.IconMarginRight = 0
+        Me.btnPrint.IconRightVisible = True
+        Me.btnPrint.IconRightZoom = 0R
+        Me.btnPrint.IconVisible = True
+        Me.btnPrint.IconZoom = 90.0R
+        Me.btnPrint.IsTab = False
+        Me.btnPrint.Location = New System.Drawing.Point(558, 458)
+        Me.btnPrint.Name = "btnPrint"
+        Me.btnPrint.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnPrint.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnPrint.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnPrint.selected = False
+        Me.btnPrint.Size = New System.Drawing.Size(135, 48)
+        Me.btnPrint.TabIndex = 18
+        Me.btnPrint.Text = "Print"
+        Me.btnPrint.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnPrint.Textcolor = System.Drawing.Color.White
+        Me.btnPrint.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'cbJenis
+        '
+        Me.cbJenis.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cbJenis.FormattingEnabled = True
+        Me.cbJenis.Items.AddRange(New Object() {"-- Pilih Jenis Barang --", "Kayu", "Besi", "Aluminium", "Plastik", "Lain-lain"})
+        Me.cbJenis.Location = New System.Drawing.Point(138, 85)
+        Me.cbJenis.Name = "cbJenis"
+        Me.cbJenis.Size = New System.Drawing.Size(373, 21)
+        Me.cbJenis.TabIndex = 27
+        '
+        'cbSatuan
+        '
+        Me.cbSatuan.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cbSatuan.FormattingEnabled = True
+        Me.cbSatuan.Items.AddRange(New Object() {"-- Pilih Satuan Barang --", "Pcs", "Kg", "Packs"})
+        Me.cbSatuan.Location = New System.Drawing.Point(138, 142)
+        Me.cbSatuan.Name = "cbSatuan"
+        Me.cbSatuan.Size = New System.Drawing.Size(373, 21)
+        Me.cbSatuan.TabIndex = 28
+        '
+        'cbKet
+        '
+        Me.cbKet.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cbKet.FormattingEnabled = True
+        Me.cbKet.Items.AddRange(New Object() {"-- Pilih Keterangan --", "Dipinjam", "Tersedia"})
+        Me.cbKet.Location = New System.Drawing.Point(138, 169)
+        Me.cbKet.Name = "cbKet"
+        Me.cbKet.Size = New System.Drawing.Size(373, 21)
+        Me.cbKet.TabIndex = 29
+        '
+        'cbTempat
+        '
+        Me.cbTempat.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cbTempat.FormattingEnabled = True
+        Me.cbTempat.Items.AddRange(New Object() {"-- Pilih Tempat Barang --", "Sekre", "Camp", "Gudang"})
+        Me.cbTempat.Location = New System.Drawing.Point(138, 195)
+        Me.cbTempat.Name = "cbTempat"
+        Me.cbTempat.Size = New System.Drawing.Size(373, 21)
+        Me.cbTempat.TabIndex = 30
+        '
+        'cbStatus
+        '
+        Me.cbStatus.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cbStatus.FormattingEnabled = True
+        Me.cbStatus.Items.AddRange(New Object() {"-- Pilih Status Barang --", "Baik", "Rusak", "Masih bisa digunakan"})
+        Me.cbStatus.Location = New System.Drawing.Point(138, 223)
+        Me.cbStatus.Name = "cbStatus"
+        Me.cbStatus.Size = New System.Drawing.Size(373, 21)
+        Me.cbStatus.TabIndex = 31
         '
         'Inventaris_Admin
         '
@@ -464,6 +575,7 @@ Partial Class Inventaris_Admin
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(705, 518)
+        Me.Controls.Add(Me.btnPrint)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.Panel1)
@@ -491,8 +603,6 @@ Partial Class Inventaris_Admin
     Friend WithEvents btnAdd As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents DGBarang As Bunifu.Framework.UI.BunifuCustomDataGrid
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents cbStatus As Bunifu.Framework.UI.BunifuDropdown
-    Friend WithEvents cbJenis As Bunifu.Framework.UI.BunifuDropdown
     Friend WithEvents BunifuCustomLabel5 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel4 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents txtStock As Bunifu.Framework.UI.BunifuMaterialTextbox
@@ -501,4 +611,13 @@ Partial Class Inventaris_Admin
     Friend WithEvents txtNama As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents txtKode As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents BunifuCustomLabel6 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuCustomLabel8 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuCustomLabel7 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents btnPrint As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents cbStatus As ComboBox
+    Friend WithEvents cbTempat As ComboBox
+    Friend WithEvents cbKet As ComboBox
+    Friend WithEvents cbSatuan As ComboBox
+    Friend WithEvents cbJenis As ComboBox
 End Class

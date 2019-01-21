@@ -2,81 +2,128 @@ create database Inventory
 
 use Inventory
 
-create table admin
+create table personal
 (
-	id_admin varchar(5) not null primary key,
-	username varchar(20) not null,
-	password varchar(20) not null,
+	id_personal int identity(1,1) not null primary key,
+	tipe char(1) not null,
 	nama varchar(100) not null,
 	email varchar(100) not null,
-	contact varchar(13)
+	contact varchar(13),
+	jurusan varchar(30),
+	password varchar(20) not null
+)
+
+create table admin 
+(
+	id_personal int identity(1,1) not null primary key references personal(id_personal),
+	username varchar(20) not null,
 )
 
 create table member
 (
-	NIM varchar(10) not null primary key,
-	nama_member varchar(100) not null,
-	password varchar(20) not null,
-	email varchar(100) not null,
-	contact varchar(13) not null,
-	jurusan varchar(30)
-)
-
-insert into admin values('A0001', 'Melon', 'doto', 'Muhammad Taptazani Adi', 'm.taftazani123@gmail.com', '085393051298')
-
-insert into member values('16.12.8983', 'Muhammad Taptazani Adi', '36456', 'm.taftazani123@gmail.com', '085393051298', 'Sistem Informasi')
-
-insert into status_barang values(1, 'Baik')
-insert into status_barang values(2, 'Rusak')
-insert into status_barang values(3, 'Masih Bisa')
-
-insert into status_transaksi values(1, 'Dipinjam')
-insert into status_transaksi values(2, 'Dikembalikan')
-
-insert into jenis_barang values('J0001', 'Kayu')
-
-insert into barang values('B0001', 'Meja', 'J0001', 5, 1)
-
-select * from status_transaksi
-
-create table jenis_barang
-(
-	id_jenis varchar(5) not null primary key,
-	nama_jenis varchar(50) not null,
-)
-
-create table status_barang
-(
-	id_status int not null primary key,
-	nama_status varchar(15) not null,
-)
-
-create table status_transaksi
-(
-	id_status_transaksi int not null primary key,
-	nama_transaksi varchar(15) not null,
+	id_personal int identity(1,1) not null primary key references personal(id_personal),
+	NIM varchar(10) not null,
 )
 
 create table barang
 (
 	id_barang varchar(5) not null primary key,
+	id_personal int not null foreign key references personal(id_personal),
 	nama_barang varchar(50) not null,
-	id_jenis varchar(5) not null foreign key references Jenis_Barang(id_jenis),
+	jenis_barang varchar(20) not null,
 	stock int not null,
-	id_status int not null foreign key references status_barang(id_status)
+	satuan varchar(30) not null,
+	keterangan varchar(15),
+	tempat varchar(50) not null,
+	status_barang varchar(30) not null
 )
 
-create table Transaksi
+create table transaksi
 (
 	id_transaksi varchar(5) primary key not null,
-	NIM varchar(10) foreign key references member(NIM) not null,
+	id_personal int not null references personal(id_personal),
 	id_barang varchar(5) foreign key references barang(id_barang) not null,
 	tgl_pinjam date not null,
 	tgl_kembali date not null,
 	jumlah int not null,
-	id_status_transaksi int foreign key references status_transaksi(id_status_transaksi) not null,
+	deskripsi text,
+	surat text not null,
+	status_transaksi varchar(30) not null,
 )
 
-SELECT b.id_barang, b.nama, j.nama, b.stock, s.nama FROM barang AS b JOIN jenis_barang AS j ON b.id_jenis = j.id_jenis JOIN status_barang AS s ON b.id_status = s.id_status
+--Constraint Barang
+alter table barang add constraint cek_barang check(jenis_barang IN('Kayu', 'Besi', 'Aluminium', 'Plastik', 'Lain-lain'))
+alter table barang add constraint cek_status check(status_barang IN('Baik', 'Rusak', 'Masih bisa digunakan'))
+alter table barang add constraint cek_tempat check(tempat IN('Camp', 'Sekre', 'Gudang'))
+alter table barang add constraint cek_satuan check(satuan IN('Pcs', 'Kg', 'Packs'))
+alter table barang add constraint cek_ket check(keterangan IN('Dipinjam', 'Tersedia'))
 
-INSERT INTO Transaksi VALUES('T0001', '16.12.8983', 'B0001', '2018-11-01', '2018-11-02', 1, 1)
+--Constraint transaksi
+alter table transaksi add constraint cek_transaksi check(status_transaksi IN('Diterima','Ditolak', 'Menunggu'))
+
+--Procedure Insert Data
+CREATE PROC InsertPersonal(@tipe char(1), @nama VARCHAR(100), @email VARCHAR(100), @contact varchar(13), @jurusan VARCHAR(30), @password VARCHAR(20), @username varchar(20), @NIM varchar(10))
+AS
+  DECLARE @newID AS INT
+  INSERT INTO personal(tipe, nama, email, contact, jurusan, password) VALUES(@tipe, @nama, @email, @contact, @jurusan, @password)
+  SET @newID = SCOPE_IDENTITY()
+  IF (@tipe = 'A')
+	BEGIN
+		SET IDENTITY_INSERT member OFF
+		SET IDENTITY_INSERT admin ON
+		INSERT INTO admin(id_personal, username) VALUES(@newID, @username)
+	END
+  ELSE
+	BEGIN
+		SET IDENTITY_INSERT admin OFF
+		SET IDENTITY_INSERT member ON
+		INSERT INTO member(id_personal, NIM) VALUES(@newID, @NIM)
+	END
+
+exec InsertPersonal 'A', 'Muhammad Taptazani Adi', 'm.taftazani123@gmail.com', '085393051298', 'Sistem Informasi', 'doto', 'melon', NULL
+exec InsertPersonal 'M', 'Muhammad Taptazani Adi', 'm.taftazani123@gmail.com', '085393051298', 'Sistem Informasi', '36456', NULL, '16.12.8984'
+exec InsertPersonal 'M', 'Intan Disty Anggraini', 'intandistyanggraini@gmail.com', '0895604565563', 'Ilmu Komunikasi', '54360', NULL, '17.96.0165'
+
+
+--Procedure Update Data
+CREATE PROC UpdatePersonal(@tipe char(1), @nama VARCHAR(100), @email VARCHAR(100), @contact varchar(13), @jurusan VARCHAR(30), @password VARCHAR(20), @username varchar(20), @NIM varchar(10))
+AS
+  UPDATE personal SET nama=@nama, email=@email, contact=@contact, jurusan=@jurusan, password=@password WHERE tipe=(@tipe='A' | @tipe='M')
+  IF (@tipe = 'A')
+	BEGIN
+		SET IDENTITY_INSERT member OFF
+		SET IDENTITY_INSERT admin ON
+		UPDATE admin SET username=@username
+	END
+  ELSE
+	BEGIN
+		SET IDENTITY_INSERT admin OFF
+		SET IDENTITY_INSERT member ON
+		UPDATE member SET NIM=@NIM
+	END
+
+EXEC UpdatePersonal 'Test', 'm.taftazani123@gmail.com', '085393051298', 'Informatika', '36456', NULL, '16.12.8984' 
+
+drop proc UpdatePersonal
+
+
+--Insert Barang
+INSERT INTO barang VALUES('B0001', 1, 'Meja', 'Kayu', 5, 'pcs', 'Tersedia', 'Sekre', 'Baik')
+INSERT INTO barang VALUES('B0002', 1, 'Kursi', 'Kayu', 1, 'pcs', 'Tersedia', 'Sekre', 'Baik')
+
+--Insert Transaksi
+INSERT INTO transaksi VALUES('T0001', 2, 'B0001', '2019-01-10', '2019-01-11', 2, '', '', 'Menunggu')
+
+select * from transaksi
+
+delete from transaksi
+
+
+SELECT t.id_transaksi, m.NIM, t.id_barang, t.tgl_pinjam, t.tgl_kembali, t.jumlah, t.deskripsi, t.surat, t.status_transaksi FROM transaksi t JOIN member m ON t.id_personal = m.id_personal JOIN personal p ON t.id_personal = p.id_personal
+
+
+
+UPDATE barang SET id_personal = '" & data.id_PersonalAdmin & "', nama_barang = '" & data.namaBarang & "', jenis_barang ='" & data.jenisBarang & "', stock = " & data.stockBarang & ", satuan = " & data.satuanBarang & ", keterangan = " & data.keteranganBarang & ", tempat = " & data.tempatBarang & ", status_barang = 'Bagus' WHERE id_barang = 'B0002'
+
+
+SELECT nama_barang FROM barang

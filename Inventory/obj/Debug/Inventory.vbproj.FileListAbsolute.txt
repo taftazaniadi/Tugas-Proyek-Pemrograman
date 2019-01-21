@@ -39,3 +39,4 @@ E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-P
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\obj\Debug\Inventory.Info_Member.resources
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\obj\Debug\Inventory.Transaksi_Admin.resources
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\obj\Debug\Inventory.Transaksi.resources
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\obj\Debug\Inventory.Input.resources

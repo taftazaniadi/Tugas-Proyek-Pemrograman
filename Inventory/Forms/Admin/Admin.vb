@@ -42,10 +42,6 @@
         Me.CenterToScreen()
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs)
-
-    End Sub
-
     Private Sub btnDash_Click(sender As Object, e As EventArgs) Handles btnDash.Click
         Dashboard_Admin.Show()
         Dashboard_Admin.Location = New System.Drawing.Point(0, 0)
@@ -82,6 +78,5 @@
     Private Sub BunifuImageButton2_Click(sender As Object, e As EventArgs) Handles BunifuImageButton2.Click
         System.Diagnostics.Process.Start("http://amcc-inventory.000webhostapp.com/")
     End Sub
-
 
 End Class

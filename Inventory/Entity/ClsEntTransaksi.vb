@@ -1,11 +1,13 @@
 ﻿Public Class ClsEntTransaksi
     Private id_transaksi As String
-    Private NIM As String
+    Private id_personal As Integer
     Private id_barang As String
     Private tgl_pinjam As Date
     Private tgl_kembali As Date
     Private jumlah As Integer
-    Private id_status_transaksi As Integer
+    Private deskripsi As String
+    Private surat As String
+    Private status_transaksi As String
 
     Public Property id_transaksiDetail() As String
         Get
@@ -16,12 +18,12 @@
         End Set
     End Property
 
-    Public Property NIMDetail() As String
+    Public Property id_personalDetail() As Integer
         Get
-            Return NIM
+            Return id_personal
         End Get
-        Set(value As String)
-            NIM = value
+        Set(value As Integer)
+            id_personal = value
         End Set
     End Property
 
@@ -61,12 +63,30 @@
         End Set
     End Property
 
-    Public Property id_status_transaksiDetail() As Integer
+    Public Property deskripsiDetail() As String
         Get
-            Return id_status_transaksi
+            Return deskripsi
         End Get
-        Set(value As Integer)
-            id_status_transaksi = value
+        Set(value As String)
+            deskripsi = value
+        End Set
+    End Property
+
+    Public Property suratDetail() As String
+        Get
+            Return surat
+        End Get
+        Set(value As String)
+            surat = value
+        End Set
+    End Property
+
+    Public Property status_transaksiDetail() As String
+        Get
+            Return status_transaksi
+        End Get
+        Set(value As String)
+            status_transaksi = value
         End Set
     End Property
 

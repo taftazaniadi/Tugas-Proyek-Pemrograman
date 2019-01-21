@@ -1,10 +1,75 @@
 ﻿Public Class ClsEntMember
+    Private id_personal As Integer
+    Private tipe As Char
+    Private nama As String
+    Private email As String
+    Private contact As String
+    Private jurusan As String
+    Private password As String
     Private NIM As String
-    Private Nama As String
-    Private Password As String
-    Private Email As String
-    Private Contact As String
-    Private Jurusan As String
+
+    Public Property id_personalMember() As String
+        Get
+            Return id_personal
+        End Get
+        Set(value As String)
+            id_personal = value
+        End Set
+    End Property
+
+    Public Property tipeMember() As String
+        Get
+            Return tipe
+        End Get
+        Set(value As String)
+            tipe = value
+        End Set
+    End Property
+
+    Public Property namaMember() As String
+        Get
+            Return nama
+        End Get
+        Set(value As String)
+            nama = value
+        End Set
+    End Property
+
+    Public Property emailMember() As String
+        Get
+            Return email
+        End Get
+        Set(value As String)
+            email = value
+        End Set
+    End Property
+
+    Public Property contactMember() As String
+        Get
+            Return contact
+        End Get
+        Set(value As String)
+            contact = value
+        End Set
+    End Property
+
+    Public Property jurusanMember() As String
+        Get
+            Return jurusan
+        End Get
+        Set(value As String)
+            jurusan = value
+        End Set
+    End Property
+
+    Public Property passwordMember() As String
+        Get
+            Return password
+        End Get
+        Set(value As String)
+            password = value
+        End Set
+    End Property
 
     Public Property NIMMember() As String
         Get
@@ -12,51 +77,6 @@
         End Get
         Set(value As String)
             NIM = value
-        End Set
-    End Property
-
-    Public Property NamaMember() As String
-        Get
-            Return Nama
-        End Get
-        Set(value As String)
-            Nama = value
-        End Set
-    End Property
-
-    Public Property PasswordMember() As String
-        Get
-            Return Password
-        End Get
-        Set(value As String)
-            Password = value
-        End Set
-    End Property
-
-    Public Property EmailMember() As String
-        Get
-            Return Email
-        End Get
-        Set(value As String)
-            Email = value
-        End Set
-    End Property
-
-    Public Property ContactMember() As String
-        Get
-            Return Contact
-        End Get
-        Set(value As String)
-            Contact = value
-        End Set
-    End Property
-
-    Public Property JurusanMember() As String
-        Get
-            Return Jurusan
-        End Get
-        Set(value As String)
-            Jurusan = value
         End Set
     End Property
 

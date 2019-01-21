@@ -2,10 +2,10 @@
 Imports Inventory
 
 Public Class ClsCtlMember : Implements InfProses
-
-    Public Function LoginMember(NIM As String) As DataView
+    Public Function LoginMember(NIM As String, password As String) As DataView
         Try
-            DTA = New OleDbDataAdapter("SELECT * FROM member WHERE NIM = '" & NIM & "'", BUKAKONEKSI)
+            DTA = New OleDbDataAdapter("SELECT p.*, m.NIM FROM personal p JOIN member m ON p.id_personal = m.id_personal WHERE 
+                                        m.NIM = '" & NIM & "' AND p.password = '" & password & "'", BUKAKONEKSI)
             DTS = New DataSet()
             DTA.Fill(DTS, "cari_member")
             Dim grid As New DataView(DTS.Tables("cari_member"))
@@ -19,7 +19,9 @@ Public Class ClsCtlMember : Implements InfProses
     Public Function InsertData(Ob As Object) As OleDbCommand Implements InfProses.InsertData
         Dim data As New ClsEntMember
         data = Ob
-        CMD = New OleDbCommand("INSERT INTO member VALUES('" & data.NIMMember & "', '" & data.NamaMember & "', '" & data.PasswordMember & "', '" & data.EmailMember & "', '" & data.ContactMember & "', '" & data.JurusanMember & "')", BUKAKONEKSI)
+        CMD = New OleDbCommand("EXEC InsertPersonal 'M', '" & data.namaMember & "', '" & data.emailMember & "', 
+                               '" & data.contactMember & "', '" & data.jurusanMember & "', '" & data.passwordMember & "', '', 
+                               '" & data.NIMMember & "'", BUKAKONEKSI)
         CMD.CommandType = CommandType.Text
         CMD.ExecuteNonQuery()
         CMD = New OleDbCommand("", TUTUPKONEKSI)
@@ -29,7 +31,9 @@ Public Class ClsCtlMember : Implements InfProses
     Public Function updateData(Ob As Object) As OleDbCommand Implements InfProses.updateData
         Dim data As New ClsEntMember
         data = Ob
-        CMD = New OleDbCommand("UPDATE member SET nama ='" & data.NamaMember & "', email = '" & data.EmailMember & "', contact = " & data.ContactMember & ", jurusan = '" & data.JurusanMember & "' WHERE NIM = '" & data.NIMMember & "'", BUKAKONEKSI)
+        CMD = New OleDbCommand("EXEC UpdatePersonal 'M', '" & data.namaMember & "', '" & data.emailMember & "', 
+                               '" & data.contactMember & "', '" & data.jurusanMember & "', '" & data.passwordMember & "', '', 
+                               WHERE NIM = '" & data.NIMMember & "'", BUKAKONEKSI)
         CMD.CommandType = CommandType.Text
         CMD.ExecuteNonQuery()
         CMD = New OleDbCommand("", TUTUPKONEKSI)
@@ -37,7 +41,7 @@ Public Class ClsCtlMember : Implements InfProses
     End Function
 
     Public Function deleteData(kunci As String) As OleDbCommand Implements InfProses.deleteData
-        CMD = New OleDbCommand("DELETE FROM peminjaman WHERE id_peminjaman = '" & kunci & "'", BUKAKONEKSI)
+        CMD = New OleDbCommand("DELETE FROM member WHERE NIM = '" & kunci & "'", BUKAKONEKSI)
         CMD.CommandType = CommandType.Text
         CMD.ExecuteNonQuery()
         CMD = New OleDbCommand("", TUTUPKONEKSI)
@@ -46,7 +50,8 @@ Public Class ClsCtlMember : Implements InfProses
 
     Public Function tampilData() As DataView Implements InfProses.tampilData
         Try
-            DTA = New OleDbDataAdapter("SELECT * FROM member", BUKAKONEKSI)
+            DTA = New OleDbDataAdapter("SELECT m.NIM, p.nama, p.password, p.email, p.contact, p.jurusan FROM personal p JOIN member m 
+                                        ON p.id_personal = m.id_personal", BUKAKONEKSI)
             DTS = New DataSet()
             DTA.Fill(DTS, "data_member")
             Dim data As New DataView(DTS.Tables("data_member"))

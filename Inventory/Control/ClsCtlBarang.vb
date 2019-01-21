@@ -7,7 +7,7 @@ Public Class ClsCtlBarang : Implements InfProses
         Dim baru As String
         Dim kodeakhir As Integer
         Try
-            DTA = New OleDbDataAdapter("SELECT MAX(RIGHT(id_barang, 4)) FROM Barang", BUKAKONEKSI)
+            DTA = New OleDbDataAdapter("SELECT MAX(RIGHT(id_barang, 4)) FROM barang", BUKAKONEKSI)
             DTS = New DataSet()
             DTA.Fill(DTS, "max_kode")
             kodeakhir = Val(DTS.Tables("max_kode").Rows(0).Item(0))
@@ -24,7 +24,7 @@ Public Class ClsCtlBarang : Implements InfProses
         cek = False
 
         Try
-            DTA = New OleDbDataAdapter("SELECT COUNT(id_barang) FROM Transaksi WHERE id_barang = '" & kunci & "'", BUKAKONEKSI)
+            DTA = New OleDbDataAdapter("SELECT COUNT(id_barang) FROM transaksi WHERE id_barang = '" & kunci & "'", BUKAKONEKSI)
             DTS = New DataSet()
             DTA.Fill(DTS, "cek")
 
@@ -38,7 +38,10 @@ Public Class ClsCtlBarang : Implements InfProses
     Public Function InsertData(Ob As Object) As OleDbCommand Implements InfProses.InsertData
         Dim data As New ClsEntBarang
         data = Ob
-        CMD = New OleDbCommand("INSERT INTO Barang VALUES('" & data.id_barangBarang & "', '" & data.jenisBarang & "', '" & data.namaBarang & "', '" & data.jumlahBarang & "', '" & data.statusBarang & "')", BUKAKONEKSI)
+        CMD = New OleDbCommand("INSERT INTO barang VALUES('" & data.id_barangBarang & "', '1', '" & data.namaBarang & "', 
+                               '" & data.jenisBarang & "', '" & data.stockBarang & "', '" & data.satuanBarang & "', 
+                               '" & data.keteranganBarang & "', '" & data.tempatBarang & "', '" & data.statusBarang & "')",
+                               BUKAKONEKSI)
         CMD.CommandType = CommandType.Text
         CMD.ExecuteNonQuery()
         CMD = New OleDbCommand("", TUTUPKONEKSI)
@@ -48,7 +51,10 @@ Public Class ClsCtlBarang : Implements InfProses
     Public Function updateData(Ob As Object) As OleDbCommand Implements InfProses.updateData
         Dim data As New ClsEntBarang
         data = Ob
-        CMD = New OleDbCommand("UPDATE Barang SET id_jenis ='" & data.jenisBarang & "', nama_barang = '" & data.namaBarang & "', jumlah_barang = " & data.jumlahBarang & ", id_status = '" & data.statusBarang & "' WHERE id_barang = '" & data.id_barangBarang & "'", BUKAKONEKSI)
+        CMD = New OleDbCommand("UPDATE barang SET nama_barang = '" & data.namaBarang & "', jenis_barang ='" & data.jenisBarang & "', 
+                                stock = '" & data.stockBarang & "', satuan = '" & data.satuanBarang & "', keterangan = 
+                                '" & data.keteranganBarang & "', tempat = '" & data.tempatBarang & "', status_barang = 
+                                '" & data.statusBarang & "' WHERE id_barang = '" & data.id_barangBarang & "'", BUKAKONEKSI)
         CMD.CommandType = CommandType.Text
         CMD.ExecuteNonQuery()
         CMD = New OleDbCommand("", TUTUPKONEKSI)
@@ -56,7 +62,7 @@ Public Class ClsCtlBarang : Implements InfProses
     End Function
 
     Public Function deleteData(kunci As String) As OleDbCommand Implements InfProses.deleteData
-        CMD = New OleDbCommand("DELETE FROM Barang WHERE id_barang = '" & kunci & "'", BUKAKONEKSI)
+        CMD = New OleDbCommand("DELETE FROM barang WHERE id_barang = '" & kunci & "'", BUKAKONEKSI)
         CMD.CommandType = CommandType.Text
         CMD.ExecuteNonQuery()
         CMD = New OleDbCommand("", TUTUPKONEKSI)
@@ -65,7 +71,8 @@ Public Class ClsCtlBarang : Implements InfProses
 
     Public Function tampilData() As DataView Implements InfProses.tampilData
         Try
-            DTA = New OleDbDataAdapter("SELECT b.id_barang, b.nama, j.nama, b.stock, s.nama FROM barang AS b JOIN jenis_barang AS j ON b.id_jenis = j.id_jenis JOIN status_barang AS s ON b.id_status = s.id_status", BUKAKONEKSI)
+            DTA = New OleDbDataAdapter("SELECT id_barang, nama_barang, jenis_barang, stock, satuan, keterangan, tempat, status_barang
+                                        FROM barang", BUKAKONEKSI)
             DTS = New DataSet()
             DTA.Fill(DTS, "Tabel_Barang")
             Dim grid As New DataView(DTS.Tables("Tabel_Barang"))

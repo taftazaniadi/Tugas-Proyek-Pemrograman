@@ -26,6 +26,7 @@ Partial Class Dashboard
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New Bunifu.Framework.UI.BunifuCards()
+        Me.BunifuCustomLabel6 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel5 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.txtJurusan = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -53,6 +54,7 @@ Partial Class Dashboard
         Me.Panel1.BorderRadius = 5
         Me.Panel1.BottomSahddow = True
         Me.Panel1.color = System.Drawing.Color.Green
+        Me.Panel1.Controls.Add(Me.BunifuCustomLabel6)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel5)
         Me.Panel1.Controls.Add(Me.txtJurusan)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel4)
@@ -70,6 +72,17 @@ Partial Class Dashboard
         Me.Panel1.ShadowDepth = 20
         Me.Panel1.Size = New System.Drawing.Size(540, 494)
         Me.Panel1.TabIndex = 0
+        '
+        'BunifuCustomLabel6
+        '
+        Me.BunifuCustomLabel6.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BunifuCustomLabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold)
+        Me.BunifuCustomLabel6.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BunifuCustomLabel6.Location = New System.Drawing.Point(105, 24)
+        Me.BunifuCustomLabel6.Name = "BunifuCustomLabel6"
+        Me.BunifuCustomLabel6.Size = New System.Drawing.Size(345, 39)
+        Me.BunifuCustomLabel6.TabIndex = 10
+        Me.BunifuCustomLabel6.Text = "SELAMAT DATANG"
         '
         'BunifuCustomLabel5
         '
@@ -98,7 +111,7 @@ Partial Class Dashboard
         Me.txtJurusan.isPassword = False
         Me.txtJurusan.LineFocusedColor = System.Drawing.Color.Blue
         Me.txtJurusan.LineIdleColor = System.Drawing.Color.Gray
-        Me.txtJurusan.LineMouseHoverColor = System.Drawing.Color.Gray
+        Me.txtJurusan.LineMouseHoverColor = System.Drawing.Color.Blue
         Me.txtJurusan.LineThickness = 3
         Me.txtJurusan.Location = New System.Drawing.Point(85, 404)
         Me.txtJurusan.Margin = New System.Windows.Forms.Padding(4)
@@ -173,7 +186,7 @@ Partial Class Dashboard
         Me.txtEmail.isPassword = False
         Me.txtEmail.LineFocusedColor = System.Drawing.Color.Blue
         Me.txtEmail.LineIdleColor = System.Drawing.Color.Gray
-        Me.txtEmail.LineMouseHoverColor = System.Drawing.Color.Gray
+        Me.txtEmail.LineMouseHoverColor = System.Drawing.Color.Blue
         Me.txtEmail.LineThickness = 3
         Me.txtEmail.Location = New System.Drawing.Point(85, 333)
         Me.txtEmail.Margin = New System.Windows.Forms.Padding(4)
@@ -194,9 +207,9 @@ Partial Class Dashboard
         Me.txtNIM.HintForeColor = System.Drawing.Color.Empty
         Me.txtNIM.HintText = ""
         Me.txtNIM.isPassword = False
-        Me.txtNIM.LineFocusedColor = System.Drawing.Color.Blue
+        Me.txtNIM.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.txtNIM.LineIdleColor = System.Drawing.Color.Gray
-        Me.txtNIM.LineMouseHoverColor = System.Drawing.Color.Gray
+        Me.txtNIM.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.txtNIM.LineThickness = 3
         Me.txtNIM.Location = New System.Drawing.Point(85, 113)
         Me.txtNIM.Margin = New System.Windows.Forms.Padding(4)
@@ -219,7 +232,7 @@ Partial Class Dashboard
         Me.txtContact.isPassword = False
         Me.txtContact.LineFocusedColor = System.Drawing.Color.Blue
         Me.txtContact.LineIdleColor = System.Drawing.Color.Gray
-        Me.txtContact.LineMouseHoverColor = System.Drawing.Color.Gray
+        Me.txtContact.LineMouseHoverColor = System.Drawing.Color.Blue
         Me.txtContact.LineThickness = 3
         Me.txtContact.Location = New System.Drawing.Point(85, 263)
         Me.txtContact.Margin = New System.Windows.Forms.Padding(4)
@@ -242,7 +255,7 @@ Partial Class Dashboard
         Me.txtFull.isPassword = False
         Me.txtFull.LineFocusedColor = System.Drawing.Color.Blue
         Me.txtFull.LineIdleColor = System.Drawing.Color.Gray
-        Me.txtFull.LineMouseHoverColor = System.Drawing.Color.Gray
+        Me.txtFull.LineMouseHoverColor = System.Drawing.Color.Blue
         Me.txtFull.LineThickness = 3
         Me.txtFull.Location = New System.Drawing.Point(85, 186)
         Me.txtFull.Margin = New System.Windows.Forms.Padding(4)
@@ -390,4 +403,5 @@ Partial Class Dashboard
     Friend WithEvents txtNIM As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents txtContact As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents txtFull As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents BunifuCustomLabel6 As Bunifu.Framework.UI.BunifuCustomLabel
 End Class

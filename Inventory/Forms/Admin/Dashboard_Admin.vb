@@ -7,10 +7,10 @@
     End Sub
 
     Private Sub RefreshData_Admin()
-        txtEmail.Text = EntitasAdmin.usernameAdmin
-        txtContact.Text = EntitasAdmin.fullnameAdmin
-        txtFull.Text = EntitasAdmin.contactAdmin
-        txtUser.Text = EntitasAdmin.emailAdmin
+        txtEmail.Text = EntitasAdmin.emailAdmin
+        txtContact.Text = EntitasAdmin.contactAdmin
+        txtFull.Text = EntitasAdmin.namaAdmin
+        txtUser.Text = EntitasAdmin.usernameAdmin
     End Sub
 
     Private Sub BunifuCards1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
@@ -46,10 +46,10 @@
         txtUser.Enabled = False
 
         With EntitasAdmin
-            .usernameAdmin = txtEmail.Text
-            .fullnameAdmin = txtContact.Text
-            .emailAdmin = txtUser.Text
-            .contactAdmin = txtFull.Text
+            .usernameAdmin = txtUser.Text
+            .namaAdmin = txtFull.Text
+            .emailAdmin = txtEmail.Text
+            .contactAdmin = txtContact.Text
         End With
 
         KontrolAdmin.updateData(EntitasAdmin)
@@ -71,5 +71,4 @@
         txtFull.Enabled = False
         txtUser.Enabled = False
     End Sub
-
 End Class

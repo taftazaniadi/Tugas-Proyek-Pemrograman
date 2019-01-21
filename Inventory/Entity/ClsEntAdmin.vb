@@ -1,44 +1,37 @@
 ﻿Public Class ClsEntAdmin
-    Private id_admin As String
-    Private username As String
-    Private password As String
-    Private fullname As String
+    Private id_personal As Integer
+    Private tipe As Char
+    Private nama As String
     Private email As String
     Private contact As String
+    Private jurusan As String
+    Private password As String
+    Private username As String
 
-    Public Property id_adminAdmin() As String
+    Public Property id_personalAdmin() As String
         Get
-            Return id_admin
+            Return id_personal
         End Get
         Set(value As String)
-            id_admin = value
+            id_personal = value
         End Set
     End Property
 
-    Public Property usernameAdmin() As String
+    Public Property tipeAdmin() As String
         Get
-            Return username
+            Return tipe
         End Get
         Set(value As String)
-            username = value
+            tipe = value
         End Set
     End Property
 
-    Public Property passwordAdmin() As String
+    Public Property namaAdmin() As String
         Get
-            Return password
+            Return nama
         End Get
         Set(value As String)
-            password = value
-        End Set
-    End Property
-
-    Public Property fullnameAdmin() As String
-        Get
-            Return fullname
-        End Get
-        Set(value As String)
-            fullname = value
+            nama = value
         End Set
     End Property
 
@@ -60,4 +53,30 @@
         End Set
     End Property
 
+    Public Property jurusanAdmin() As String
+        Get
+            Return jurusan
+        End Get
+        Set(value As String)
+            jurusan = value
+        End Set
+    End Property
+
+    Public Property passwordAdmin() As String
+        Get
+            Return password
+        End Get
+        Set(value As String)
+            password = value
+        End Set
+    End Property
+
+    Public Property usernameAdmin() As String
+        Get
+            Return username
+        End Get
+        Set(value As String)
+            username = value
+        End Set
+    End Property
 End Class

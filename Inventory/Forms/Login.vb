@@ -1,6 +1,8 @@
 ﻿Public Class Login
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
-        Environment.Exit(1)
+        If MsgBox("Are you sure to Exit?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Confirmation") = MsgBoxResult.Yes Then
+            Environment.Exit(1)
+        End If
     End Sub
 
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -21,15 +23,17 @@
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         If chkAdmin.Checked = True Then
-            DTGrid = KontrolAdmin.LoginAdmin(txtUser.Text).ToTable
+            DTGrid = KontrolAdmin.LoginAdmin(txtUser.Text, txtPass.Text).ToTable
 
             If DTGrid.Rows.Count > 0 Then
-                EntitasAdmin.id_adminAdmin = DTGrid.Rows(0).Item(0)
-                EntitasAdmin.usernameAdmin = DTGrid.Rows(0).Item(1)
-                EntitasAdmin.passwordAdmin = DTGrid.Rows(0).Item(2)
-                EntitasAdmin.fullnameAdmin = DTGrid.Rows(0).Item(3)
-                EntitasAdmin.emailAdmin = DTGrid.Rows(0).Item(4)
-                EntitasAdmin.contactAdmin = DTGrid.Rows(0).Item(5)
+                EntitasAdmin.id_personalAdmin = DTGrid.Rows(0).Item(0)
+                EntitasAdmin.tipeAdmin = DTGrid.Rows(0).Item(1)
+                EntitasAdmin.namaAdmin = DTGrid.Rows(0).Item(2)
+                EntitasAdmin.emailAdmin = DTGrid.Rows(0).Item(3)
+                EntitasAdmin.contactAdmin = DTGrid.Rows(0).Item(4)
+                EntitasAdmin.jurusanAdmin = DTGrid.Rows(0).Item(5)
+                EntitasAdmin.passwordAdmin = DTGrid.Rows(0).Item(6)
+                EntitasAdmin.usernameAdmin = DTGrid.Rows(0).Item(7)
 
                 If txtPass.Text = EntitasAdmin.passwordAdmin And chkAdmin.Checked = True Then
                     Form1.Show()
@@ -48,15 +52,17 @@
                 txtUser.Focus()
             End If
         Else
-            DTGrid = KontrolMember.LoginMember(txtUser.Text).ToTable
+            DTGrid = KontrolMember.LoginMember(txtUser.Text, txtPass.Text).ToTable
 
             If DTGrid.Rows.Count > 0 Then
-                EntitasMember.NIMMember = DTGrid.Rows(0).Item(0)
-                EntitasMember.NamaMember = DTGrid.Rows(0).Item(1)
-                EntitasMember.PasswordMember = DTGrid.Rows(0).Item(2)
-                EntitasMember.EmailMember = DTGrid.Rows(0).Item(3)
-                EntitasMember.ContactMember = DTGrid.Rows(0).Item(4)
-                EntitasMember.JurusanMember = DTGrid.Rows(0).Item(5)
+                EntitasMember.id_personalMember = DTGrid.Rows(0).Item(0)
+                EntitasMember.tipeMember = DTGrid.Rows(0).Item(1)
+                EntitasMember.namaMember = DTGrid.Rows(0).Item(2)
+                EntitasMember.emailMember = DTGrid.Rows(0).Item(3)
+                EntitasMember.contactMember = DTGrid.Rows(0).Item(4)
+                EntitasMember.jurusanMember = DTGrid.Rows(0).Item(5)
+                EntitasMember.passwordMember = DTGrid.Rows(0).Item(6)
+                EntitasMember.NIMMember = DTGrid.Rows(0).Item(7)
 
                 If txtPass.Text = EntitasMember.PasswordMember Then
                     Member.Show()
