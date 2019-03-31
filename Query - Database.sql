@@ -121,10 +121,13 @@ drop proc UpdateMember
 
 --Insert Barang
 INSERT INTO barang VALUES('B0001', 1, 'Meja', 'Kayu', 5, 'pcs', 'Tersedia', 'Sekre', 'Baik')
+go
 INSERT INTO barang VALUES('B0002', 1, 'Kursi', 'Kayu', 1, 'pcs', 'Tersedia', 'Sekre', 'Baik')
+go
 
 --Insert Transaksi
 INSERT INTO transaksi VALUES('T0001', 2, 'B0001', '2019-01-10', '2019-01-11', 2, '', '', 'Menunggu')
+go
 
 select * from personal
 
