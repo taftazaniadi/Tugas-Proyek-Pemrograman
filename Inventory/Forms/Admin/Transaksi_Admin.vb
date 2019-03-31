@@ -21,7 +21,7 @@
         If br < DTGrid.Rows.Count Then
             With DGTransaksi.Rows(br)
                 txtID_Transaksi.Text = .Cells(0).Value.ToString
-                cbStatus.SelectedItem = .Cells(8).Value.ToString
+                cbStatus.SelectedItem = .Cells(9).Value.ToString
             End With
         End If
     End Sub
@@ -51,14 +51,6 @@
         End If
     End Sub
 
-    Private Sub DGTransaksi_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGTransaksi.CellClick
-        If modeProses = 0 Then
-            baris = e.RowIndex
-            DGTransaksi.Rows(baris).Selected = True
-            IsiBox(baris)
-        End If
-    End Sub
-
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
         AturButton(True)
         modeProses = 2
@@ -82,6 +74,14 @@
     End Sub
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
+        Dim status_referensi As Boolean
+        status_referensi = KontrolBarang.cekBarangDireferensi(txtID_Transaksi.Text)
+
+        If status_referensi Then
+            MsgBox("Barang masih Digunakan/Belum Dikembalikan, tidak boleh dihapus.", MsgBoxStyle.Exclamation, "Warning!")
+            Exit Sub
+        End If
+
         If MsgBox("Apakah Anda yakin akan menghapus " & txtID_Transaksi.Text & " ? ", MsgBoxStyle.Question + MsgBoxStyle.YesNo,
                   "Konfirmasi") = MsgBoxResult.Yes Then
             KontrolTransaksi.deleteData(txtID_Transaksi.Text)
@@ -93,5 +93,13 @@
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
         AturButton(False)
         modeProses = 0
+    End Sub
+
+    Private Sub DGTransaksi_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGTransaksi.CellClick
+        If modeProses = 0 Then
+            baris = e.RowIndex
+            DGTransaksi.Rows(baris).Selected = True
+            IsiBox(baris)
+        End If
     End Sub
 End Class

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Inventaris_Admin
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Inventaris_Admin
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -35,6 +35,11 @@ Partial Class Inventaris_Admin
         Me.btnSave = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnAdd = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cbStatus = New System.Windows.Forms.ComboBox()
+        Me.cbTempat = New System.Windows.Forms.ComboBox()
+        Me.cbKet = New System.Windows.Forms.ComboBox()
+        Me.cbSatuan = New System.Windows.Forms.ComboBox()
+        Me.cbJenis = New System.Windows.Forms.ComboBox()
         Me.BunifuCustomLabel8 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel7 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel6 = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -47,11 +52,6 @@ Partial Class Inventaris_Admin
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.txtKode = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.btnPrint = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.cbJenis = New System.Windows.Forms.ComboBox()
-        Me.cbSatuan = New System.Windows.Forms.ComboBox()
-        Me.cbKet = New System.Windows.Forms.ComboBox()
-        Me.cbTempat = New System.Windows.Forms.ComboBox()
-        Me.cbStatus = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         CType(Me.DGBarang, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -79,6 +79,8 @@ Partial Class Inventaris_Admin
         '
         'DGBarang
         '
+        Me.DGBarang.AllowUserToAddRows = False
+        Me.DGBarang.AllowUserToDeleteRows = False
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.DGBarang.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DGBarang.BackgroundColor = System.Drawing.Color.Gainsboro
@@ -94,6 +96,7 @@ Partial Class Inventaris_Admin
         Me.DGBarang.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DGBarang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGBarang.DoubleBuffered = True
+        Me.DGBarang.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.DGBarang.EnableHeadersVisualStyles = False
         Me.DGBarang.HeaderBgColor = System.Drawing.Color.SeaGreen
         Me.DGBarang.HeaderForeColor = System.Drawing.Color.White
@@ -304,6 +307,66 @@ Partial Class Inventaris_Admin
         Me.GroupBox1.TabIndex = 17
         Me.GroupBox1.TabStop = False
         '
+        'cbStatus
+        '
+        Me.cbStatus.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cbStatus.FormattingEnabled = True
+        Me.cbStatus.Items.AddRange(New Object() {"-- Pilih Status Barang --", "Baik", "Rusak", "Masih bisa digunakan"})
+        Me.cbStatus.Location = New System.Drawing.Point(138, 223)
+        Me.cbStatus.Name = "cbStatus"
+        Me.cbStatus.Size = New System.Drawing.Size(373, 21)
+        Me.cbStatus.TabIndex = 31
+        '
+        'cbTempat
+        '
+        Me.cbTempat.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cbTempat.FormattingEnabled = True
+        Me.cbTempat.Items.AddRange(New Object() {"-- Pilih Tempat Barang --", "Sekre", "Camp", "Gudang"})
+        Me.cbTempat.Location = New System.Drawing.Point(138, 195)
+        Me.cbTempat.Name = "cbTempat"
+        Me.cbTempat.Size = New System.Drawing.Size(373, 21)
+        Me.cbTempat.TabIndex = 30
+        '
+        'cbKet
+        '
+        Me.cbKet.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cbKet.FormattingEnabled = True
+        Me.cbKet.Items.AddRange(New Object() {"-- Pilih Keterangan --", "Dipinjam", "Tersedia"})
+        Me.cbKet.Location = New System.Drawing.Point(138, 169)
+        Me.cbKet.Name = "cbKet"
+        Me.cbKet.Size = New System.Drawing.Size(373, 21)
+        Me.cbKet.TabIndex = 29
+        '
+        'cbSatuan
+        '
+        Me.cbSatuan.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cbSatuan.FormattingEnabled = True
+        Me.cbSatuan.Items.AddRange(New Object() {"-- Pilih Satuan Barang --", "Pcs", "Kg", "Packs"})
+        Me.cbSatuan.Location = New System.Drawing.Point(138, 142)
+        Me.cbSatuan.Name = "cbSatuan"
+        Me.cbSatuan.Size = New System.Drawing.Size(373, 21)
+        Me.cbSatuan.TabIndex = 28
+        '
+        'cbJenis
+        '
+        Me.cbJenis.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cbJenis.FormattingEnabled = True
+        Me.cbJenis.Items.AddRange(New Object() {"-- Pilih Jenis Barang --", "Kayu", "Besi", "Aluminium", "Plastik", "Lain-lain"})
+        Me.cbJenis.Location = New System.Drawing.Point(138, 85)
+        Me.cbJenis.Name = "cbJenis"
+        Me.cbJenis.Size = New System.Drawing.Size(373, 21)
+        Me.cbJenis.TabIndex = 27
+        '
         'BunifuCustomLabel8
         '
         Me.BunifuCustomLabel8.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -508,66 +571,6 @@ Partial Class Inventaris_Admin
         Me.btnPrint.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnPrint.Textcolor = System.Drawing.Color.White
         Me.btnPrint.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'cbJenis
-        '
-        Me.cbJenis.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.cbJenis.FormattingEnabled = True
-        Me.cbJenis.Items.AddRange(New Object() {"-- Pilih Jenis Barang --", "Kayu", "Besi", "Aluminium", "Plastik", "Lain-lain"})
-        Me.cbJenis.Location = New System.Drawing.Point(138, 85)
-        Me.cbJenis.Name = "cbJenis"
-        Me.cbJenis.Size = New System.Drawing.Size(373, 21)
-        Me.cbJenis.TabIndex = 27
-        '
-        'cbSatuan
-        '
-        Me.cbSatuan.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.cbSatuan.FormattingEnabled = True
-        Me.cbSatuan.Items.AddRange(New Object() {"-- Pilih Satuan Barang --", "Pcs", "Kg", "Packs"})
-        Me.cbSatuan.Location = New System.Drawing.Point(138, 142)
-        Me.cbSatuan.Name = "cbSatuan"
-        Me.cbSatuan.Size = New System.Drawing.Size(373, 21)
-        Me.cbSatuan.TabIndex = 28
-        '
-        'cbKet
-        '
-        Me.cbKet.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.cbKet.FormattingEnabled = True
-        Me.cbKet.Items.AddRange(New Object() {"-- Pilih Keterangan --", "Dipinjam", "Tersedia"})
-        Me.cbKet.Location = New System.Drawing.Point(138, 169)
-        Me.cbKet.Name = "cbKet"
-        Me.cbKet.Size = New System.Drawing.Size(373, 21)
-        Me.cbKet.TabIndex = 29
-        '
-        'cbTempat
-        '
-        Me.cbTempat.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.cbTempat.FormattingEnabled = True
-        Me.cbTempat.Items.AddRange(New Object() {"-- Pilih Tempat Barang --", "Sekre", "Camp", "Gudang"})
-        Me.cbTempat.Location = New System.Drawing.Point(138, 195)
-        Me.cbTempat.Name = "cbTempat"
-        Me.cbTempat.Size = New System.Drawing.Size(373, 21)
-        Me.cbTempat.TabIndex = 30
-        '
-        'cbStatus
-        '
-        Me.cbStatus.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.cbStatus.FormattingEnabled = True
-        Me.cbStatus.Items.AddRange(New Object() {"-- Pilih Status Barang --", "Baik", "Rusak", "Masih bisa digunakan"})
-        Me.cbStatus.Location = New System.Drawing.Point(138, 223)
-        Me.cbStatus.Name = "cbStatus"
-        Me.cbStatus.Size = New System.Drawing.Size(373, 21)
-        Me.cbStatus.TabIndex = 31
         '
         'Inventaris_Admin
         '

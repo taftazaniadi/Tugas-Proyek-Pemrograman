@@ -414,6 +414,72 @@
   <data name="&gt;&gt;btnEdit.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="BunifuCustomLabel6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="BunifuCustomLabel6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BunifuCustomLabel6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BunifuCustomLabel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 407</value>
+  </data>
+  <data name="BunifuCustomLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="BunifuCustomLabel6.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="BunifuCustomLabel6.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="&gt;&gt;BunifuCustomLabel6.Name" xml:space="preserve">
+    <value>BunifuCustomLabel6</value>
+  </data>
+  <data name="&gt;&gt;BunifuCustomLabel6.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BunifuCustomLabel6.Parent" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;BunifuCustomLabel6.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtPassword.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="txtPassword.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
+  <data name="txtPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 424</value>
+  </data>
+  <data name="txtPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="txtPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>379, 29</value>
+  </data>
+  <data name="txtPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.Name" xml:space="preserve">
+    <value>txtPassword</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.Parent" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="BunifuCustomLabel5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
@@ -424,7 +490,7 @@
     <value>Microsoft Sans Serif, 26.25pt, style=Bold</value>
   </data>
   <data name="BunifuCustomLabel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 54</value>
+    <value>97, 34</value>
   </data>
   <data name="BunifuCustomLabel5.Size" type="System.Drawing.Size, System.Drawing">
     <value>345, 39</value>
@@ -445,7 +511,7 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;BunifuCustomLabel5.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="BunifuCustomLabel4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -457,7 +523,7 @@
     <value>NoControl</value>
   </data>
   <data name="BunifuCustomLabel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>73, 313</value>
+    <value>80, 257</value>
   </data>
   <data name="BunifuCustomLabel4.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 13</value>
@@ -478,7 +544,7 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;BunifuCustomLabel4.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="BunifuCustomLabel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -490,7 +556,7 @@
     <value>NoControl</value>
   </data>
   <data name="BunifuCustomLabel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>73, 394</value>
+    <value>80, 338</value>
   </data>
   <data name="BunifuCustomLabel3.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 13</value>
@@ -511,7 +577,7 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;BunifuCustomLabel3.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="BunifuCustomLabel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -523,7 +589,7 @@
     <value>NoControl</value>
   </data>
   <data name="BunifuCustomLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>73, 237</value>
+    <value>80, 181</value>
   </data>
   <data name="BunifuCustomLabel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 13</value>
@@ -544,7 +610,7 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;BunifuCustomLabel2.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="BunifuCustomLabel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -553,7 +619,7 @@
     <value>True</value>
   </data>
   <data name="BunifuCustomLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>73, 164</value>
+    <value>80, 108</value>
   </data>
   <data name="BunifuCustomLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 13</value>
@@ -574,7 +640,7 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;BunifuCustomLabel1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="txtUser.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -586,7 +652,7 @@
     <value>Century Gothic, 9.75pt</value>
   </data>
   <data name="txtUser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 181</value>
+    <value>83, 125</value>
   </data>
   <data name="txtUser.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -607,7 +673,7 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;txtUser.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="txtFull.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -619,7 +685,7 @@
     <value>Century Gothic, 9.75pt</value>
   </data>
   <data name="txtFull.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 254</value>
+    <value>83, 198</value>
   </data>
   <data name="txtFull.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -640,7 +706,7 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;txtFull.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="txtContact.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -652,7 +718,7 @@
     <value>Century Gothic, 9.75pt</value>
   </data>
   <data name="txtContact.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 411</value>
+    <value>83, 355</value>
   </data>
   <data name="txtContact.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -673,7 +739,7 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;txtContact.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="txtEmail.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -685,7 +751,7 @@
     <value>Century Gothic, 9.75pt</value>
   </data>
   <data name="txtEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 330</value>
+    <value>83, 274</value>
   </data>
   <data name="txtEmail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -706,7 +772,7 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;txtEmail.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="Panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>

@@ -1,0 +1,72 @@
+c:\users\76_sis\documents\visual studio 2013\Projects\SignaIR\SignaIR\bin\SignaIR.dll.config
+c:\users\76_sis\documents\visual studio 2013\Projects\SignaIR\SignaIR\bin\SignaIR.dll
+c:\users\76_sis\documents\visual studio 2013\Projects\SignaIR\SignaIR\bin\SignaIR.pdb
+c:\users\76_sis\documents\visual studio 2013\Projects\SignaIR\SignaIR\bin\SignaIR.xml
+c:\users\76_sis\documents\visual studio 2013\Projects\SignaIR\SignaIR\obj\Debug\SignaIR.Resources.resources
+c:\users\76_sis\documents\visual studio 2013\Projects\SignaIR\SignaIR\obj\Debug\SignaIR.vbproj.GenerateResource.Cache
+c:\users\76_sis\documents\visual studio 2013\Projects\SignaIR\SignaIR\obj\Debug\SignaIR.dll
+c:\users\76_sis\documents\visual studio 2013\Projects\SignaIR\SignaIR\obj\Debug\SignaIR.xml
+c:\users\76_sis\documents\visual studio 2013\Projects\SignaIR\SignaIR\obj\Debug\SignaIR.pdb
+c:\users\76_sis\documents\visual studio 2013\Projects\SignaIR\SignaIR\bin\Microsoft.AspNet.SignalR.Core.dll
+c:\users\76_sis\documents\visual studio 2013\Projects\SignaIR\SignaIR\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+c:\users\76_sis\documents\visual studio 2013\Projects\SignaIR\SignaIR\bin\Microsoft.Owin.dll
+c:\users\76_sis\documents\visual studio 2013\Projects\SignaIR\SignaIR\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\76_sis\documents\visual studio 2013\Projects\SignaIR\SignaIR\bin\Microsoft.Owin.Security.dll
+c:\users\76_sis\documents\visual studio 2013\Projects\SignaIR\SignaIR\bin\Newtonsoft.Json.dll
+c:\users\76_sis\documents\visual studio 2013\Projects\SignaIR\SignaIR\bin\Owin.dll
+c:\users\76_sis\documents\visual studio 2013\Projects\SignaIR\SignaIR\bin\Microsoft.AspNet.SignalR.Core.xml
+c:\users\76_sis\documents\visual studio 2013\Projects\SignaIR\SignaIR\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+c:\users\76_sis\documents\visual studio 2013\Projects\SignaIR\SignaIR\bin\Microsoft.Owin.xml
+c:\users\76_sis\documents\visual studio 2013\Projects\SignaIR\SignaIR\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\76_sis\documents\visual studio 2013\Projects\SignaIR\SignaIR\bin\Microsoft.Owin.Security.xml
+c:\users\76_sis\documents\visual studio 2013\Projects\SignaIR\SignaIR\bin\Newtonsoft.Json.xml
+c:\users\76_sis\documents\visual studio 2013\Projects\SignaIR\SignaIR\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\bin\SignaIR.dll.config
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\bin\SignaIR.dll
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\bin\SignaIR.pdb
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\bin\SignaIR.xml
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\bin\Microsoft.Owin.dll
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\bin\Microsoft.Owin.Security.dll
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\bin\Newtonsoft.Json.dll
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\bin\Owin.dll
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\bin\Microsoft.Owin.xml
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\bin\Microsoft.Owin.Security.xml
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\bin\Newtonsoft.Json.xml
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\obj\Debug\SignaIR.vbprojResolveAssemblyReference.cache
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\obj\Debug\SignaIR.Resources.resources
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\obj\Debug\SignaIR.vbproj.GenerateResource.Cache
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\obj\Debug\SignaIR.dll
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\obj\Debug\SignaIR.xml
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\SignaIR\SignaIR\obj\Debug\SignaIR.pdb
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\bin\SignaIR.dll.config
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\bin\SignaIR.dll
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\bin\SignaIR.pdb
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\bin\SignaIR.xml
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\bin\Microsoft.AspNet.SignalR.Core.dll
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\bin\Microsoft.Owin.dll
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\bin\Microsoft.Owin.Security.dll
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\bin\Microsoft.Web.Infrastructure.dll
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\bin\Newtonsoft.Json.dll
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\bin\Owin.dll
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\bin\Microsoft.AspNet.SignalR.Core.xml
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\bin\Microsoft.Owin.xml
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\bin\Microsoft.Owin.Security.xml
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\bin\Newtonsoft.Json.xml
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\obj\Debug\SignaIR.vbprojResolveAssemblyReference.cache
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\obj\Debug\SignaIR.Resources.resources
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\obj\Debug\SignaIR.vbproj.GenerateResource.Cache
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\obj\Debug\SignaIR.vbproj.CoreCompileInputs.cache
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\obj\Debug\SignaIR.dll
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\obj\Debug\SignaIR.xml
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Signal R\SignalR con VB - Ejemplo Practico y Simple\VB\SignaIR\obj\Debug\SignaIR.pdb

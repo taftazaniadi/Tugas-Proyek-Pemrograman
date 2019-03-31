@@ -23,7 +23,7 @@ Partial Class Login
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Animation1 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -35,17 +35,17 @@ Partial Class Login
         Me.btnExit = New Bunifu.Framework.UI.BunifuImageButton()
         Me.txtUser = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.logoAnimator = New BunifuAnimatorNS.BunifuTransition(Me.components)
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.txtPass = New Bunifu.Framework.UI.BunifuMaterialTextbox()
-        Me.chkAdmin = New Bunifu.Framework.UI.BunifuCheckbox()
         Me.btnLogin = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.BunifuImageButton3 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.logo = New System.Windows.Forms.PictureBox()
+        Me.BunifuImageButton2 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.Panel1.SuspendLayout()
         CType(Me.amcc, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnExit, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -163,13 +163,13 @@ Partial Class Login
         Me.txtUser.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.txtUser.ForeColor = System.Drawing.Color.White
         Me.txtUser.HintForeColor = System.Drawing.Color.White
-        Me.txtUser.HintText = "Username or NPM"
+        Me.txtUser.HintText = "Username"
         Me.txtUser.isPassword = False
         Me.txtUser.LineFocusedColor = System.Drawing.Color.Teal
         Me.txtUser.LineIdleColor = System.Drawing.Color.Gray
         Me.txtUser.LineMouseHoverColor = System.Drawing.Color.Teal
         Me.txtUser.LineThickness = 3
-        Me.txtUser.Location = New System.Drawing.Point(364, 148)
+        Me.txtUser.Location = New System.Drawing.Point(364, 178)
         Me.txtUser.Margin = New System.Windows.Forms.Padding(4)
         Me.txtUser.Name = "txtUser"
         Me.txtUser.Size = New System.Drawing.Size(260, 33)
@@ -180,34 +180,22 @@ Partial Class Login
         '
         Me.logoAnimator.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate
         Me.logoAnimator.Cursor = Nothing
-        Animation1.AnimateOnlyDifferences = True
-        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
-        Animation1.LeafCoeff = 0!
-        Animation1.MaxTime = 1.0!
-        Animation1.MinTime = 0!
-        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
-        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
-        Animation1.MosaicSize = 0
-        Animation1.Padding = New System.Windows.Forms.Padding(30)
-        Animation1.RotateCoeff = 0.5!
-        Animation1.RotateLimit = 0.2!
-        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
-        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
-        Animation1.TimeCoeff = 0!
-        Animation1.TransparencyCoeff = 0!
-        Me.logoAnimator.DefaultAnimation = Animation1
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.logoAnimator.SetDecoration(Me.Label1, BunifuAnimatorNS.DecorationType.None)
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(390, 280)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(144, 18)
-        Me.Label1.TabIndex = 15
-        Me.Label1.Text = "Login sebagai Admin"
+        Animation2.AnimateOnlyDifferences = True
+        Animation2.BlindCoeff = CType(resources.GetObject("Animation2.BlindCoeff"), System.Drawing.PointF)
+        Animation2.LeafCoeff = 0!
+        Animation2.MaxTime = 1.0!
+        Animation2.MinTime = 0!
+        Animation2.MosaicCoeff = CType(resources.GetObject("Animation2.MosaicCoeff"), System.Drawing.PointF)
+        Animation2.MosaicShift = CType(resources.GetObject("Animation2.MosaicShift"), System.Drawing.PointF)
+        Animation2.MosaicSize = 0
+        Animation2.Padding = New System.Windows.Forms.Padding(30)
+        Animation2.RotateCoeff = 0.5!
+        Animation2.RotateLimit = 0.2!
+        Animation2.ScaleCoeff = CType(resources.GetObject("Animation2.ScaleCoeff"), System.Drawing.PointF)
+        Animation2.SlideCoeff = CType(resources.GetObject("Animation2.SlideCoeff"), System.Drawing.PointF)
+        Animation2.TimeCoeff = 0!
+        Animation2.TransparencyCoeff = 0!
+        Me.logoAnimator.DefaultAnimation = Animation2
         '
         'txtPass
         '
@@ -222,25 +210,12 @@ Partial Class Login
         Me.txtPass.LineIdleColor = System.Drawing.Color.Gray
         Me.txtPass.LineMouseHoverColor = System.Drawing.Color.Teal
         Me.txtPass.LineThickness = 3
-        Me.txtPass.Location = New System.Drawing.Point(364, 213)
+        Me.txtPass.Location = New System.Drawing.Point(364, 243)
         Me.txtPass.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPass.Name = "txtPass"
         Me.txtPass.Size = New System.Drawing.Size(260, 33)
         Me.txtPass.TabIndex = 16
         Me.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'chkAdmin
-        '
-        Me.chkAdmin.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(140, Byte), Integer))
-        Me.chkAdmin.ChechedOffColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(140, Byte), Integer))
-        Me.chkAdmin.Checked = False
-        Me.chkAdmin.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(117, Byte), Integer))
-        Me.logoAnimator.SetDecoration(Me.chkAdmin, BunifuAnimatorNS.DecorationType.None)
-        Me.chkAdmin.ForeColor = System.Drawing.Color.White
-        Me.chkAdmin.Location = New System.Drawing.Point(364, 280)
-        Me.chkAdmin.Name = "chkAdmin"
-        Me.chkAdmin.Size = New System.Drawing.Size(20, 20)
-        Me.chkAdmin.TabIndex = 17
         '
         'btnLogin
         '
@@ -275,7 +250,7 @@ Partial Class Login
         Me.logoAnimator.SetDecoration(Me.BunifuImageButton3, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuImageButton3.Image = CType(resources.GetObject("BunifuImageButton3.Image"), System.Drawing.Image)
         Me.BunifuImageButton3.ImageActive = Nothing
-        Me.BunifuImageButton3.Location = New System.Drawing.Point(592, 5)
+        Me.BunifuImageButton3.Location = New System.Drawing.Point(572, 5)
         Me.BunifuImageButton3.Name = "BunifuImageButton3"
         Me.BunifuImageButton3.Size = New System.Drawing.Size(22, 22)
         Me.BunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -294,17 +269,31 @@ Partial Class Login
         Me.logo.TabIndex = 13
         Me.logo.TabStop = False
         '
+        'BunifuImageButton2
+        '
+        Me.BunifuImageButton2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BunifuImageButton2.BackColor = System.Drawing.Color.Transparent
+        Me.logoAnimator.SetDecoration(Me.BunifuImageButton2, BunifuAnimatorNS.DecorationType.None)
+        Me.BunifuImageButton2.Image = CType(resources.GetObject("BunifuImageButton2.Image"), System.Drawing.Image)
+        Me.BunifuImageButton2.ImageActive = Nothing
+        Me.BunifuImageButton2.Location = New System.Drawing.Point(596, 4)
+        Me.BunifuImageButton2.Name = "BunifuImageButton2"
+        Me.BunifuImageButton2.Size = New System.Drawing.Size(22, 22)
+        Me.BunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton2.TabIndex = 21
+        Me.BunifuImageButton2.TabStop = False
+        Me.BunifuImageButton2.Zoom = 10
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(650, 400)
+        Me.Controls.Add(Me.BunifuImageButton2)
         Me.Controls.Add(Me.BunifuImageButton3)
         Me.Controls.Add(Me.btnLogin)
-        Me.Controls.Add(Me.chkAdmin)
         Me.Controls.Add(Me.txtPass)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.logo)
         Me.Controls.Add(Me.txtUser)
         Me.Controls.Add(Me.btnExit)
@@ -320,8 +309,8 @@ Partial Class Login
         CType(Me.btnExit, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -332,13 +321,12 @@ Partial Class Login
     Friend WithEvents txtUser As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents logoAnimator As BunifuAnimatorNS.BunifuTransition
     Friend WithEvents txtPass As Bunifu.Framework.UI.BunifuMaterialTextbox
-    Friend WithEvents Label1 As Label
     Friend WithEvents btnLogin As Bunifu.Framework.UI.BunifuThinButton2
-    Friend WithEvents chkAdmin As Bunifu.Framework.UI.BunifuCheckbox
     Friend WithEvents Label2 As Label
     Friend WithEvents amcc As PictureBox
     Friend WithEvents Garis1 As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents Garis2 As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents BunifuImageButton3 As Bunifu.Framework.UI.BunifuImageButton
     Friend WithEvents logo As PictureBox
+    Friend WithEvents BunifuImageButton2 As Bunifu.Framework.UI.BunifuImageButton
 End Class

@@ -29,16 +29,16 @@ Partial Class Transaksi_Admin
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New Bunifu.Framework.UI.BunifuCards()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cbStatus = New System.Windows.Forms.ComboBox()
+        Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.txtID_Transaksi = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.DGTransaksi = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.btnEdit = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnCancel = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnDelete = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnSave = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnPrint = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.txtID_Transaksi = New Bunifu.Framework.UI.BunifuMaterialTextbox()
-        Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.cbStatus = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DGTransaksi, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -73,8 +73,42 @@ Partial Class Transaksi_Admin
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.TabStop = False
         '
+        'cbStatus
+        '
+        resources.ApplyResources(Me.cbStatus, "cbStatus")
+        Me.cbStatus.FormattingEnabled = True
+        Me.cbStatus.Items.AddRange(New Object() {resources.GetString("cbStatus.Items"), resources.GetString("cbStatus.Items1"), resources.GetString("cbStatus.Items2"), resources.GetString("cbStatus.Items3")})
+        Me.cbStatus.Name = "cbStatus"
+        '
+        'BunifuCustomLabel2
+        '
+        resources.ApplyResources(Me.BunifuCustomLabel2, "BunifuCustomLabel2")
+        Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
+        '
+        'txtID_Transaksi
+        '
+        resources.ApplyResources(Me.txtID_Transaksi, "txtID_Transaksi")
+        Me.txtID_Transaksi.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtID_Transaksi.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtID_Transaksi.HintForeColor = System.Drawing.Color.Empty
+        Me.txtID_Transaksi.HintText = ""
+        Me.txtID_Transaksi.isPassword = False
+        Me.txtID_Transaksi.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.txtID_Transaksi.LineIdleColor = System.Drawing.Color.Gray
+        Me.txtID_Transaksi.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.txtID_Transaksi.LineThickness = 3
+        Me.txtID_Transaksi.Name = "txtID_Transaksi"
+        Me.txtID_Transaksi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'BunifuCustomLabel1
+        '
+        resources.ApplyResources(Me.BunifuCustomLabel1, "BunifuCustomLabel1")
+        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
+        '
         'DGTransaksi
         '
+        Me.DGTransaksi.AllowUserToAddRows = False
+        Me.DGTransaksi.AllowUserToDeleteRows = False
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.DGTransaksi.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         resources.ApplyResources(Me.DGTransaksi, "DGTransaksi")
@@ -91,10 +125,12 @@ Partial Class Transaksi_Admin
         Me.DGTransaksi.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DGTransaksi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGTransaksi.DoubleBuffered = True
+        Me.DGTransaksi.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.DGTransaksi.EnableHeadersVisualStyles = False
         Me.DGTransaksi.HeaderBgColor = System.Drawing.Color.SeaGreen
         Me.DGTransaksi.HeaderForeColor = System.Drawing.Color.White
         Me.DGTransaksi.Name = "DGTransaksi"
+        Me.DGTransaksi.ReadOnly = True
         Me.DGTransaksi.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         '
         'btnEdit
@@ -246,38 +282,6 @@ Partial Class Transaksi_Admin
         Me.btnPrint.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnPrint.Textcolor = System.Drawing.Color.White
         Me.btnPrint.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'BunifuCustomLabel1
-        '
-        resources.ApplyResources(Me.BunifuCustomLabel1, "BunifuCustomLabel1")
-        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
-        '
-        'txtID_Transaksi
-        '
-        resources.ApplyResources(Me.txtID_Transaksi, "txtID_Transaksi")
-        Me.txtID_Transaksi.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtID_Transaksi.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtID_Transaksi.HintForeColor = System.Drawing.Color.Empty
-        Me.txtID_Transaksi.HintText = ""
-        Me.txtID_Transaksi.isPassword = False
-        Me.txtID_Transaksi.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.txtID_Transaksi.LineIdleColor = System.Drawing.Color.Gray
-        Me.txtID_Transaksi.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.txtID_Transaksi.LineThickness = 3
-        Me.txtID_Transaksi.Name = "txtID_Transaksi"
-        Me.txtID_Transaksi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'BunifuCustomLabel2
-        '
-        resources.ApplyResources(Me.BunifuCustomLabel2, "BunifuCustomLabel2")
-        Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
-        '
-        'cbStatus
-        '
-        resources.ApplyResources(Me.cbStatus, "cbStatus")
-        Me.cbStatus.FormattingEnabled = True
-        Me.cbStatus.Items.AddRange(New Object() {resources.GetString("cbStatus.Items"), resources.GetString("cbStatus.Items1"), resources.GetString("cbStatus.Items2"), resources.GetString("cbStatus.Items3")})
-        Me.cbStatus.Name = "cbStatus"
         '
         'Transaksi_Admin
         '

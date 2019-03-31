@@ -11,6 +11,7 @@
         txtContact.Text = EntitasAdmin.contactAdmin
         txtFull.Text = EntitasAdmin.namaAdmin
         txtUser.Text = EntitasAdmin.usernameAdmin
+        txtPassword.Text = EntitasAdmin.passwordAdmin
     End Sub
 
     Private Sub BunifuCards1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
@@ -31,6 +32,7 @@
         txtContact.Enabled = True
         txtFull.Enabled = True
         txtUser.Enabled = True
+        txtPassword.Enabled = True
     End Sub
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
@@ -44,12 +46,14 @@
         txtContact.Enabled = False
         txtFull.Enabled = False
         txtUser.Enabled = False
+        txtPassword.Enabled = False
 
         With EntitasAdmin
             .usernameAdmin = txtUser.Text
             .namaAdmin = txtFull.Text
             .emailAdmin = txtEmail.Text
             .contactAdmin = txtContact.Text
+            .passwordAdmin = txtPassword.Text
         End With
 
         KontrolAdmin.updateData(EntitasAdmin)

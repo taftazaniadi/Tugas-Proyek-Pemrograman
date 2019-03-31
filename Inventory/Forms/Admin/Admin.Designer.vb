@@ -103,7 +103,7 @@ Partial Class Form1
         Me.btnMember.IconVisible = True
         Me.btnMember.IconZoom = 60.0R
         Me.btnMember.IsTab = True
-        Me.btnMember.Location = New System.Drawing.Point(3, 301)
+        Me.btnMember.Location = New System.Drawing.Point(0, 301)
         Me.btnMember.Name = "btnMember"
         Me.btnMember.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.btnMember.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
@@ -175,7 +175,7 @@ Partial Class Form1
         Me.btnInventaris.IconVisible = True
         Me.btnInventaris.IconZoom = 60.0R
         Me.btnInventaris.IsTab = True
-        Me.btnInventaris.Location = New System.Drawing.Point(3, 247)
+        Me.btnInventaris.Location = New System.Drawing.Point(0, 247)
         Me.btnInventaris.Name = "btnInventaris"
         Me.btnInventaris.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.btnInventaris.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer))

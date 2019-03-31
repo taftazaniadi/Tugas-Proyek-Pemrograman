@@ -26,6 +26,8 @@ Partial Class Dashboard_Admin
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard_Admin))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New Bunifu.Framework.UI.BunifuCards()
+        Me.BunifuCustomLabel6 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.txtPassword = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.BunifuCustomLabel5 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -52,6 +54,8 @@ Partial Class Dashboard_Admin
         Me.Panel1.BorderRadius = 5
         Me.Panel1.BottomSahddow = True
         Me.Panel1.color = System.Drawing.Color.Green
+        Me.Panel1.Controls.Add(Me.BunifuCustomLabel6)
+        Me.Panel1.Controls.Add(Me.txtPassword)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel5)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel4)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel3)
@@ -66,6 +70,26 @@ Partial Class Dashboard_Admin
         Me.Panel1.Name = "Panel1"
         Me.Panel1.RightSahddow = True
         Me.Panel1.ShadowDepth = 20
+        '
+        'BunifuCustomLabel6
+        '
+        resources.ApplyResources(Me.BunifuCustomLabel6, "BunifuCustomLabel6")
+        Me.BunifuCustomLabel6.Name = "BunifuCustomLabel6"
+        '
+        'txtPassword
+        '
+        resources.ApplyResources(Me.txtPassword, "txtPassword")
+        Me.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtPassword.HintForeColor = System.Drawing.Color.Empty
+        Me.txtPassword.HintText = ""
+        Me.txtPassword.isPassword = False
+        Me.txtPassword.LineFocusedColor = System.Drawing.Color.Blue
+        Me.txtPassword.LineIdleColor = System.Drawing.Color.Gray
+        Me.txtPassword.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.txtPassword.LineThickness = 3
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'BunifuCustomLabel5
         '
@@ -273,4 +297,6 @@ Partial Class Dashboard_Admin
     Friend WithEvents txtContact As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents txtEmail As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents BunifuCustomLabel5 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuCustomLabel6 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents txtPassword As Bunifu.Framework.UI.BunifuMaterialTextbox
 End Class

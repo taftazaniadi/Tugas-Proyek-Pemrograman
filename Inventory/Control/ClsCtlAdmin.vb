@@ -25,10 +25,8 @@ Public Class ClsCtlAdmin : Implements InfProses
     Public Function updateData(Ob As Object) As OleDbCommand Implements InfProses.updateData
         Dim data As New ClsEntAdmin
         data = Ob
-        CMD = New OleDbCommand("UPDATE admin a SET a.username ='" & data.usernameAdmin & "', p.nama = '" & data.namaAdmin &
-                               "', p.email = '" & data.emailAdmin & "', p.contact = '" & data.contactAdmin & "' JOIN 
-                               personal p ON a.id_personal = p.id_personal WHERE a.id_personal = '" & data.id_personalAdmin & "'",
-                               BUKAKONEKSI)
+        CMD = New OleDbCommand("exec UpdateData '" & data.namaAdmin & "', '" & data.emailAdmin & "', '" & data.contactAdmin & "', '" & data.jurusanAdmin & "', 
+                               '" & data.passwordAdmin & "', '" & data.usernameAdmin & "', 'null', 'A', '" & data.id_personalAdmin & "'", BUKAKONEKSI)
         CMD.CommandType = CommandType.Text
         CMD.ExecuteNonQuery()
         CMD = New OleDbCommand("", TUTUPKONEKSI)

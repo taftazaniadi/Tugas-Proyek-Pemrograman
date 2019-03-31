@@ -27,12 +27,13 @@ Public Class Info_Member
     Private Sub IsiBox(br As Integer)
         If br < DTGrid.Rows.Count Then
             With DGMember.Rows(br)
-                txtNIM.Text = .Cells(0).Value.ToString
-                txtNama.Text = .Cells(1).Value.ToString
-                txtPass.Text = .Cells(2).Value.ToString
-                txtEmail.Text = .Cells(3).Value.ToString
-                txtKontak.Text = .Cells(4).Value.ToString
-                txtJurusan.Text = .Cells(5).Value.ToString
+                txtID.Text = .Cells(0).Value.ToString
+                txtNIM.Text = .Cells(1).Value.ToString
+                txtNama.Text = .Cells(2).Value.ToString
+                txtPass.Text = .Cells(3).Value.ToString
+                txtEmail.Text = .Cells(4).Value.ToString
+                txtKontak.Text = .Cells(5).Value.ToString
+                txtJurusan.Text = .Cells(6).Value.ToString
             End With
         End If
     End Sub
@@ -90,12 +91,13 @@ Public Class Info_Member
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         With EntitasMember
+            .id_personalMember = txtID.Text + 1
             .NIMMember = txtNIM.Text
-            .NamaMember = txtNama.Text
-            .PasswordMember = txtPass.Text
-            .EmailMember = txtEmail.Text
-            .ContactMember = txtKontak.Text
-            .JurusanMember = txtJurusan.Text
+            .namaMember = txtNama.Text
+            .passwordMember = txtPass.Text
+            .emailMember = txtEmail.Text
+            .contactMember = txtKontak.Text
+            .jurusanMember = txtJurusan.Text
         End With
 
         txtNIM.Enabled = False

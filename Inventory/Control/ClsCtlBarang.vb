@@ -35,6 +35,21 @@ Public Class ClsCtlBarang : Implements InfProses
         Return cek
     End Function
 
+    Function cekStock(kunci As String) As Integer
+        Dim stock As Integer
+
+        Try
+            DTA = New OleDbDataAdapter("SELECT stock FROM barang WHERE id_barang = '" & kunci & "'", BUKAKONEKSI)
+            DTS = New DataSet()
+            DTA.Fill(DTS, "stock")
+            stock = Val(DTS.Tables("stock").Rows(0).Item(0))
+
+            Return stock
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+    End Function
+
     Public Function InsertData(Ob As Object) As OleDbCommand Implements InfProses.InsertData
         Dim data As New ClsEntBarang
         data = Ob
@@ -86,4 +101,5 @@ Public Class ClsCtlBarang : Implements InfProses
     Public Function cariData(kunci As String) As DataView Implements InfProses.cariData
         Throw New NotImplementedException()
     End Function
+
 End Class

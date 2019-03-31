@@ -47,6 +47,7 @@ Partial Class Info_Member
         Me.btnEdit = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnSave = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnCancel = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.txtID = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.Panel1.SuspendLayout()
         CType(Me.DGMember, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -74,6 +75,8 @@ Partial Class Info_Member
         '
         'DGMember
         '
+        Me.DGMember.AllowUserToAddRows = False
+        Me.DGMember.AllowUserToDeleteRows = False
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.DGMember.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DGMember.BackgroundColor = System.Drawing.Color.Gainsboro
@@ -89,6 +92,7 @@ Partial Class Info_Member
         Me.DGMember.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DGMember.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGMember.DoubleBuffered = True
+        Me.DGMember.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.DGMember.EnableHeadersVisualStyles = False
         Me.DGMember.HeaderBgColor = System.Drawing.Color.SeaGreen
         Me.DGMember.HeaderForeColor = System.Drawing.Color.White
@@ -100,6 +104,7 @@ Partial Class Info_Member
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.txtID)
         Me.GroupBox1.Controls.Add(Me.txtJurusan)
         Me.GroupBox1.Controls.Add(Me.BunifuCustomLabel6)
         Me.GroupBox1.Controls.Add(Me.txtKontak)
@@ -505,6 +510,30 @@ Partial Class Info_Member
         Me.btnCancel.Textcolor = System.Drawing.Color.White
         Me.btnCancel.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
+        'txtID
+        '
+        Me.txtID.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtID.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtID.Enabled = False
+        Me.txtID.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.txtID.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtID.HintForeColor = System.Drawing.Color.Empty
+        Me.txtID.HintText = ""
+        Me.txtID.isPassword = False
+        Me.txtID.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.txtID.LineIdleColor = System.Drawing.Color.Gray
+        Me.txtID.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.txtID.LineThickness = 3
+        Me.txtID.Location = New System.Drawing.Point(138, 9)
+        Me.txtID.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtID.Name = "txtID"
+        Me.txtID.Size = New System.Drawing.Size(368, 33)
+        Me.txtID.TabIndex = 34
+        Me.txtID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txtID.Visible = False
+        '
         'Info_Member
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -550,4 +579,5 @@ Partial Class Info_Member
     Friend WithEvents BunifuCustomLabel3 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents txtJurusan As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents BunifuCustomLabel6 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents txtID As Bunifu.Framework.UI.BunifuMaterialTextbox
 End Class

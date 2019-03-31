@@ -31,9 +31,8 @@ Public Class ClsCtlMember : Implements InfProses
     Public Function updateData(Ob As Object) As OleDbCommand Implements InfProses.updateData
         Dim data As New ClsEntMember
         data = Ob
-        CMD = New OleDbCommand("EXEC UpdatePersonal 'M', '" & data.namaMember & "', '" & data.emailMember & "', 
-                               '" & data.contactMember & "', '" & data.jurusanMember & "', '" & data.passwordMember & "', '', 
-                               WHERE NIM = '" & data.NIMMember & "'", BUKAKONEKSI)
+        CMD = New OleDbCommand("exec UpdateData '" & data.namaMember & "', '" & data.emailMember & "', '" & data.contactMember & "', '" & data.jurusanMember & "', 
+                               '" & data.passwordMember & "', null, '" & data.NIMMember & "', 'M', '" & data.id_personalMember & "'", BUKAKONEKSI)
         CMD.CommandType = CommandType.Text
         CMD.ExecuteNonQuery()
         CMD = New OleDbCommand("", TUTUPKONEKSI)
@@ -50,8 +49,7 @@ Public Class ClsCtlMember : Implements InfProses
 
     Public Function tampilData() As DataView Implements InfProses.tampilData
         Try
-            DTA = New OleDbDataAdapter("SELECT m.NIM, p.nama, p.password, p.email, p.contact, p.jurusan FROM personal p JOIN member m 
-                                        ON p.id_personal = m.id_personal", BUKAKONEKSI)
+            DTA = New OleDbDataAdapter("SELECT (m.id_personal - 1) as 'No', m.NIM, p.nama, p.password, p.email, p.contact, p.company FROM personal p JOIN member m ON p.id_personal = m.id_personal", BUKAKONEKSI)
             DTS = New DataSet()
             DTA.Fill(DTS, "data_member")
             Dim data As New DataView(DTS.Tables("data_member"))

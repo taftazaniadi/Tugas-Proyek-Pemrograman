@@ -138,4 +138,8 @@ Public Class Inventaris_Admin
         End If
     End Sub
 
+    Private Sub btnPrint_Click(sender As Object, e As EventArgs) Handles btnPrint.Click
+        Report_Barang.Show()
+    End Sub
+
 End Class
