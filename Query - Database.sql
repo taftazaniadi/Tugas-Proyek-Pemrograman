@@ -1,6 +1,24 @@
 create database Inventory
+ON
+(
+	NAME = Inventory,
+	FILENAME = 'E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory.mdf',
+	SIZE = 10,
+	MAXSIZE = 50,
+	FILEGROWTH = 5
+)
+LOG ON
+(
+	NAME = Inventory_log,
+	FILENAME = 'E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory_log.ldf',
+	SIZE = 5MB,
+	MAXSIZE = 25MB,
+	FILEGROWTH = 5MB
+)
+go
 
 use Inventory
+go
 
 create table personal
 (
@@ -35,6 +53,7 @@ create table barang
 	nama_barang varchar(50) not null,
 	jenis_barang varchar(20) not null,
 	stock int not null,
+	pinjam int not null,
 	satuan varchar(30) not null,
 	keterangan varchar(15),
 	tempat varchar(50) not null,
@@ -50,8 +69,6 @@ create table transaksi
 	tgl_pinjam date not null,
 	tgl_kembali date not null,
 	jumlah int not null,
-	deskripsi text,
-	surat text not null,
 	status_transaksi varchar(30) not null,
 )
 go
@@ -96,8 +113,6 @@ exec InsertPersonal 'A', 'Muhammad Taptazani Adi', 'm.taftazani123@gmail.com', '
 go
 exec InsertPersonal 'M', 'Muhammad Taptazani Adi', 'm.taftazani123@gmail.com', '085393051298', 'Sistem Informasi', '36456', NULL, '16.12.8983'
 go
-exec InsertPersonal 'M', 'Intan Disty Anggraini', 'intandistyanggraini@gmail.com', '0895604565563', 'Ilmu Komunikasi', '54360', NULL, '17.96.0165'
-go
 
 --Procedure Update Data
 CREATE PROC UpdateData (@nama VARCHAR(100), @email VARCHAR(100), @contact varchar(13), @company VARCHAR(30), @password VARCHAR(20),@username varchar(20), @NIM varchar(10), @tipe CHAR(1), @id_personal int)
@@ -113,31 +128,96 @@ AS
 		END
 go
 
-exec UpdateData 'Muhammad Taftazani Adi', 'm.taftazani123@gmail.com', '085787572313', 'Sistem Informasi', 'melondoto', 'Melon', null, 'A', 1
+exec UpdateData 'Muhammad Taftazani Adi', 'm.taftazani123@gmail.com', '085787572313', 'Sistem Informasi', 'doto', 'Melon', null, 'A', 1
 exec UpdateData 'Muhammad Taftazani Adi', 'm.taftazani123@gmail.com', '085787572313', 'Sistem Informasi', 'melon', null, '16.12.8983', 'M', 2
 
-drop proc UpdateMember
-
-
 --Insert Barang
-INSERT INTO barang VALUES('B0001', 1, 'Meja', 'Kayu', 5, 'pcs', 'Tersedia', 'Sekre', 'Baik')
+INSERT INTO barang VALUES('B0001', 1, 'Meja', 'Kayu', 5, 0, 'Pcs', 'Tersedia', 'Sekre', 'Baik')
 go
-INSERT INTO barang VALUES('B0002', 1, 'Kursi', 'Kayu', 1, 'pcs', 'Tersedia', 'Sekre', 'Baik')
+INSERT INTO barang VALUES('B0002', 1, 'Kursi', 'Kayu', 1, 0, 'Pcs', 'Tersedia', 'Sekre', 'Baik')
+go
+INSERT INTO barang VALUES('B0003', 1, 'Lemari', 'Besi', 2, 0, 'Pcs', 'Tersedia', 'Camp', 'Baik')
 go
 
 --Insert Transaksi
-INSERT INTO transaksi VALUES('T0001', 2, 'B0001', '2019-01-10', '2019-01-11', 2, '', '', 'Menunggu')
+INSERT INTO transaksi VALUES('T0001', 2, 'B0001', '2019-01-10', '2019-01-11', 2, 'Menunggu')
+go
+INSERT INTO transaksi VALUES('T0002', 2, 'B0002', '2019-01-10', '2019-01-11', 2, 'Menunggu')
+go
+INSERT INTO transaksi VALUES('T0004', 2, 'B0003', '2019-01-10', '2019-01-11', 2, 'Menunggu')
 go
 
+--Query Transaksi
+UPDATE transaksi SET status_transaksi = 'Dikembalikan' WHERE id_transaksi = 'T0001'
+UPDATE barang set stock = 5, keterangan = 'Tersedia'
+UPDATE barang set pinjam = 0
+DELETE FROM transaksi WHERE id_transaksi = 'T0001'
+
+-- Trigger Transaksi
+ALTER TRIGGER update_transaksi
+ON transaksi
+for insert
+as
+	declare @stok as int
+	declare @pinjam as int
+	declare @kode_barang as varchar(5)
+	select @kode_barang = id_barang, @pinjam = jumlah from inserted
+	select @stok = stock from barang where id_barang = @kode_barang
+	set @stok = @stok - @pinjam
+begin transaction
+	update barang set stock = @stok, pinjam = @pinjam, keterangan = 'Tersedia' where id_barang = @kode_barang
+if @@ERROR = 0
+	commit transaction
+else
+	rollback transaction
+
+
+CREATE TRIGGER return_transaksi
+ON transaksi
+AFTER UPDATE
+as
+	declare @stok as int
+	declare @pinjam as int
+	declare @kode_barang as varchar(5)
+	declare @status as varchar(15)
+	declare @status_trans as varchar(15)
+	select @kode_barang = id_barang, @pinjam = jumlah, @status_trans = status_transaksi from inserted
+	select @stok = stock, @pinjam = pinjam, @status = keterangan from barang where id_barang = @kode_barang
+	set @stok = @stok + @pinjam
+begin transaction
+	update barang set barang.stock = @stok, barang.pinjam = 0, barang.keterangan = @status 
+	FROM transaksi
+	where barang.id_barang = @kode_barang AND transaksi.status_transaksi = @status_trans
+if @@ERROR = 0
+	commit transaction
+else
+	rollback transaction
+
+
+CREATE TRIGGER delete_transaksi
+ON transaksi
+AFTER DELETE
+as
+	declare @stok as int
+	declare @pinjam as int
+	declare @kode_barang as varchar(5)
+	declare @status as varchar(15)
+	declare @status_trans as varchar(15)
+	select @kode_barang = id_barang, @pinjam = jumlah, @status_trans = status_transaksi from inserted
+	select @stok = stock, @pinjam = pinjam, @status = keterangan from barang where id_barang = @kode_barang
+	set @stok = @stok + @pinjam
+begin transaction
+	update barang set barang.stock = @stok, barang.pinjam = 0, barang.keterangan = 'Tersedia' 
+	FROM transaksi
+	where barang.id_barang = @kode_barang AND transaksi.status_transaksi = @status_trans
+if @@ERROR = 0
+	commit transaction
+else
+	rollback transaction
+
+--Query Select
 select * from personal
-
-delete from personal
-
---View Transaksi
-Create view BuktiTransaksi
-As
-	SELECT t.id_transaksi, m.NIM, b.nama_barang, t.tgl_pinjam, t.tgl_kembali, t.jumlah, t.deskripsi, t.surat, t.status_transaksi FROM transaksi t JOIN member m 
-	ON t.id_personal = m.id_personal JOIN personal p ON t.id_personal = p.id_personal JOIN barang b ON b.id_barang = t.id_barang
-
+select * from admin
+select * from member
+select * from barang
 select * from transaksi
-

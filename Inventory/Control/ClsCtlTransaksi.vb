@@ -53,7 +53,7 @@ Public Class ClsCtlTransaksi : Implements InfProses
     Public Function tampilData() As DataView Implements InfProses.tampilData
         Try
             DTA = New OleDbDataAdapter("SELECT t.id_transaksi, m.NIM, b.nama_barang, t.tgl_pinjam, t.tgl_kembali, b.stock, t.jumlah, 
-                                        t.deskripsi, t.surat, t.status_transaksi FROM transaksi t JOIN member m ON t.id_personal = 
+                                        t.status_transaksi FROM transaksi t JOIN member m ON t.id_personal = 
                                         m.id_personal JOIN personal p ON t.id_personal = p.id_personal JOIN barang b ON b.id_barang =
                                         t.id_barang", BUKAKONEKSI)
             DTS = New DataSet()

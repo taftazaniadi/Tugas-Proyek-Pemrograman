@@ -618,6 +618,12 @@
   <data name="cbStatus.Items3" xml:space="preserve">
     <value>Menunggu</value>
   </data>
+  <data name="cbStatus.Items4" xml:space="preserve">
+    <value>Dikembalikan</value>
+  </data>
+  <data name="cbStatus.Items5" xml:space="preserve">
+    <value>Belum Dikembalikan</value>
+  </data>
   <data name="cbStatus.Location" type="System.Drawing.Point, System.Drawing">
     <value>130, 75</value>
   </data>

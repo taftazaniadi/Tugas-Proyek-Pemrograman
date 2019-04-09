@@ -77,7 +77,7 @@ Partial Class Transaksi_Admin
         '
         resources.ApplyResources(Me.cbStatus, "cbStatus")
         Me.cbStatus.FormattingEnabled = True
-        Me.cbStatus.Items.AddRange(New Object() {resources.GetString("cbStatus.Items"), resources.GetString("cbStatus.Items1"), resources.GetString("cbStatus.Items2"), resources.GetString("cbStatus.Items3")})
+        Me.cbStatus.Items.AddRange(New Object() {resources.GetString("cbStatus.Items"), resources.GetString("cbStatus.Items1"), resources.GetString("cbStatus.Items2"), resources.GetString("cbStatus.Items3"), resources.GetString("cbStatus.Items4"), resources.GetString("cbStatus.Items5")})
         Me.cbStatus.Name = "cbStatus"
         '
         'BunifuCustomLabel2
