@@ -49,7 +49,8 @@ Public Class ClsCtlMember : Implements InfProses
 
     Public Function tampilData() As DataView Implements InfProses.tampilData
         Try
-            DTA = New OleDbDataAdapter("SELECT (m.id_personal - 1) as 'No', m.NIM, p.nama, p.password, p.email, p.contact, p.company FROM personal p JOIN member m ON p.id_personal = m.id_personal", BUKAKONEKSI)
+            DTA = New OleDbDataAdapter("SELECT (m.id_personal - 1) as 'No', m.NIM, p.nama as 'Nama', p.password as 'Password', p.email as 'Email', p.contact as 'Kontak', 
+                                        p.company as 'Organisasi' FROM personal p JOIN member m ON p.id_personal = m.id_personal", BUKAKONEKSI)
             DTS = New DataSet()
             DTA.Fill(DTS, "data_member")
             Dim data As New DataView(DTS.Tables("data_member"))

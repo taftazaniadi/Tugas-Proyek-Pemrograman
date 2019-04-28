@@ -86,8 +86,8 @@ Public Class ClsCtlBarang : Implements InfProses
 
     Public Function tampilData() As DataView Implements InfProses.tampilData
         Try
-            DTA = New OleDbDataAdapter("SELECT id_barang, nama_barang, jenis_barang, stock, satuan, keterangan, tempat, status_barang
-                                        FROM barang", BUKAKONEKSI)
+            DTA = New OleDbDataAdapter("SELECT id_barang as 'ID Barang', nama_barang as 'Nama Barang', jenis_barang as 'Jenis Barang', stock as 'Stock Barang', 
+                                        satuan as 'Satuan', keterangan as 'Keterangan', tempat as 'Lokasi Barang', status_barang as 'Kondisi Barang' FROM barang", BUKAKONEKSI)
             DTS = New DataSet()
             DTA.Fill(DTS, "Tabel_Barang")
             Dim grid As New DataView(DTS.Tables("Tabel_Barang"))

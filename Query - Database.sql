@@ -43,6 +43,7 @@ create table member
 (
 	id_personal int identity(1,1) not null primary key references personal(id_personal),
 	NIM varchar(10) not null,
+	Denda double
 )
 go
 
@@ -82,7 +83,7 @@ alter table barang add constraint cek_tempat check(tempat IN('Camp', 'Sekre', 'G
 go
 alter table barang add constraint cek_satuan check(satuan IN('Pcs', 'Kg', 'Packs'))
 go
-alter table barang add constraint cek_ket check(keterangan IN('Dipinjam', 'Tersedia'))
+alter table barang add constraint cek_ket check(keterangan IN('Dipinjam', 'Tersedia', 'Diproses'))
 go
 
 --Constraint transaksi
@@ -142,19 +143,19 @@ go
 --Insert Transaksi
 INSERT INTO transaksi VALUES('T0001', 2, 'B0001', '2019-01-10', '2019-01-11', 2, 'Menunggu')
 go
-INSERT INTO transaksi VALUES('T0002', 2, 'B0002', '2019-01-10', '2019-01-11', 2, 'Menunggu')
+INSERT INTO transaksi VALUES('T0002', 2, 'B0002', '2019-01-10', '2019-01-11', 1, 'Menunggu')
 go
-INSERT INTO transaksi VALUES('T0004', 2, 'B0003', '2019-01-10', '2019-01-11', 2, 'Menunggu')
+INSERT INTO transaksi VALUES('T0003', 2, 'B0003', '2019-01-10', '2019-01-11', 2, 'Menunggu')
 go
 
 --Query Transaksi
-UPDATE transaksi SET status_transaksi = 'Dikembalikan' WHERE id_transaksi = 'T0001'
+UPDATE transaksi SET status_transaksi = 'Dikembalikan' WHERE id_transaksi = 'T0002'
 UPDATE barang set stock = 5, keterangan = 'Tersedia'
 UPDATE barang set pinjam = 0
 DELETE FROM transaksi WHERE id_transaksi = 'T0001'
 
 -- Trigger Transaksi
-ALTER TRIGGER update_transaksi
+create TRIGGER update_transaksi 
 ON transaksi
 for insert
 as
@@ -165,14 +166,13 @@ as
 	select @stok = stock from barang where id_barang = @kode_barang
 	set @stok = @stok - @pinjam
 begin transaction
-	update barang set stock = @stok, pinjam = @pinjam, keterangan = 'Tersedia' where id_barang = @kode_barang
+	update barang set stock = @stok, pinjam = @pinjam, keterangan = 'Diproses' where id_barang = @kode_barang
 if @@ERROR = 0
 	commit transaction
 else
 	rollback transaction
 
-
-CREATE TRIGGER return_transaksi
+alter TRIGGER trig_transaksi
 ON transaksi
 AFTER UPDATE
 as
@@ -180,21 +180,28 @@ as
 	declare @pinjam as int
 	declare @kode_barang as varchar(5)
 	declare @status as varchar(15)
-	declare @status_trans as varchar(15)
-	select @kode_barang = id_barang, @pinjam = jumlah, @status_trans = status_transaksi from inserted
-	select @stok = stock, @pinjam = pinjam, @status = keterangan from barang where id_barang = @kode_barang
+	select @kode_barang = id_barang, @pinjam = jumlah, @status = status_transaksi from inserted
+	select @stok = stock, @pinjam = pinjam from barang where id_barang = @kode_barang
 	set @stok = @stok + @pinjam
 begin transaction
-	update barang set barang.stock = @stok, barang.pinjam = 0, barang.keterangan = @status 
-	FROM transaksi
-	where barang.id_barang = @kode_barang AND transaksi.status_transaksi = @status_trans
+	if @status = 'Dikembalikan' OR @status = 'Ditolak'
+	BEGIN
+		update barang set barang.stock = @stok, barang.pinjam = 0, barang.keterangan = 'Tersedia' 
+		FROM transaksi
+		where barang.id_barang = @kode_barang AND transaksi.status_transaksi = 'Dikembalikan' OR transaksi.status_transaksi = 'Ditolak'
+	END
+	else
+	BEGIN
+		update barang set barang.keterangan = 'Dipinjam' 
+		FROM transaksi
+		where barang.id_barang = @kode_barang AND transaksi.status_transaksi = 'Diterima'
+	END
 if @@ERROR = 0
 	commit transaction
 else
 	rollback transaction
 
-
-CREATE TRIGGER delete_transaksi
+alter TRIGGER delete_transaksi
 ON transaksi
 AFTER DELETE
 as
@@ -202,14 +209,11 @@ as
 	declare @pinjam as int
 	declare @kode_barang as varchar(5)
 	declare @status as varchar(15)
-	declare @status_trans as varchar(15)
-	select @kode_barang = id_barang, @pinjam = jumlah, @status_trans = status_transaksi from inserted
+	select @kode_barang = id_barang, @pinjam = jumlah from deleted
 	select @stok = stock, @pinjam = pinjam, @status = keterangan from barang where id_barang = @kode_barang
 	set @stok = @stok + @pinjam
 begin transaction
-	update barang set barang.stock = @stok, barang.pinjam = 0, barang.keterangan = 'Tersedia' 
-	FROM transaksi
-	where barang.id_barang = @kode_barang AND transaksi.status_transaksi = @status_trans
+	update barang set stock = @stok, pinjam = 0, keterangan = 'Tersedia' where id_barang = @kode_barang
 if @@ERROR = 0
 	commit transaction
 else
@@ -221,3 +225,10 @@ select * from admin
 select * from member
 select * from barang
 select * from transaksi
+
+
+--Delete Trigger
+drop trigger update_transaksi
+drop trigger return_transaksi
+drop trigger delete_transaksi
+

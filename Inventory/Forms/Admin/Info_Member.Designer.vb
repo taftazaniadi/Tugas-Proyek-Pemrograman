@@ -25,11 +25,14 @@ Partial Class Info_Member
         Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Info_Member))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New Bunifu.Framework.UI.BunifuCards()
         Me.DGMember = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtID = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.txtJurusan = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.BunifuCustomLabel6 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.txtKontak = New Bunifu.Framework.UI.BunifuMaterialTextbox()
@@ -47,7 +50,6 @@ Partial Class Info_Member
         Me.btnEdit = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnSave = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnCancel = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.txtID = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.Panel1.SuspendLayout()
         CType(Me.DGMember, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -99,6 +101,17 @@ Partial Class Info_Member
         Me.DGMember.Location = New System.Drawing.Point(3, 7)
         Me.DGMember.Name = "DGMember"
         Me.DGMember.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGMember.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.DGMember.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DGMember.RowsDefaultCellStyle = DataGridViewCellStyle4
         Me.DGMember.Size = New System.Drawing.Size(534, 234)
         Me.DGMember.TabIndex = 1
         '
@@ -122,6 +135,30 @@ Partial Class Info_Member
         Me.GroupBox1.Size = New System.Drawing.Size(540, 247)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
+        '
+        'txtID
+        '
+        Me.txtID.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtID.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtID.Enabled = False
+        Me.txtID.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.txtID.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtID.HintForeColor = System.Drawing.Color.Empty
+        Me.txtID.HintText = ""
+        Me.txtID.isPassword = False
+        Me.txtID.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.txtID.LineIdleColor = System.Drawing.Color.Gray
+        Me.txtID.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.txtID.LineThickness = 3
+        Me.txtID.Location = New System.Drawing.Point(138, 9)
+        Me.txtID.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtID.Name = "txtID"
+        Me.txtID.Size = New System.Drawing.Size(368, 33)
+        Me.txtID.TabIndex = 34
+        Me.txtID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txtID.Visible = False
         '
         'txtJurusan
         '
@@ -509,30 +546,6 @@ Partial Class Info_Member
         Me.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnCancel.Textcolor = System.Drawing.Color.White
         Me.btnCancel.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'txtID
-        '
-        Me.txtID.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtID.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtID.Enabled = False
-        Me.txtID.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.txtID.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtID.HintForeColor = System.Drawing.Color.Empty
-        Me.txtID.HintText = ""
-        Me.txtID.isPassword = False
-        Me.txtID.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.txtID.LineIdleColor = System.Drawing.Color.Gray
-        Me.txtID.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.txtID.LineThickness = 3
-        Me.txtID.Location = New System.Drawing.Point(138, 9)
-        Me.txtID.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtID.Name = "txtID"
-        Me.txtID.Size = New System.Drawing.Size(368, 33)
-        Me.txtID.TabIndex = 34
-        Me.txtID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txtID.Visible = False
         '
         'Info_Member
         '

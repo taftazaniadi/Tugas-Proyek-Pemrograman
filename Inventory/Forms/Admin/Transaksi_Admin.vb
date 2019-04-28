@@ -21,7 +21,7 @@
         If br < DTGrid.Rows.Count Then
             With DGTransaksi.Rows(br)
                 txtID_Transaksi.Text = .Cells(0).Value.ToString
-                cbStatus.SelectedItem = .Cells(7).Value.ToString
+                cbStatus.SelectedItem = .Cells(6).Value.ToString
             End With
         End If
     End Sub
