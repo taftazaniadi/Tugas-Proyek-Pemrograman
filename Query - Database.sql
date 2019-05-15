@@ -172,7 +172,7 @@ if @@ERROR = 0
 else
 	rollback transaction
 
-alter TRIGGER trig_transaksi
+create TRIGGER trig_transaksi
 ON transaksi
 AFTER UPDATE
 as
@@ -201,7 +201,7 @@ if @@ERROR = 0
 else
 	rollback transaction
 
-alter TRIGGER delete_transaksi
+create TRIGGER delete_transaksi
 ON transaksi
 AFTER DELETE
 as
