@@ -24,7 +24,7 @@ Public Class ClsCtlBarang : Implements InfProses
         cek = False
 
         Try
-            DTA = New OleDbDataAdapter("SELECT COUNT(id_barang) FROM transaksi WHERE id_barang = '" & kunci & "'", BUKAKONEKSI)
+            DTA = New OleDbDataAdapter("SELECT COUNT(id_transaksi) FROM transaksi WHERE id_transaksi = '" & kunci & "' AND (status_transaksi = 'Diterima' OR status_transaksi = 'Menunggu' OR status_transaksi = 'Belum Dikembalikan')", BUKAKONEKSI)
             DTS = New DataSet()
             DTA.Fill(DTS, "cek")
 
@@ -54,7 +54,7 @@ Public Class ClsCtlBarang : Implements InfProses
         Dim data As New ClsEntBarang
         data = Ob
         CMD = New OleDbCommand("INSERT INTO barang VALUES('" & data.id_barangBarang & "', '1', '" & data.namaBarang & "', 
-                               '" & data.jenisBarang & "', '" & data.stockBarang & "', '" & data.satuanBarang & "', 
+                               '" & data.jenisBarang & "', '" & data.stockBarang & "', '', '" & data.satuanBarang & "', 
                                '" & data.keteranganBarang & "', '" & data.tempatBarang & "', '" & data.statusBarang & "')",
                                BUKAKONEKSI)
         CMD.CommandType = CommandType.Text

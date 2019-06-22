@@ -165,13 +165,14 @@ Partial Class Transaksi_Admin
         '
         'btnEdit
         '
-        Me.btnEdit.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnEdit.Activecolor = System.Drawing.Color.Yellow
         resources.ApplyResources(Me.btnEdit, "btnEdit")
-        Me.btnEdit.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnEdit.BackColor = System.Drawing.Color.Yellow
         Me.btnEdit.BorderRadius = 0
         Me.btnEdit.ButtonText = "Edit"
         Me.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnEdit.DisabledColor = System.Drawing.Color.Gray
+        Me.btnEdit.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnEdit.Iconcolor = System.Drawing.Color.Transparent
         Me.btnEdit.Iconimage = CType(resources.GetObject("btnEdit.Iconimage"), System.Drawing.Image)
         Me.btnEdit.Iconimage_right = Nothing
@@ -185,19 +186,19 @@ Partial Class Transaksi_Admin
         Me.btnEdit.IconZoom = 90.0R
         Me.btnEdit.IsTab = False
         Me.btnEdit.Name = "btnEdit"
-        Me.btnEdit.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.btnEdit.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.btnEdit.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnEdit.Normalcolor = System.Drawing.Color.Yellow
+        Me.btnEdit.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnEdit.OnHoverTextColor = System.Drawing.Color.Black
         Me.btnEdit.selected = False
         Me.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnEdit.Textcolor = System.Drawing.Color.White
+        Me.btnEdit.Textcolor = System.Drawing.Color.Black
         Me.btnEdit.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'btnCancel
         '
-        Me.btnCancel.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnCancel.Activecolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         resources.ApplyResources(Me.btnCancel, "btnCancel")
-        Me.btnCancel.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnCancel.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btnCancel.BorderRadius = 0
         Me.btnCancel.ButtonText = "Cancel"
         Me.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand
@@ -215,8 +216,8 @@ Partial Class Transaksi_Admin
         Me.btnCancel.IconZoom = 90.0R
         Me.btnCancel.IsTab = False
         Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.btnCancel.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnCancel.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnCancel.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btnCancel.OnHoverTextColor = System.Drawing.Color.White
         Me.btnCancel.selected = False
         Me.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -225,9 +226,9 @@ Partial Class Transaksi_Admin
         '
         'btnDelete
         '
-        Me.btnDelete.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnDelete.Activecolor = System.Drawing.Color.Red
         resources.ApplyResources(Me.btnDelete, "btnDelete")
-        Me.btnDelete.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnDelete.BackColor = System.Drawing.Color.Red
         Me.btnDelete.BorderRadius = 0
         Me.btnDelete.ButtonText = "Delete"
         Me.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand
@@ -245,8 +246,8 @@ Partial Class Transaksi_Admin
         Me.btnDelete.IconZoom = 90.0R
         Me.btnDelete.IsTab = False
         Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.btnDelete.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnDelete.Normalcolor = System.Drawing.Color.Red
+        Me.btnDelete.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btnDelete.OnHoverTextColor = System.Drawing.Color.White
         Me.btnDelete.selected = False
         Me.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -255,9 +256,9 @@ Partial Class Transaksi_Admin
         '
         'btnSave
         '
-        Me.btnSave.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnSave.Activecolor = System.Drawing.Color.Blue
         resources.ApplyResources(Me.btnSave, "btnSave")
-        Me.btnSave.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnSave.BackColor = System.Drawing.Color.Blue
         Me.btnSave.BorderRadius = 0
         Me.btnSave.ButtonText = "Save"
         Me.btnSave.Cursor = System.Windows.Forms.Cursors.Hand
@@ -275,8 +276,8 @@ Partial Class Transaksi_Admin
         Me.btnSave.IconZoom = 90.0R
         Me.btnSave.IsTab = False
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.btnSave.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnSave.Normalcolor = System.Drawing.Color.Blue
+        Me.btnSave.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnSave.OnHoverTextColor = System.Drawing.Color.White
         Me.btnSave.selected = False
         Me.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft

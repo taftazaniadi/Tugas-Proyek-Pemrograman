@@ -2,12 +2,14 @@
 
     Dim modeProses As Integer
     Dim baris As Integer
+    Dim sekarang, denda, total As Integer
 
     Private Sub Peminjaman_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.MdiParent = Form1
         RefreshGrid()
         DGTransaksi.Columns(2).Visible = False
         txtID_Transaksi.Enabled = False
+
     End Sub
 
     Private Sub AturButton(st As Boolean)

@@ -71,3 +71,6 @@ E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-P
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\bin\Debug\Microsoft.Owin.Diagnostics.xml
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\bin\Debug\Microsoft.Owin.Hosting.xml
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\obj\Debug\Inventory.vbprojAssemblyReference.cache
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\obj\Debug\RdlCompile.cache
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\obj\Debug\RdlCompile.compiled

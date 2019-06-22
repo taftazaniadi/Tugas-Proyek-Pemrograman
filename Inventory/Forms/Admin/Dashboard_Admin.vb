@@ -74,5 +74,6 @@
         txtContact.Enabled = False
         txtFull.Enabled = False
         txtUser.Enabled = False
+        txtPassword.Enabled = False
     End Sub
 End Class

@@ -43,7 +43,7 @@ create table member
 (
 	id_personal int identity(1,1) not null primary key references personal(id_personal),
 	NIM varchar(10) not null,
-	Denda double
+	Denda int
 )
 go
 
@@ -232,3 +232,6 @@ drop trigger update_transaksi
 drop trigger return_transaksi
 drop trigger delete_transaksi
 
+SELECT COUNT(id_barang) FROM transaksi WHERE id_barang = 'B0003'
+
+SELECT COUNT(id_transaksi) FROM transaksi WHERE id_transaksi = 'T0002' AND status_transaksi = 'Diterima' OR status_transaksi = 'Menunggu' OR status_transaksi = 'Belum dikembalikan'
