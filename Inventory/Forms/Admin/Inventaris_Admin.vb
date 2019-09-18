@@ -109,7 +109,7 @@ Public Class Inventaris_Admin
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         With EntitasBarang
             .id_barangBarang = txtKode.Text
-            .id_PersonalAdmin = EntitasAdmin.id_personalAdmin.ToString
+            .id_PersonalAdmin = EntitasAdmin.IdAdmin.ToString
             .namaBarang = txtNama.Text
             .jenisBarang = cbJenis.SelectedItem
             .stockBarang = txtStock.Text

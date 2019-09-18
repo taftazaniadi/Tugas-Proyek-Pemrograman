@@ -1,68 +1,34 @@
 ﻿Public Class ClsEntAdmin
-    Private id_personal As Integer
-    Private tipe As Char
-    Private nama As String
-    Private email As String
-    Private contact As String
-    Private jurusan As String
-    Private password As String
+
+    Private id As Integer
     Private username As String
+    Private password As String
+    Private email As String
+    Private active As Integer
+    Private first_name As String
+    Private last_name As String
+    Private company As String
+    Private phone As String
 
-    Public Property id_personalAdmin() As String
+    Public Property IdAdmin() As Integer
         Get
-            Return id_personal
+            Return id
         End Get
-        Set(value As String)
-            id_personal = value
+        Set(value As Integer)
+            id = value
         End Set
     End Property
 
-    Public Property tipeAdmin() As String
+    Public Property UsernameAdmin() As String
         Get
-            Return tipe
+            Return username
         End Get
         Set(value As String)
-            tipe = value
+            username = value
         End Set
     End Property
 
-    Public Property namaAdmin() As String
-        Get
-            Return nama
-        End Get
-        Set(value As String)
-            nama = value
-        End Set
-    End Property
-
-    Public Property emailAdmin() As String
-        Get
-            Return email
-        End Get
-        Set(value As String)
-            email = value
-        End Set
-    End Property
-
-    Public Property contactAdmin() As String
-        Get
-            Return contact
-        End Get
-        Set(value As String)
-            contact = value
-        End Set
-    End Property
-
-    Public Property jurusanAdmin() As String
-        Get
-            Return jurusan
-        End Get
-        Set(value As String)
-            jurusan = value
-        End Set
-    End Property
-
-    Public Property passwordAdmin() As String
+    Public Property PasswordAdmin() As String
         Get
             Return password
         End Get
@@ -71,12 +37,58 @@
         End Set
     End Property
 
-    Public Property usernameAdmin() As String
+    Public Property EmailAdmin() As String
         Get
-            Return username
+            Return email
         End Get
         Set(value As String)
-            username = value
+            email = value
         End Set
     End Property
+
+    Public Property ActiveAdmin() As Integer
+        Get
+            Return active
+        End Get
+        Set(value As Integer)
+            active = value
+        End Set
+    End Property
+
+    Public Property First_nameAdmin() As String
+        Get
+            Return first_name
+        End Get
+        Set(value As String)
+            first_name = value
+        End Set
+    End Property
+
+    Public Property Last_nameAdmin() As String
+        Get
+            Return last_name
+        End Get
+        Set(value As String)
+            last_name = value
+        End Set
+    End Property
+
+    Public Property CompanyAdmin() As String
+        Get
+            Return company
+        End Get
+        Set(value As String)
+            company = value
+        End Set
+    End Property
+
+    Public Property PhoneAdmin() As String
+        Get
+            Return phone
+        End Get
+        Set(value As String)
+            phone = value
+        End Set
+    End Property
+
 End Class

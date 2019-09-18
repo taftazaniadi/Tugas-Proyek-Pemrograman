@@ -7,9 +7,9 @@
     End Sub
 
     Private Sub RefreshData_Admin()
-        txtEmail.Text = EntitasAdmin.emailAdmin
-        txtContact.Text = EntitasAdmin.contactAdmin
-        txtFull.Text = EntitasAdmin.namaAdmin
+        txtEmail.Text = EntitasAdmin.EmailAdmin
+        txtContact.Text = EntitasAdmin.PhoneAdmin
+        txtFull.Text = EntitasAdmin.First_nameAdmin
         txtUser.Text = EntitasAdmin.usernameAdmin
         txtPassword.Text = EntitasAdmin.passwordAdmin
     End Sub
@@ -50,9 +50,9 @@
 
         With EntitasAdmin
             .usernameAdmin = txtUser.Text
-            .namaAdmin = txtFull.Text
+            .First_nameAdmin = txtFull.Text
             .emailAdmin = txtEmail.Text
-            .contactAdmin = txtContact.Text
+            .PhoneAdmin = txtContact.Text
             .passwordAdmin = txtPassword.Text
         End With
 

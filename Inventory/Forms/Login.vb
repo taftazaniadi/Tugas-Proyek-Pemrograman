@@ -20,19 +20,20 @@
     End Sub
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
-        DTGrid = KontrolAdmin.LoginAdmin(txtUser.Text, txtPass.Text).ToTable
+        dtg = KontrolAdmin.LoginAdmin(txtUser.Text, txtPass.Text).ToTable
 
-        If DTGrid.Rows.Count > 0 Then
-            EntitasAdmin.id_personalAdmin = DTGrid.Rows(0).Item(0)
-            EntitasAdmin.tipeAdmin = DTGrid.Rows(0).Item(1)
-            EntitasAdmin.namaAdmin = DTGrid.Rows(0).Item(2)
-            EntitasAdmin.emailAdmin = DTGrid.Rows(0).Item(3)
-            EntitasAdmin.contactAdmin = DTGrid.Rows(0).Item(4)
-            EntitasAdmin.jurusanAdmin = DTGrid.Rows(0).Item(5)
-            EntitasAdmin.passwordAdmin = DTGrid.Rows(0).Item(6)
-            EntitasAdmin.usernameAdmin = DTGrid.Rows(0).Item(7)
+        If dtg.Rows.Count > 0 Then
+            EntitasAdmin.IdAdmin = dtg.Rows(0).Item(0)
+            EntitasAdmin.UsernameAdmin = dtg.Rows(0).Item(1)
+            EntitasAdmin.PasswordAdmin = dtg.Rows(0).Item(2)
+            EntitasAdmin.EmailAdmin = dtg.Rows(0).Item(3)
+            EntitasAdmin.ActiveAdmin = dtg.Rows(0).Item(4)
+            EntitasAdmin.First_nameAdmin = dtg.Rows(0).Item(5)
+            EntitasAdmin.Last_nameAdmin = dtg.Rows(0).Item(6)
+            EntitasAdmin.CompanyAdmin = dtg.Rows(0).Item(7)
+            EntitasAdmin.PhoneAdmin = dtg.Rows(0).Item(8)
 
-            If txtPass.Text = EntitasAdmin.passwordAdmin Then
+            If txtPass.Text = EntitasAdmin.PasswordAdmin Then
                 Form1.Show()
                 txtUser.Text = ""
                 txtPass.Text = ""
@@ -52,10 +53,6 @@
 
     Private Sub txtPass_OnValueChanged(sender As Object, e As EventArgs) Handles txtPass.OnValueChanged
         txtPass.isPassword = True
-    End Sub
-
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-
     End Sub
 
     Private Sub BunifuImageButton3_Click(sender As Object, e As EventArgs) Handles BunifuImageButton3.Click

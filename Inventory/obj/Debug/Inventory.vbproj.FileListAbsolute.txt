@@ -36,7 +36,6 @@ E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-P
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\obj\Debug\Inventory.Info_Member.resources
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\obj\Debug\Inventory.Transaksi_Admin.resources
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\bin\Debug\Microsoft.ReportViewer.Common.dll
-E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\bin\Debug\Microsoft.ReportViewer.WinForms.dll
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\bin\Debug\Microsoft.ReportViewer.WinForms.xml
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
@@ -72,5 +71,11 @@ E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-P
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\bin\Debug\Microsoft.Owin.Hosting.xml
 E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\obj\Debug\Inventory.vbprojAssemblyReference.cache
-E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\obj\Debug\RdlCompile.cache
-E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\obj\Debug\RdlCompile.compiled
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\bin\Debug\BouncyCastle.Crypto.dll
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\bin\Debug\Google.Protobuf.dll
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\bin\Debug\MySql.Data.dll
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\bin\Debug\Renci.SshNet.dll
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\bin\Debug\Google.Protobuf.pdb
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\bin\Debug\Google.Protobuf.xml
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\bin\Debug\MySql.Data.xml
+E:\Documents\File\File - Sistem Informasi\Semester - V\New folder\Tugas-Proyek-Pemrograman\Inventory\bin\Debug\Renci.SshNet.xml
